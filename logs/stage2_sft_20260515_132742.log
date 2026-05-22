@@ -1,0 +1,46 @@
+[MODEL] Loading SigLIP2 ...
+Loading weights:   0%|          | 0/448 [00:00<?, ?it/s]Loading weights:  56%|█████▌    | 249/448 [00:00<00:00, 2433.17it/s]Loading weights: 100%|██████████| 448/448 [00:00<00:00, 2090.67it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: ../models/siglip2-so400m-patch16-256
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...26}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[MODEL] SigLIP2 loaded and frozen.
+[MODEL] Loading Qwen2.5-3B-Instruct ...
+[MODEL] Registered '<image>' as special token.
+[MODEL] <image> token id = 151665
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 10496.89it/s]
+[MODEL] Qwen2.5 loaded, gradient checkpointing ON.
+[MODEL] Trainable params: 3092.8M (projector + full decoder)
+
+[TRAIN] Start | samples=381827 | batches/epoch=23864 | eff_batch=128 | total_opt_steps=2983
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[Epoch 1/1] Step 1/23864 | Loss 1.9476 (avg 1.9476) | LR 0.00e+00 | Batch 3.30s | Elapsed 4s | ETA 26h 32m 26s | Samples/s 5[Epoch 1/1] Step 2/23864 | Loss 1.5692 (avg 1.7584) | LR 0.00e+00 | Batch 2.80s | Elapsed 6s | ETA 22h 33m 49s | Samples/s 6[Epoch 1/1] Step 3/23864 | Loss 1.8281 (avg 1.7816) | LR 0.00e+00 | Batch 2.81s | Elapsed 9s | ETA 21h 15m 3s | Samples/s 6[Epoch 1/1] Step 4/23864 | Loss 1.4645 (avg 1.7023) | LR 0.00e+00 | Batch 2.81s | Elapsed 12s | ETA 20h 35m 46s | Samples/s 6[Epoch 1/1] Step 5/23864 | Loss 1.4220 (avg 1.6463) | LR 0.00e+00 | Batch 2.83s | Elapsed 15s | ETA 20h 13m 21s | Samples/s 6[Epoch 1/1] Step 6/23864 | Loss 1.6540 (avg 1.6476) | LR 0.00e+00 | Batch 2.83s | Elapsed 18s | ETA 19h 58m 28s | Samples/s 6[Epoch 1/1] Step 7/23864 | Loss 1.5794 (avg 1.6378) | LR 0.00e+00 | Batch 2.84s | Elapsed 20s | ETA 19h 48m 43s | Samples/s 6/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/PIL/Image.py:1034: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Epoch 1/1] Step 8/23864 | Loss 1.4826 (avg 1.6184) | LR 2.25e-07 | Batch 3.00s | Elapsed 23s | ETA 19h 49m 9s | Samples/s 5[Epoch 1/1] Step 9/23864 | Loss 1.3224 (avg 1.5855) | LR 2.25e-07 | Batch 2.85s | Elapsed 26s | ETA 19h 42m 48s | Samples/s 6[Epoch 1/1] Step 10/23864 | Loss 1.6024 (avg 1.5872) | LR 2.25e-07 | Batch 2.86s | Elapsed 29s | ETA 19h 38m 21s | Samples/s 6[Epoch 1/1] Step 11/23864 | Loss 1.3789 (avg 1.5683) | LR 2.25e-07 | Batch 2.88s | Elapsed 32s | ETA 19h 35m 29s | Samples/s 6[Epoch 1/1] Step 12/23864 | Loss 1.5008 (avg 1.5627) | LR 2.25e-07 | Batch 2.88s | Elapsed 35s | ETA 19h 32m 58s | Samples/s 6[Epoch 1/1] Step 13/23864 | Loss 1.8056 (avg 1.5813) | LR 2.25e-07 | Batch 2.88s | Elapsed 38s | ETA 19h 30m 42s | Samples/s 6[Epoch 1/1] Step 14/23864 | Loss 1.5414 (avg 1.5785) | LR 2.25e-07 | Batch 2.88s | Elapsed 41s | ETA 19h 28m 52s | Samples/s 6[Epoch 1/1] Step 15/23864 | Loss 1.5873 (avg 1.5791) | LR 2.25e-07 | Batch 2.89s | Elapsed 44s | ETA 19h 27m 33s | Samples/s 6[Epoch 1/1] Step 16/23864 | Loss 1.5592 (avg 1.5778) | LR 4.49e-07 | Batch 2.98s | Elapsed 47s | ETA 19h 28m 42s | Samples/s 5[Epoch 1/1] Step 17/23864 | Loss 1.7033 (avg 1.5852) | LR 4.49e-07 | Batch 2.88s | Elapsed 49s | ETA 19h 27m 19s | Samples/s 6[Epoch 1/1] Step 18/23864 | Loss 1.3969 (avg 1.5747) | LR 4.49e-07 | Batch 2.91s | Elapsed 52s | ETA 19h 26m 37s | Samples/s 6[Epoch 1/1] Step 19/23864 | Loss 1.3709 (avg 1.5640) | LR 4.49e-07 | Batch 2.92s | Elapsed 55s | ETA 19h 26m 18s | Samples/s 5[Epoch 1/1] Step 20/23864 | Loss 1.6814 (avg 1.5699) | LR 4.49e-07 | Batch 2.90s | Elapsed 58s | ETA 19h 25m 35s | Samples/s 6[Epoch 1/1] Step 21/23864 | Loss 1.5473 (avg 1.5688) | LR 4.49e-07 | Batch 2.90s | Elapsed 1m 1s | ETA 19h 24m 55s | Samples/s 6[Epoch 1/1] Step 22/23864 | Loss 1.7285 (avg 1.5761) | LR 4.49e-07 | Batch 2.90s | Elapsed 1m 4s | ETA 19h 24m 21s | Samples/s 6[Epoch 1/1] Step 23/23864 | Loss 1.3819 (avg 1.5676) | LR 4.49e-07 | Batch 2.91s | Elapsed 1m 7s | ETA 19h 23m 59s | Samples/s 5[Epoch 1/1] Step 24/23864 | Loss 1.4433 (avg 1.5624) | LR 6.74e-07 | Batch 3.00s | Elapsed 1m 10s | ETA 19h 25m 2s | Samples/s 5[Epoch 1/1] Step 25/23864 | Loss 1.1949 (avg 1.5477) | LR 6.74e-07 | Batch 2.90s | Elapsed 1m 13s | ETA 19h 24m 25s | Samples/s 6[Epoch 1/1] Step 26/23864 | Loss 1.2641 (avg 1.5368) | LR 6.74e-07 | Batch 2.91s | Elapsed 1m 16s | ETA 19h 24m 4s | Samples/s 5[Epoch 1/1] Step 27/23864 | Loss 1.2583 (avg 1.5265) | LR 6.74e-07 | Batch 2.92s | Elapsed 1m 19s | ETA 19h 23m 54s | Samples/s 5

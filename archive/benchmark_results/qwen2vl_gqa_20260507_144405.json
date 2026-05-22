@@ -1,0 +1,16 @@
+{
+  "model": "qwen2vl",
+  "dataset": "gqa",
+  "metric": "Accuracy",
+  "score": 0.0,
+  "num_samples": 1,
+  "predictions": [
+    {
+      "idx": 0,
+      "question": "Is it overcast?",
+      "pred": "There is no existence of the sky being overcast in the image description.",
+      "gt": "no",
+      "score": 0.0
+    }
+  ]
+}

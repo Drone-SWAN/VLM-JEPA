@@ -1,0 +1,16 @@
+{
+  "model": "qwen2vl",
+  "dataset": "mmbench",
+  "metric": "Accuracy",
+  "score": 0.0,
+  "num_samples": 1,
+  "predictions": [
+    {
+      "idx": 0,
+      "question": "Hint: The passage below describes an experiment. Read the passage and then follow the instructions below.\n\nMadelyn applied a thin layer of wax to the underside of her snowboard and rode the board straight down a hill. Then, she removed the wax and rode the snowboard straight down the hill again. She repeated the rides four more times, alternating whether she rode with a thin layer of wax on the board or not. Her friend Tucker timed each ride. Madelyn and Tucker calculated the average time it took to slide straight down the hill on the snowboard with wax compared to the average time on the snowboard without wax.\nFigure: snowboarding down a hill.\nIdentify the question that Madelyn and Tucker's experiment can best answer.\nOptions: A: Does Madelyn's snowboard slide down a hill in less time when it has a thin layer of wax or a thick layer of wax? | B: Does Madelyn's snowboard slide down a hill in less time when it has a layer of wax or when it does not have a layer of wax? | C: nan | D: nan",
+      "pred": "To determine the best question that Madelyn and Tucker's experiment can best answer, let's analyze the information provided:\n\n1. Madelyn applied a thin layer of wax to the underside of her snowboard and rode the board straight down a hill.\n2",
+      "gt": "B",
+      "score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+BENCHMARK RESULTS
+POPE = F1, all others = Accuracy
+
+  Model                  GQA   TEXTVQA     VQAV2      POPE   MMBENCH
+  ──────────────────────────────────────────────────────────────────
+  pipeline_b            3.63      0.84      1.54     71.23     47.89
+
+POPE detailed (Acc / F1 / Prec / Rec / Yes%):
+  pipeline_b        Acc=70.12  F1=71.23  Prec=68.68  Rec=73.98  Yes%=53.86

@@ -1,0 +1,16 @@
+{
+  "model": "qwen2vl",
+  "dataset": "pope",
+  "metric": "F1",
+  "score": 100.0,
+  "num_samples": 1,
+  "predictions": [
+    {
+      "idx": 0,
+      "question": "Is there a snowboard in the image?",
+      "pred": "Yes, there is a snowboard in the image.",
+      "gt": "yes",
+      "score": "{'pred': 'yes', 'gt': 'yes'}"
+    }
+  ]
+}

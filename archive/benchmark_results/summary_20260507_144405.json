@@ -1,0 +1,37 @@
+[
+  {
+    "model": "qwen2vl",
+    "dataset": "vqav2",
+    "metric": "Accuracy",
+    "score": 0.0,
+    "num_samples": 1
+  },
+  {
+    "model": "qwen2vl",
+    "dataset": "pope",
+    "metric": "F1",
+    "score": 100.0,
+    "num_samples": 1
+  },
+  {
+    "model": "qwen2vl",
+    "dataset": "textvqa",
+    "metric": "Accuracy",
+    "score": 0.0,
+    "num_samples": 1
+  },
+  {
+    "model": "qwen2vl",
+    "dataset": "mmbench",
+    "metric": "Accuracy",
+    "score": 0.0,
+    "num_samples": 1
+  },
+  {
+    "model": "qwen2vl",
+    "dataset": "gqa",
+    "metric": "Accuracy",
+    "score": 0.0,
+    "num_samples": 1
+  }
+]

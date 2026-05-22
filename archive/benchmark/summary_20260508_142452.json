@@ -1,0 +1,56 @@
+[
+  {
+    "model": "pipeline_a",
+    "dataset": "gqa",
+    "metrics": {
+      "accuracy": 0.0
+    },
+    "primary_score": 0.0,
+    "num_samples": 12578,
+    "time_sec": 1459.7809917926788
+  },
+  {
+    "model": "pipeline_a",
+    "dataset": "textvqa",
+    "metrics": {
+      "accuracy": 0.006666666666666665
+    },
+    "primary_score": 0.006666666666666665,
+    "num_samples": 5000,
+    "time_sec": 598.3266921043396
+  },
+  {
+    "model": "pipeline_a",
+    "dataset": "vqav2",
+    "metrics": {
+      "accuracy": 0.0
+    },
+    "primary_score": 0.0,
+    "num_samples": 5000,
+    "time_sec": 583.0533261299133
+  },
+  {
+    "model": "pipeline_a",
+    "dataset": "pope",
+    "metrics": {
+      "accuracy": 50.011111111111106,
+      "precision": 50.005556172902544,
+      "recall": 99.99999999997777,
+      "f1": 66.67160530364227,
+      "yes_ratio": 99.9888888888889
+    },
+    "primary_score": 50.011111111111106,
+    "num_samples": 9000,
+    "time_sec": 1055.330806016922
+  },
+  {
+    "model": "pipeline_a",
+    "dataset": "mmbench",
+    "metrics": {
+      "accuracy": 30.30723030723031
+    },
+    "primary_score": 30.30723030723031,
+    "num_samples": 4329,
+    "time_sec": 461.8868770599365
+  }
+]

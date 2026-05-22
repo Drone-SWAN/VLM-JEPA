@@ -1,0 +1,16 @@
+{
+  "model": "qwen2vl",
+  "dataset": "vqav2",
+  "metric": "Accuracy",
+  "score": 0.0,
+  "num_samples": 1,
+  "predictions": [
+    {
+      "idx": 0,
+      "question": "Where is he looking?",
+      "pred": "he is looking(499,221),(559,271)",
+      "gt": "down",
+      "score": 0.0
+    }
+  ]
+}

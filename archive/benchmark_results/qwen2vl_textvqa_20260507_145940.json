@@ -1,0 +1,16 @@
+{
+  "model": "qwen2vl",
+  "dataset": "textvqa",
+  "metric": "Accuracy",
+  "score": 0.0,
+  "num_samples": 1,
+  "predictions": [
+    {
+      "idx": 0,
+      "question": "what is the brand of this camera?",
+      "pred": "The brand of the camera in the picture is Dakota Digital.",
+      "gt": "['nous les gosses', 'dakota', 'clos culombu', 'dakota digital', 'dakota', 'dakota', 'dakota digital', 'dakota digital', 'dakota', 'dakota']",
+      "score": 0.0
+    }
+  ]
+}
