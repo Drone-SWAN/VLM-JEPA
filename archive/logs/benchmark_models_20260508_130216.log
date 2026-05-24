@@ -1,0 +1,107 @@
+
+════════════════════════════════════════════════════════════════════════════════
+  VLM BENCHMARK
+  Device  : cuda
+  Samples : -1 per dataset  (-1 = full)
+  Models  : ['pipeline_a_v2', 'pipeline_b_v2']
+  Datasets: ['gqa', 'textvqa', 'vqav2', 'pope', 'mmbench']
+════════════════════════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Loading: pipeline_a_v2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [pipeline_a] Loading CLIP, Gemma, proj1, proj2, Qwen...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 54280.19it/s]
+[transformers] [1mCLIPVisionModel LOAD REPORT[0m from: openai/clip-vit-base-patch32
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_projection.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+visual_projection.weight                                     | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/314 [00:00<?, ?it/s]Loading weights: 100%|██████████| 314/314 [00:00<00:00, 11058.31it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 10899.96it/s]
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [pipeline_a] proj1 loaded | stage1 val_loss=2.4596 epoch=5
+  [pipeline_a] proj2+qwen loaded | stage2 best GQA=32.62%
+
+────────────────────────────────────────────────────────────
+  MODEL: pipeline_a_v2  |  DATASET: gqa  |  N=-1
+────────────────────────────────────────────────────────────
+  [    1/12578]  pred: no                                   gt: no               acc: 100.0%  elapsed: 0s  ETA: 5416s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    2/12578]  pred: woman                                gt: women            acc:  50.0%  elapsed: 0s  ETA: 3018s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    3/12578]  pred: Yes, the utensil on top of the tabl  gt: no               acc:  33.3%  elapsed: 1s  ETA: 2520s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    4/12578]  pred: yes                                  gt: yes              acc:  50.0%  elapsed: 1s  ETA: 2038s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    5/12578]  pred: tall                                 gt: short            acc:  40.0%  elapsed: 1s  ETA: 1771s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    6/12578]  pred: A laptop is on top of the desk.      gt: keyboard         acc:  33.3%  elapsed: 1s  ETA: 1725s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    7/12578]  pred: sky                                  gt: ocean            acc:  28.6%  elapsed: 1s  ETA: 1562s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    8/12578]  pred: black                                gt: red              acc:  25.0%  elapsed: 1s  ETA: 1439s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    9/12578]  pred: brown                                gt: brown            acc:  33.3%  elapsed: 1s  ETA: 1344s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   10/12578]  pred: There is a window in the living roo  gt: drapes           acc:  30.0%  elapsed: 1s  ETA: 1359s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   11/12578]  pred: couch                                gt: drapes           acc:  27.3%  elapsed: 1s  ETA: 1298s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   12/12578]  pred: woman                                gt: woman            acc:  33.3%  elapsed: 1s  ETA: 1239s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   13/12578]  pred: yes                                  gt: yes              acc:  38.5%  elapsed: 1s  ETA: 1188s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   14/12578]  pred: A chalkboard is hanging above the d  gt: picture          acc:  35.7%  elapsed: 1s  ETA: 1210s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   15/12578]  pred: yes                                  gt: no               acc:  33.3%  elapsed: 1s  ETA: 1168s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   16/12578]  pred: yes                                  gt: yes              acc:  37.5%  elapsed: 1s  ETA: 1131s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   17/12578]  pred: A laptop is sitting next to the mou  gt: keyboard         acc:  35.3%  elapsed: 2s  ETA: 1153s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   18/12578]  pred: yes                                  gt: yes              acc:  38.9%  elapsed: 2s  ETA: 1121s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   19/12578]  pred: yes                                  gt: yes              acc:  42.1%  elapsed: 2s  ETA: 1093s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   20/12578]  pred: yes                                  gt: yes              acc:  45.0%  elapsed: 2s  ETA: 1068s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   21/12578]  pred: right                                gt: right            acc:  47.6%  elapsed: 2s  ETA: 1045s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   22/12578]  pred: yes                                  gt: no               acc:  45.5%  elapsed: 2s  ETA: 1024s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   23/12578]  pred: white                                gt: white            acc:  47.8%  elapsed: 2s  ETA: 1005s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   24/12578]  pred: pan                                  gt: pan              acc:  50.0%  elapsed: 2s  ETA: 987s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   25/12578]  pred: The skinny person is standing in th  gt: table            acc:  48.0%  elapsed: 2s  ETA: 1007s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   26/12578]  pred: no                                   gt: no               acc:  50.0%  elapsed: 2s  ETA: 991s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   27/12578]  pred: The freezer is located near the wal  gt: large            acc:  48.1%  elapsed: 2s  ETA: 1011s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   28/12578]  pred: cake                                 gt: marshmallow      acc:  46.4%  elapsed: 2s  ETA: 996s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   29/12578]  pred: The fence is made of aluminum.       gt: aluminum         acc:  44.8%  elapsed: 2s  ETA: 1005s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   30/12578]  pred: right                                gt: left             acc:  43.3%  elapsed: 2s  ETA: 991s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   31/12578]  pred: no                                   gt: yes              acc:  41.9%  elapsed: 2s  ETA: 977s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   32/12578]  pred: no                                   gt: no               acc:  43.8%  elapsed: 2s  ETA: 965s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   33/12578]  pred: orange                               gt: white            acc:  42.4%  elapsed: 3s  ETA: 953s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   34/12578]  pred: blue                                 gt: white            acc:  41.2%  elapsed: 3s  ETA: 942s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   35/12578]  pred: white                                gt: red              acc:  40.0%  elapsed: 3s  ETA: 932s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   36/12578]  pred: yes                                  gt: no               acc:  38.9%  elapsed: 3s  ETA: 922s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   37/12578]  pred: window                               gt: window           acc:  40.5%  elapsed: 3s  ETA: 912s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   38/12578]  pred: right                                gt: left             acc:  39.5%  elapsed: 3s  ETA: 904s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   39/12578]  pred: The crosswalk in front of the store  gt: concrete         acc:  38.5%  elapsed: 3s  ETA: 919s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   40/12578]  pred: The sprinkles are very large, cover  gt: small            acc:  37.5%  elapsed: 3s  ETA: 933s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   41/12578]  pred: The crosswalk near the street lamp   gt: concrete         acc:  36.6%  elapsed: 3s  ETA: 946s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   42/12578]  pred: jacket                               gt: tank top         acc:  35.7%  elapsed: 3s  ETA: 940s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   43/12578]  pred: shirt                                gt: tank top         acc:  34.9%  elapsed: 3s  ETA: 932s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   44/12578]  pred: pants                                gt: hat              acc:  34.1%  elapsed: 3s  ETA: 924s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   45/12578]  pred: off                                  gt: off              acc:  35.6%  elapsed: 3s  ETA: 916s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   46/12578]  pred: yes                                  gt: yes              acc:  37.0%  elapsed: 3s  ETA: 909s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   47/12578]  pred: yes                                  gt: no               acc:  36.2%  elapsed: 3s  ETA: 901s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   48/12578]  pred: sleeveless                           gt: tank top         acc:  35.4%  elapsed: 3s  ETA: 902s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   49/12578]  pred: yes                                  gt: no               acc:  34.7%  elapsed: 4s  ETA: 895s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   50/12578]  pred: apples                               gt: bananas          acc:  34.0%  elapsed: 4s  ETA: 891s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   51/12578]  pred: blue                                 gt: white            acc:  33.3%  elapsed: 4s  ETA: 885s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   52/12578]  pred: bowl                                 gt: bananas          acc:  32.7%  elapsed: 4s  ETA: 882s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   53/12578]  pred: right                                gt: right            acc:  34.0%  elapsed: 4s  ETA: 876s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   54/12578]  pred: left                                 gt: right            acc:  33.3%  elapsed: 4s  ETA: 871s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.

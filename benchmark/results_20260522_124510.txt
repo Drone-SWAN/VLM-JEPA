@@ -1,0 +1,21 @@
+BENCHMARK RESULTS — ALLaVA (SigLIP2-SO400M + MLP + Qwen2.5-3B-Instruct)
+Training data : ALLaVA + Visual Web Instruct
+Run           : 20260522_124510
+
+  Metric                                       F1         Acc
+  Model                                      POPE     MMBENCH
+  ───────────────────────────────────────────────────────────
+  ALLaVA (SigLIP2+Qwen2.5-3B)               43.05       69.14
+  ───────────────────────────────────────────────────────────
+
+[POPE] samples=9000  time=437s
+  accuracy: 63.3667
+  precision: 96.6641
+  recall: 27.6889
+  f1: 43.0472
+  yes_ratio: 14.3222
+  primary: 43.0472
+
+[MMBENCH] samples=4329  time=211s
+  accuracy: 69.1384
+  primary: 69.1384

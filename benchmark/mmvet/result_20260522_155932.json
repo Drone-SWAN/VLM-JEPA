@@ -1,0 +1,1328 @@
+{
+  "dataset": "mmvet",
+  "metrics": {
+    "accuracy": 25.972166697433302,
+    "capability_scores": {
+      "ocr": 22.65876126397089,
+      "math": 7.6923076923076925,
+      "spat": 27.893091999844692,
+      "rec": 27.29978702884115,
+      "know": 20.17798142919176,
+      "gen": 21.19082091717241
+    },
+    "primary": 25.972166697433302
+  },
+  "primary_score": 25.972166697433302,
+  "num_samples": 218,
+  "predictions": [
+    {
+      "idx": 0,
+      "question": "What is x in the equation?",
+      "pred": "Based solely on the image, it is not possible to determine the exact value of x because the equation is incomplete. The image shows only part of the equation and does not provide enough information to solve for x. To find the value of x, one would need additional terms or a complete equation that includes an equal sign with a numerical value on the right side.",
+      "gt": "['-1', '-5']"
+    },
+    {
+      "idx": 1,
+      "question": "What is d in the last equation?",
+      "pred": "Based on the image, the last equation is 7d - 4 = 11. To solve for d, we would add 4 to both sides of the equation to get 7d = 15, and then divide both sides by 7 to find that d equals 15/7 or approximately 2.14.",
+      "gt": "['1.25<or>=1.25<or>5/4']"
+    },
+    {
+      "idx": 2,
+      "question": "What is x in the equation?",
+      "pred": "Based on the image, the equation provided is 8x + 11 = 14. To solve for x, one would subtract 11 from both sides to get 8x = 3, and then divide both sides by 8 to find that x equals 3/8.",
+      "gt": "['0.75<or>=0.75<or>3/4']"
+    },
+    {
+      "idx": 3,
+      "question": "What is the answer to the bottom left equation?",
+      "pred": "The answer to the bottom left equation is 9. This is calculated by adding 7 and 2 together, as indicated by the equation \"7 + 2 = ?\".",
+      "gt": "['12<or>=12']"
+    },
+    {
+      "idx": 4,
+      "question": "What is the answer to the second equation on the right?",
+      "pred": "The answer to the second equation on the right is 10. This is calculated by adding 7 and 3 together, as indicated by the equation \"7 + 3 = ?\".",
+      "gt": "['7<or>=7']"
+    },
+    {
+      "idx": 5,
+      "question": "What is the answer to the second last equation on the right?",
+      "pred": "The answer to the second last equation on the right is 15. This can be determined by adding the numbers in parentheses: (20 + 4) - (15 - 9), which simplifies to 24 - 6, resulting in 18. However, since the image shows the answer as 15, it may indicate a mistake or a different interpretation of the problem.",
+      "gt": "['2<or>=2']"
+    },
+    {
+      "idx": 6,
+      "question": "What is y in the last equation?",
+      "pred": "Based on the image, the last equation is 2y + 15 = 39. To find y, we would subtract 15 from both sides to get 2y = 24, and then divide both sides by 2 to find that y equals 12.",
+      "gt": "['5<or>=5']"
+    },
+    {
+      "idx": 7,
+      "question": "Find the pattern of how the \"X\" operator is redefined, and answer the given equa",
+      "pred": "The \"X\" operator is redefined as a subtraction operation, where the result of the equation is obtained by subtracting the second number from the first. For the given equation, 6 - 3 equals 3, which matches the answer provided in the image.",
+      "gt": "['13<or>=13']"
+    },
+    {
+      "idx": 8,
+      "question": "What will the girl on the right write on the board?",
+      "pred": "Based solely on the image, it is not possible to determine with certainty what the girl on the right will write on the board. However, given that she is holding a pencil and appears to be looking at the equation \"3x2 - 11 = 7,\" it is reasonable to infer that she might continue solving the equation or write down another related mathematical problem. The presence of the chalkboard suggests that the activity involves mathematics, so her next action could logically be to either complete the current problem or start a new one.",
+      "gt": "['14<or>=14']"
+    },
+    {
+      "idx": 9,
+      "question": "How many gallons of supreme gasoline can I get with $50?",
+      "pred": "With $50, you can get 2.6 gallons of supreme gasoline. This is calculated by dividing the total amount of money ($50) by the price per gallon for supreme gasoline ($3.69), which equals approximately 13.67 gallons. However, since we cannot purchase a fraction of a gallon in most retail settings, you would likely be able to buy 2 full gallons and have some change remaining.",
+      "gt": "['13.6<or>13.7']"
+    },
+    {
+      "idx": 10,
+      "question": "What is the price difference between diesel and regular gasoline?",
+      "pred": "The price difference between diesel and regular gasoline, as indicated by the digital display, is $0.49. Regular gasoline is priced at $3.69 per gallon, while diesel is priced at $3.20 per gallon.",
+      "gt": "['0.11']"
+    },
+    {
+      "idx": 11,
+      "question": "What is the total price for a bottle of Merlot and a bottle of Cabernet shown in",
+      "pred": "The total price for a bottle of Merlot and a bottle of Cabernet, as shown in the image, is $139.99. This is calculated by adding the individual prices of the two bottles: $130.99 for the Merlot and $6.99 for the Cabernet.",
+      "gt": "['249.98']"
+    },
+    {
+      "idx": 12,
+      "question": "What is the cost of three bottles of Moet champagne?",
+      "pred": "The cost of three bottles of Moet champagne is $139.99, as indicated by the price tag on the third bottle in the image.",
+      "gt": "['344.97']"
+    },
+    {
+      "idx": 13,
+      "question": "I am getting one funghi pizza and one prosciutto pizza. How much should I pay in",
+      "pred": "Based on the image, the funghi pizza is priced at 7.50\u20ac and the prosciutto pizza at 8.00\u20ac. Adding these together gives a total of 15.50\u20ac for both pizzas.",
+      "gt": "['14.8<or>14,8']"
+    },
+    {
+      "idx": 14,
+      "question": "I am getting two margherita pizza and one calzone. How much should I pay in tota",
+      "pred": "Based on the image, the margherita pizza costs 7.50\u20ac and the calzone is priced at 8.00\u20ac. Therefore, for two margherita pizzas and one calzone, you would pay a total of 15.00\u20ac for the pizzas plus 8.00\u20ac for the calzone, which equals 23.00\u20ac in total.",
+      "gt": "['25.8<or>25,8']"
+    },
+    {
+      "idx": 15,
+      "question": "What is the original price for pork belly before discount?",
+      "pred": "The original price for pork belly before the discount is indicated as 9.80, which is shown in the top right corner of the display.",
+      "gt": "['14']"
+    },
+    {
+      "idx": 16,
+      "question": "What is the gasoline price?",
+      "pred": "The gasoline price is $2.88 per gallon, as indicated by the text \"GALLONS\" and the number \"$2.88\".",
+      "gt": "['4.299<or>4.3']"
+    },
+    {
+      "idx": 17,
+      "question": "What is the color of the hat worn by the person in the front left?",
+      "pred": "The hat worn by the person in the front left is black.",
+      "gt": "['blue']"
+    },
+    {
+      "idx": 18,
+      "question": "What is located to the right of the shampoo?",
+      "pred": "To the right of the shampoo, there is a small white bottle with a label that reads \"SCENTED MIST.\" This bottle appears to be a separate product from the shampoo and conditioner, possibly used for adding fragrance or as a styling aid.",
+      "gt": "['conditioner']"
+    },
+    {
+      "idx": 19,
+      "question": "What is in the right most bottle?",
+      "pred": "The right most bottle contains a product that appears to be a hair mask, as indicated by the label \"HAIR MASK\" and the word \"MUSTHAKE.\" The label also mentions \"100% NATURAL,\" suggesting that the product is made from natural ingredients.",
+      "gt": "['mousse']"
+    },
+    {
+      "idx": 20,
+      "question": "What is the spatial relation between the frisbee and the man?",
+      "pred": "The spatial relation between the frisbee and the man is that of a thrown object in mid-air. The frisbee is above the man, indicating it has been launched by him. The man's body position suggests he is either in the process of throwing or has just thrown the frisbee. His outstretched arm and open hand are typical of someone preparing to throw an object, with his gaze directed upwards towards the frisbee, which is still airborne.",
+      "gt": "['above the man<or>top left']"
+    },
+    {
+      "idx": 21,
+      "question": "Which car is on the parking spot 33?",
+      "pred": "The car on parking spot 33 is the blue sedan. It is positioned in the center of the image, directly under the number \"33\" on the parking lot's numbering system.",
+      "gt": "['no<or>empty']"
+    },
+    {
+      "idx": 22,
+      "question": "Which spot is the red car parking on?",
+      "pred": "The red car is parked on the third spot from the left, which is marked with the number \"3\".",
+      "gt": "['31']"
+    },
+    {
+      "idx": 23,
+      "question": "What is the price for tomatoes?",
+      "pred": "The price for tomatoes, as indicated on the sign in the image, is 70 cents per kilogram.",
+      "gt": "['eight<or>8.0']"
+    },
+    {
+      "idx": 24,
+      "question": "What fruit is the the right of plums?",
+      "pred": "The fruit to the right of the plums is a large, round orange with a deep orange color and a smooth skin. It appears to be a variety of orange that is commonly known for its sweet taste and juicy flesh.",
+      "gt": "['orange']"
+    },
+    {
+      "idx": 25,
+      "question": "Based on the image, what is the total international awareness of Tina Fey?",
+      "pred": "The total international awareness of Tina Fey, as indicated by the image, is 56%. This figure is derived from the sum of the percentages for each country listed in the \"TOTAL\" column.",
+      "gt": "['35%']"
+    },
+    {
+      "idx": 26,
+      "question": "Based on the image, in which country does Tina Fey have the highest level of tot",
+      "pred": "Based on the image, Tina Fey has the highest level of total awareness in Australia, with a value of 65.",
+      "gt": "['australia']"
+    },
+    {
+      "idx": 27,
+      "question": "What earth's interior structure does number 2 indicate?",
+      "pred": "Number 2 in the image indicates the mantle, which is the layer of Earth's interior located between the crust and the outer core. It is composed mainly of silicate rocks and is known for its semi-fluid state due to the high temperatures and pressures found at this depth.",
+      "gt": "['mantle']"
+    },
+    {
+      "idx": 28,
+      "question": "What is the number displayed on the motorcycle ridden by the motorcyclist wearin",
+      "pred": "The number displayed on the motorcycle ridden by the motorcyclist wearing a yellow suit is \"10.\"",
+      "gt": "['16']"
+    },
+    {
+      "idx": 29,
+      "question": "What is the number displayed on the motorcycle on the right?",
+      "pred": "The number displayed on the motorcycle on the right is \"9\".",
+      "gt": "['4']"
+    },
+    {
+      "idx": 30,
+      "question": "Are which one of these two jets are larger in size?",
+      "pred": "Based on the image, the jet on the left appears to be larger in size. This assessment is made by comparing the relative sizes of the jets against each other and against the horizon line. The jet on the right seems to be slightly smaller, as it does not extend as far into the sky or as high above the horizon as the jet on the left.",
+      "gt": "['same']"
+    },
+    {
+      "idx": 31,
+      "question": "Is the person bigger than the car?",
+      "pred": "Based on the image, it appears that the person is indeed bigger than the car. This assessment is made by comparing the size of the person's head to the car's front bumper and the length of the person's arms relative to the car's width. The person's head seems to be significantly larger than the car's front bumper, and their arms extend beyond the car's width, suggesting a greater height and size compared to the vehicle.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 32,
+      "question": "What should I do after kneading the dough, before dividing it into pieces?",
+      "pred": "After kneading the dough, before dividing it into pieces, you should place the dough on a floured surface and let it rest for 10 minutes. This resting period allows the gluten in the dough to relax, which can make it easier to handle and shape without tearing.",
+      "gt": "['warm place', '1 hour']"
+    },
+    {
+      "idx": 33,
+      "question": "Should I add sugar when mixing egg and milk?",
+      "pred": "Based on the image, it is not explicitly stated whether sugar should be added when mixing egg and milk. However, in many recipes for chocolate cake, sugar is typically mixed into the eggs and milk before adding other ingredients to ensure even distribution throughout the batter. Since this step is part of a recipe, it's reasonable to infer that sugar would be included at this stage.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 34,
+      "question": "What should I do before cutting herbs, sausage, and mushrooms?",
+      "pred": "Before cutting herbs, sausage, and mushrooms, you should wash them thoroughly under cold water to remove any dirt or debris.",
+      "gt": "['tilt pan slightly']"
+    },
+    {
+      "idx": 35,
+      "question": "What is the index of the step when we need to add all purpose flour?",
+      "pred": "The index of the step when we need to add all purpose flour is 1. This is indicated in the image where it states, \"Pour all-purpose flour into a bowl and mix with the dough.\"",
+      "gt": "['third<or> 3']"
+    },
+    {
+      "idx": 36,
+      "question": "What should we add in the third step?",
+      "pred": "In the third step, we should add a dollop of honey or syrup to the pancakes. This is indicated by the image showing a spoonful of honey being poured onto the pancake in the center of the plate.",
+      "gt": "['milk']"
+    },
+    {
+      "idx": 37,
+      "question": "What should kids do after snap fingers?",
+      "pred": "Based on the image, after snap fingers, kids should \"Touch your feet\" as indicated by the third card in the sequence.",
+      "gt": "['hop on one foot']"
+    },
+    {
+      "idx": 38,
+      "question": "What should be drawn in the fourth step?",
+      "pred": "In the fourth step, which is to draw the eyes of the character, one should draw two large circles with a small dot in the center of each circle. These dots represent the pupils, and the circles are the iris of the eyes.",
+      "gt": "['nose']"
+    },
+    {
+      "idx": 39,
+      "question": "What is the step after using probe to spread tire puncture?",
+      "pred": "The step after using the probe to spread the tire puncture is to remove the probe and use a tool to remove the tire from the rim.",
+      "gt": "['remove the repair']"
+    },
+    {
+      "idx": 40,
+      "question": "What is the second step suggested?",
+      "pred": "The second step suggested in the flowchart is to \"Identify the objectives.\"",
+      "gt": "['identify your audience']"
+    },
+    {
+      "idx": 41,
+      "question": "What is the last strategy given in the image?",
+      "pred": "The last strategy given in the image is \"Make a song or sing a song.\"",
+      "gt": "['make a song']"
+    },
+    {
+      "idx": 42,
+      "question": "What is the average total fueling cost excluding the Ford F150?",
+      "pred": "The average total fueling cost excluding the Ford F150 can be calculated by adding the costs of the Toyota F150 and the Honda CR-V, then dividing by 2. The Toyota F150 costs $83.56 and the Honda CR-V costs $70.56. Adding these together gives $154.12, and dividing by 2 results in an average of $77.06.",
+      "gt": "['76.55<or>76.56']"
+    },
+    {
+      "idx": 43,
+      "question": "What is the highest fueling cost?",
+      "pred": "The highest fueling cost, as indicated by the chart, is for the \"Ford F-150\" with a fueling cost of $82.56.",
+      "gt": "['130.96']"
+    },
+    {
+      "idx": 44,
+      "question": "Which category did the worst job in plastic recycling, considering the amount of",
+      "pred": "Based on the image, the category that did the worst job in plastic recycling is \"Plastic Machines,\" as indicated by the largest bar representing 43% of the total amount of plastic made and thrown out. This suggests that a significant portion of the plastic waste generated by this industry was not recycled.",
+      "gt": "['packaging']"
+    },
+    {
+      "idx": 45,
+      "question": "What is the difference in metric tonnes between the amount of plastic produced a",
+      "pred": "The difference in metric tonnes between the amount of plastic produced and the amount discarded is 3,000,000 metric tonnes. This can be calculated by subtracting the discarded amount (4,000,000 metric tonnes) from the produced amount (7,000,000 metric tonnes).",
+      "gt": "['105']"
+    },
+    {
+      "idx": 46,
+      "question": "What is the estimated average standing charge for the year 2023?",
+      "pred": "The estimated average standing charge for the year 2023, as indicated on the chart, is \u00a316.95.",
+      "gt": "['271']"
+    },
+    {
+      "idx": 47,
+      "question": "What is the estimated total cost for the year 2023?",
+      "pred": "The estimated total cost for the year 2023, as indicated by the chart, is \u00a314,698. This figure is derived from the sum of the individual costs for each energy source at the 2023 price point.",
+      "gt": "['23800']"
+    },
+    {
+      "idx": 48,
+      "question": "In which direction does the living room window face?",
+      "pred": "Based on the image, the living room window is located in the center of the floor plan and appears to be facing towards the right side of the plan. This assumption is made by observing the orientation of the windows and doors relative to each other, which typically follow a standard layout where the living room is designed to face an outdoor space or a view.",
+      "gt": "['north']"
+    },
+    {
+      "idx": 49,
+      "question": "What are the appliances in the kitchen in this floorplan?",
+      "pred": "The appliances in the kitchen of this floorplan include a built-in oven, a range hood, and a dishwasher. These are indicated by the presence of these specific appliances in the kitchen section of the plan.",
+      "gt": "['oven', 'dishwasher']"
+    },
+    {
+      "idx": 50,
+      "question": "Which room is bigger, the double garage or the living room?",
+      "pred": "Based on the image, the double garage is larger than the living room. The garage has a width of 19 feet and a depth of 20 feet, while the living room measures 17 feet in width and 15 feet in depth.",
+      "gt": "['double garage']"
+    },
+    {
+      "idx": 51,
+      "question": "Which room is bigger, the master bedroom or the patio?",
+      "pred": "Based on the image, the master bedroom is larger than the patio. The master bedroom spans two full-width sections of the house, while the patio is only one section wide and appears to be a smaller area compared to the master bedroom's size.",
+      "gt": "['master bedroom']"
+    },
+    {
+      "idx": 52,
+      "question": "What is the solution if the lamp is plugged in and the bulb has burned out?",
+      "pred": "The solution if the lamp is plugged in and the bulb has burned out, as indicated by the flowchart, is to replace the bulb. This is shown by the arrow pointing from \"Bulb has burned out\" to \"Replace bulb,\" which suggests that this is the final step in resolving the issue of a non-functional lamp.",
+      "gt": "['replace blub']"
+    },
+    {
+      "idx": 53,
+      "question": "Which step in the flowchart is drawn with a diamond shape?",
+      "pred": "The step in the flowchart that is drawn with a diamond shape is \"Wait for kettle to boil.\" This is indicated by the diamond symbol, which is commonly used to represent decision points or conditions in flowcharts.",
+      "gt": "['water boiled?']"
+    },
+    {
+      "idx": 54,
+      "question": "What is the average wait time to climb out of bed?",
+      "pred": "The average wait time to climb out of bed is calculated by adding the time spent in each step and then dividing by the number of steps. The total time is 5 minutes for setting the alarm, 3 minutes for getting up, 1 minute for getting dressed, and 2 minutes for getting out of bed. Adding these times gives us a total of 11 minutes. Since there are four steps, the average wait time per step is 11 minutes divided by 4, which equals 2.75 minutes.",
+      "gt": "['15 min']"
+    },
+    {
+      "idx": 55,
+      "question": "Which year has the highest growth rate of median house price?",
+      "pred": "The year with the highest growth rate of median house price, as indicated by the red line on the graph, is 2017. This is evident from the peak in the red line's height compared to the other lines representing different income groups.",
+      "gt": "['2008']"
+    },
+    {
+      "idx": 56,
+      "question": "What is Japan's gdp in 2012?",
+      "pred": "Based on the image, Japan's GDP in 2012 is approximately 4.3 trillion U.S. dollars. This can be determined by locating the year 2012 on the x-axis and finding the corresponding point on the line graph, which intersects with the y-axis at around 4.3 trillion dollars.",
+      "gt": "['6,233.15 billion u.s. dollars']"
+    },
+    {
+      "idx": 57,
+      "question": "In which years did rowing and athletics have the same number of gold medals?",
+      "pred": "Rowing and athletics had the same number of gold medals in 2008, as indicated by the overlap between the two lines on the graph for that year.",
+      "gt": "['2000', '2012']"
+    },
+    {
+      "idx": 58,
+      "question": "Which department is the person who has the highest salary from?",
+      "pred": "The person with the highest salary is from the \"Marketing\" department, as indicated by the \"$2,000\" in the \"Salary\" column for that department.",
+      "gt": "['administration']"
+    },
+    {
+      "idx": 59,
+      "question": "Based on the table, how much is Wilkins earning?",
+      "pred": "Based on the table, Wilkins is earning $1,000. This can be determined by looking at the \"Salary\" column under the \"Department\" row for Wilkins, which shows a value of $1,000.",
+      "gt": "['2500<or>2,500']"
+    },
+    {
+      "idx": 60,
+      "question": "Which country has a below-average profit margin?",
+      "pred": "Based on the image, the country with a below-average profit margin is China. The profit margin for China is 19.8%, which is lower than the average of 23.6% calculated from the other countries listed.",
+      "gt": "['india']"
+    },
+    {
+      "idx": 61,
+      "question": "Which country has the highest profit margin?",
+      "pred": "Based on the image, the country with the highest profit margin is China, as indicated by the \"Profit Margin\" column. The profit margin for China is 19.8%, which is higher than the other countries listed in the table.",
+      "gt": "['australia']"
+    },
+    {
+      "idx": 62,
+      "question": "In which month is the highest income generated?",
+      "pred": "The highest income generated is in the month of February, with an income of $10,000.",
+      "gt": "['feb']"
+    },
+    {
+      "idx": 63,
+      "question": "What percentage does salary contribute to total income?",
+      "pred": "To calculate the percentage that salary contributes to total income, we take the sum of all salaries and divide it by the total income. The sum of all salaries is $10,000 (Jan), $12,000 (Feb), $13,000 (Mar), $14,000 (Apr), $15,000 (May), and $16,000 (June), which equals $70,000. Dividing this by the total income of $80,000 gives us a percentage of 87.5",
+      "gt": "['56.2<or>0.562']"
+    },
+    {
+      "idx": 64,
+      "question": "Who is the person on the left?",
+      "pred": "Based solely on the image, the person on the left appears to be a woman with blonde hair and a fair complexion. She is wearing a floral dress with a pattern that includes pink and green flowers, which contrasts with her light skin tone. The makeup she is wearing is natural with subtle eyeshadow and lipstick. The overall style of her attire and makeup suggests a casual yet stylish look, possibly for a daytime event or a social gathering.",
+      "gt": "['keira knightley']"
+    },
+    {
+      "idx": 65,
+      "question": "Who is the person in the image?",
+      "pred": "Based solely on the image, it is not possible to determine with certainty who the person is. However, given the context of the event and the attire, which includes a formal gown and a tiara, it could be inferred that the individual may be a celebrity or someone of significance at an awards ceremony. The tiara suggests a level of formality and possibly a role in a high-profile event, such as an Oscar ceremony, where such accessories are often worn by nominees or winners.",
+      "gt": "['michelle yeoh']"
+    },
+    {
+      "idx": 66,
+      "question": "Who is the person in the bottom right?",
+      "pred": "The person in the bottom right is a male individual with short, dark hair and a beard. He is wearing a black suit jacket and a white shirt, which suggests he may be dressed for a formal event or occasion. His expression is neutral, and his attire is conservative, which could indicate that he is attending a professional or semi-formal event.",
+      "gt": "['jamie dornan']"
+    },
+    {
+      "idx": 67,
+      "question": "Which one is unsweetened?",
+      "pred": "The unsweetened version of the product is the one on the left, which has a white label with the words \"UN-SWEETENED\" prominently displayed.",
+      "gt": "['oat']"
+    },
+    {
+      "idx": 68,
+      "question": "Is this apple organic?",
+      "pred": "Based on the image, the apple is labeled as \"ORGANIC\" with a green checkmark symbol. This indicates that the apple has been certified organic, which means it was grown without synthetic pesticides or fertilizers and meets certain standards for growing practices.",
+      "gt": "['yes']"
+    },
+    {
+      "idx": 69,
+      "question": "What is the calories for the entire bag?",
+      "pred": "The image does not provide the total calories for the entire bag of vegetables. It only lists the calorie content per serving, which is 100 calories per 1/2 cup. To find the total calories for the entire bag, one would need to know the number of servings in the bag and multiply that by the calories per serving. However, this information is not available in the image provided.",
+      "gt": "['275']"
+    },
+    {
+      "idx": 70,
+      "question": "What is the name of this dish?",
+      "pred": "Based solely on the image, the dish is known as \"Hot Pot\" or \"Hot Pot Soup,\" which is a type of Chinese cuisine. It's characterized by its rich broth and the variety of ingredients that are cooked in it, such as tofu, meat, and vegetables. The specific name of the dish cannot be determined from the image alone without additional context or text.",
+      "gt": "['mapo tofu']"
+    },
+    {
+      "idx": 71,
+      "question": "What is the name of this dish?",
+      "pred": "Based on the image alone, the dish is known as Caprese salad. It is a classic Italian salad that typically consists of fresh tomatoes, mozzarella cheese, and basil leaves, often drizzled with olive oil and balsamic vinegar. The presence of the tomato slices, mozzarella balls, and the green leaves in the center of the plate are characteristic of this dish.",
+      "gt": "['caprese salad']"
+    },
+    {
+      "idx": 72,
+      "question": "What is the name of this dish?",
+      "pred": "Based on the image alone, the dish appears to be a type of noodle soup, possibly Thai or Vietnamese in origin, given the style of the noodles and the garnishes. The name of the dish cannot be determined from the image alone without additional context or text that specifies the name.",
+      "gt": "['pad thai']"
+    },
+    {
+      "idx": 73,
+      "question": "What is the make of the car on the left?",
+      "pred": "The make of the car on the left, which is a Volkswagen Golf, can be identified by its distinctive design features such as the shape of the headlights, the grille design, and the overall body shape. These characteristics are characteristic of the Volkswagen Golf model.",
+      "gt": "['volkswagen']"
+    },
+    {
+      "idx": 74,
+      "question": "What does this factory make?",
+      "pred": "Based solely on the image, it is not possible to determine with certainty what the factory makes. The logo \"LEICA\" suggests that it is a company known for manufacturing high-quality optical instruments and cameras. However, without additional context or visible product labels, the specific products cannot be identified from this image alone.",
+      "gt": "['camera']"
+    },
+    {
+      "idx": 75,
+      "question": "what is the green logo on the car?",
+      "pred": "The green logo on the car is not clearly visible in the image provided. It appears to be a small emblem or patch, but due to the angle and distance from which the photo was taken, it's not possible to discern the details of the logo with certainty.",
+      "gt": "['monster']"
+    },
+    {
+      "idx": 76,
+      "question": "What is the name of this landmark?",
+      "pred": "The landmark in the image is known as the Trevi Fountain, located in Rome, Italy. It is one of the most famous fountains in the world and a symbol of the city.",
+      "gt": "['trevi fountain']"
+    },
+    {
+      "idx": 77,
+      "question": "What is the name of this landmark?",
+      "pred": "The name of the landmark is not visible in the image provided. To determine the name, one would typically need to have a view of the entire structure or additional information that is not available in this photograph.",
+      "gt": "['anbariya mosque']"
+    },
+    {
+      "idx": 78,
+      "question": "What is the name of this landmark?",
+      "pred": "Based solely on the image, it is not possible to determine the exact name of the landmark. The image does not provide any text or symbols that would indicate its name. To identify the landmark, one would typically need additional information such as a view of the surrounding area, historical context, or architectural details that are not discernible from this photograph alone.",
+      "gt": "['baochu pagoda']"
+    },
+    {
+      "idx": 79,
+      "question": "What is the face value of this banknote?",
+      "pred": "The face value of this banknote is indicated by the text \"ONE DOLLAR\" printed on the right side of the portrait.",
+      "gt": "['five<or> 5']"
+    },
+    {
+      "idx": 80,
+      "question": "What is this banknote?",
+      "pred": "Based on the image, this banknote is a British pound sterling. This can be deduced from the portrait of Queen Elizabeth II, who has been the face of the British \u00a310 note since 2016. The design elements such as the crown and the building in the background are consistent with the style used for the \u00a310 notes issued by the Bank of England.",
+      "gt": "['ten pound<or>10 pound<or>british pound']"
+    },
+    {
+      "idx": 81,
+      "question": "What type of currency does this banknote represent?",
+      "pred": "The banknote in the image represents the currency of Sweden, as indicated by the text \"SVERIGE\" on the note. This is a common practice for banknotes to include the name of the country they represent.",
+      "gt": "['swede<or>kronor']"
+    },
+    {
+      "idx": 82,
+      "question": "Which chest xray disease can be found? (Options include: Atelectasis; Cardiomega",
+      "pred": "Based on the image alone, it is not possible to definitively diagnose a specific chest xray disease. However, the presence of a large, dense shadow in the right lower lobe could suggest consolidation or an infiltrate, which are conditions where there is an abnormal accumulation of fluid, pus, or inflammatory cells in the lung tissue. Without additional clinical information and possibly a more detailed examination, it's not possible to determine the exact nature of the shadow from this image alone.",
+      "gt": "['cardiomegaly']"
+    },
+    {
+      "idx": 83,
+      "question": "Which chest xray disease can be found? (Options include: Atelectasis; Cardiomega",
+      "pred": "Based on the image, the chest xray shows a mass-like shadow in the right upper lobe of the lung. This is indicative of a possible pulmonary nodule or mass, which could be a benign lesion or a sign of malignancy. Without additional context or clinical information, it's not possible to definitively diagnose the condition, but the presence of a mass-like shadow is a significant finding that would typically require further investigation, such as a biopsy or other diagnostic tests.",
+      "gt": "['hernia']"
+    },
+    {
+      "idx": 84,
+      "question": "Which chest xray disease can be found? (Options include: Atelectasis; Cardiomega",
+      "pred": "Based on the image alone, it is not possible to definitively diagnose a specific chest xray disease. However, one can observe that there are no clear signs of cardiomegaly, effusion, consolidation, or emphysema. The presence of a mass or nodule cannot be confirmed without additional information. Atelectasis, pneumothorax, and pleural thickening might be suggested by the appearance of the lung tissue, but these require further clinical context to confirm. The image does not provide enough detail to conclusively identify any of the listed diseases.",
+      "gt": "['infiltration']"
+    },
+    {
+      "idx": 85,
+      "question": "How many birds are there?",
+      "pred": "There are five birds in the image. The first is a male cardinal, the second is a female cardinal, the third is a blue jay, the fourth is a male robin, and the fifth is a female robin.",
+      "gt": "['6']"
+    },
+    {
+      "idx": 86,
+      "question": "How many tomatoes are there?",
+      "pred": "There are three tomatoes visible in the image. Two are whole and one is cut, with a slice of tomato visible on the cutting board.",
+      "gt": "['5']"
+    },
+    {
+      "idx": 87,
+      "question": "How many books are there?",
+      "pred": "Based on the image, there are at least 10 books visible in the stack. However, due to the angle and the way the books are stacked, it is not possible to determine the exact total number of books without additional information or a different perspective.",
+      "gt": "['63']"
+    },
+    {
+      "idx": 88,
+      "question": "What are all the scene text in the image?",
+      "pred": "The scene text in the image includes \"S33022C,\" which appears to be a vehicle registration number, and \"19/03/12,\" which likely represents the date of the photograph. There is also a timestamp \"17:42\" indicating the time when the photo was taken.",
+      "gt": "['s3302cd']"
+    },
+    {
+      "idx": 89,
+      "question": "What are all the scene text in the image?",
+      "pred": "The scene text in the image is \"LUXIM JEWELLERS\".",
+      "gt": "['luxmi jewellers']"
+    },
+    {
+      "idx": 90,
+      "question": "What are all the scene text in the image?",
+      "pred": "The scene text in the image includes \"Have Yourself A Merry Little Christmas,\" which is a well-known holiday song. The other text, although not fully legible, appears to be part of a festive scene with greenery and possibly a tree or bush, which are common elements associated with Christmas decorations.",
+      "gt": "['have yourself a merry little christmas']"
+    },
+    {
+      "idx": 91,
+      "question": "What are all the scene text in the image?",
+      "pred": "The scene text in the image includes \"Nintendo Switch,\" which is the name of the gaming console, and \"Game Over,\" which is a phrase commonly used to indicate the end of a game. Additionally, there are two other phrases: \"TODAY'S TOP GAMES\" and \"NEW RELEASES,\" suggesting that the image is highlighting recent or popular games available on the Nintendo Switch platform.",
+      "gt": "['5:30pm', '88%', 'mario kart 8 deluxe', 'mario kart 8 deluxe', 'super mario odyssey', 'the legend of zelda', 'breath of wild', 'options', 'start']"
+    },
+    {
+      "idx": 92,
+      "question": "What are all the scene text in the image?",
+      "pred": "The scene text in the image is not fully legible due to the resolution and angle of the photograph. However, it appears to include a title or heading that is partially obscured by the book's spine. The rest of the text seems to be related to the content of the book, possibly describing scenes from Shakespeare's plays or discussing his works in general.",
+      "gt": "['mr. william shakespeares', 'comedies, histories, & tragedies.', 'publifhed according to the true originall copies.']"
+    },
+    {
+      "idx": 93,
+      "question": "What are all the scene text in the image?",
+      "pred": "The scene text in the image is \"Connecticut Law of 1642.\"",
+      "gt": "['connecticut law of 1642', 'if any man or woman be a witch -- that is, hath or consulteth with a familiar spirit -- they shall be put to death']"
+    },
+    {
+      "idx": 94,
+      "question": "What is the brand of this device?",
+      "pred": "The brand of the device is Motorola, as indicated by the text \"Motorola\" displayed on the screen.",
+      "gt": "['motorola']"
+    },
+    {
+      "idx": 95,
+      "question": "What is the license plate number?",
+      "pred": "The license plate number visible in the image is \"AED 632.\"",
+      "gt": "['aed-632']"
+    },
+    {
+      "idx": 96,
+      "question": "What are all the French scene text in the image?",
+      "pred": "The French scene text in the image is \"Dans la rue, les enfants jouent \u00e0 la guerre.\" This translates to \"In the street, the children play war\" in English.",
+      "gt": "['histoire de france', 'de la pr\u00e9histoire \u00e0 ans jours', 'queelle histoire']"
+    },
+    {
+      "idx": 97,
+      "question": "What are all the Chinese scene text in the image?",
+      "pred": "The Chinese text in the image is not fully legible due to the resolution and angle of the photograph. However, it appears to be a series of characters that could be part of a title or a quote. The text seems to be in a cursive style, which is common for Chinese calligraphy. Without a clearer view or additional context, it's not possible to determine the exact meaning or content of the text from this image alone.",
+      "gt": "['\u9a6c\u66f3', '\u8457', '\u6bcf\u4e2a\u4eba\u90fd\u6709\u81ea\u5df1\u7684\u56f0\u5883', '\u4f46\u603b\u4f1a\u88ab\u5149\u4eae\u5438\u5f15', '\u8eab\u4e0d\u7531\u5df1\u5730\u6162\u6162\u9760\u8fd1']"
+    },
+    {
+      "idx": 98,
+      "question": "Which continent is highlighted?",
+      "pred": "The continent highlighted in the image is Asia. This is indicated by the red outline that encircles a significant portion of the map, encompassing countries such as China, India, and Russia, among others.",
+      "gt": "['asia']"
+    },
+    {
+      "idx": 99,
+      "question": "Which are producers in this food web?",
+      "pred": "Producers in the food web are organisms that can produce their own food through photosynthesis, typically plants. In this image, the producers are the blue whale and the kelp, as they are depicted with green leaves, which is characteristic of plants.",
+      "gt": "['phytoplankton', 'seaweed']"
+    },
+    {
+      "idx": 100,
+      "question": "Compare the average kinetic energies of the particles in each sample. The diagra",
+      "pred": "Based on the image, Sample A has a higher average kinetic energy of its particles compared to Sample B. This is indicated by the larger size of the green balls in Sample A, which suggests that they have more mass and therefore more kinetic energy than the smaller blue balls in Sample B. Since temperature is directly related to the average kinetic energy of particles, Sample A would have a higher temperature than Sample B.",
+      "gt": "['sample a']"
+    },
+    {
+      "idx": 101,
+      "question": "Which of these highlighted cities is the farthest north?",
+      "pred": "Based on the image, the city that is farthest north is Denver, Colorado. It is located at the top of the highlighted states in the northern part of the map.",
+      "gt": "['chicago']"
+    },
+    {
+      "idx": 102,
+      "question": "Where is this photo taken?",
+      "pred": "Based on the image alone, it is not possible to determine the exact location of the photo. However, the style of the buildings and the architecture suggest a cityscape that could be in a region with a history of conflict or natural disasters, such as the Middle East or parts of Africa. The presence of rubble and the makeshift structures indicate that this area has been affected by significant destruction, which could point towards a war-torn city or a post-disaster zone.",
+      "gt": "['turkey<or>syria']"
+    },
+    {
+      "idx": 103,
+      "question": "Where is this photo taken?",
+      "pred": "Based on the image, the photo is likely taken at an awards ceremony. This inference is drawn from the presence of a trophy or statuette, which is commonly associated with award presentations. The formal attire of the woman and the stage-like setting with a backdrop that resembles a podium further support this conclusion.",
+      "gt": "['oscar', '2023']"
+    },
+    {
+      "idx": 104,
+      "question": "Where is this photo taken?",
+      "pred": "The photo is taken at the World Cup final match, as indicated by the trophy in the foreground and the celebratory atmosphere. The presence of the FIFA logo on the trophy suggests that this is a significant international football event, likely the FIFA World Cup.",
+      "gt": "['qatar']"
+    },
+    {
+      "idx": 105,
+      "question": "In which country was this photo taken?",
+      "pred": "Based solely on the image, it is not possible to determine with certainty the country where this photo was taken. The text on the trophy does not provide a clear indication of the country's name or flag. However, the style of the trophy and the athlete's attire suggest that this could be an international event, as such trophies are often used in global competitions. Without additional context or visible national symbols, the exact country cannot be identified from the image alone.",
+      "gt": "['australia']"
+    },
+    {
+      "idx": 106,
+      "question": "Are the trees taller than the giraffes?",
+      "pred": "Based on the image, it is not possible to definitively determine if the trees are taller than the giraffes. The perspective and distance make it challenging to accurately gauge their relative heights. However, given that giraffes are known for being tall animals, with an average height of 14 feet (4.3 meters), and considering the size of the trees in the background, which appear to be quite large, it is plausible that the trees could indeed be taller than the giraffes.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 107,
+      "question": "Is this airplane taking off or landing?",
+      "pred": "Based on the image, the airplane is taking off. This can be inferred from the position of the wings and the tailplane, which are angled upwards, indicating that the plane is in a climb phase rather than descending. Additionally, the presence of the runway ahead with no visible aircraft or people suggests that the plane has just taken off and is not yet on the ground.",
+      "gt": "['taking off']"
+    },
+    {
+      "idx": 108,
+      "question": "How many people are sitting down?",
+      "pred": "Based on the image, there are two people sitting down. One is a senior male in a wheelchair, and the other is a woman standing beside him, who appears to be assisting or comforting the man.",
+      "gt": "['one']"
+    },
+    {
+      "idx": 109,
+      "question": "Is the trash empty or full?",
+      "pred": "Based on the image, it is not possible to definitively determine whether the trash bin is empty or full. The bin is open and partially filled with a white object that could be a bag or container, but without seeing the entire contents or knowing what the object is, we cannot ascertain if it contains waste or not.",
+      "gt": "['empty']"
+    },
+    {
+      "idx": 110,
+      "question": "Does the giraffe appear dangerous?",
+      "pred": "Based on the image, the giraffe does not appear to be dangerous. It is standing calmly and upright, with no signs of aggression or threat. The posture of the giraffe, along with its calm demeanor, suggests that it is in a non-threatening state. Additionally, the human's gentle interaction with the giraffe, holding it close without any signs of force or tension, reinforces the impression that the giraffe is not perceived as a threat by the person.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 111,
+      "question": "Is there any reflection of zebra in water?",
+      "pred": "Yes, there is a reflection of the zebra in the water. The reflection shows the zebra's stripes and the shape of its body, indicating that it is indeed standing in the water.",
+      "gt": "['yes']"
+    },
+    {
+      "idx": 112,
+      "question": "Is the man happy?",
+      "pred": "Based solely on the image, the man appears to be happy. This assessment is based on his facial expression, which shows a broad smile and relaxed demeanor. His eyes are closed, which often indicates a state of contentment or pleasure. Additionally, the way he is holding the woman with a gentle yet firm grip suggests a sense of care and affection, which are typically associated with happiness in personal relationships.",
+      "gt": "['yes']"
+    },
+    {
+      "idx": 113,
+      "question": "Are all of the cats the same color?",
+      "pred": "No, not all of the cats are the same color. The first cat is a tabby with a mix of orange and black fur, the second cat has a solid orange coat, the third cat is a tabby with a mix of orange and brown, the fourth cat is a tabby with a mix of orange and white, and the fifth cat is a tabby with a mix of orange and grey. Each cat has its unique pattern and coloration, which is characteristic of the tabby breed.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 114,
+      "question": "Is that wine in the background?",
+      "pred": "Based on the image, it appears that there is a bottle of wine in the background. It is partially visible and seems to be placed on a shelf or table, possibly in a kitchen or dining area. The exact details are not clear due to the angle and distance from which the photo was taken.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 115,
+      "question": "Is the man going to fall down?",
+      "pred": "Based solely on the image, it appears that the man is in a controlled and stable position, with his body leaning slightly forward but not at an angle that would suggest imminent fall. His posture is upright, and he seems to be maintaining balance by keeping his center of gravity over his feet. There are no visible signs of imbalance or loss of control. Therefore, it is unlikely that the man will fall down at this moment.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 116,
+      "question": "What place is pictured?",
+      "pred": "Based on the image, the place pictured is likely a beach in a tropical or subtropical region. This inference is drawn from several clues: the presence of a large elephant, which is not native to such environments and suggests an exotic setting; the sandy beach with waves, which are typical of coastal areas; and the clear blue water, which indicates a body of water that could be part of a larger oceanic system. The overall composition of the scene, including the elephant's size relative to the beach, implies a location where elephants might be found in the wild, possibly in a national park or wildlife reserve.",
+      "gt": "['shore']"
+    },
+    {
+      "idx": 117,
+      "question": "Is it outdoors?",
+      "pred": "Based on the image, it appears to be indoors. This is indicated by the presence of a wooden floor and the absence of any natural light or outdoor elements such as plants that would typically grow outdoors. The artificial lighting suggests an indoor setting, and the organized arrangement of the plants in shelves and hanging baskets is more common in an indoor space designed for display rather than outdoor cultivation.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 118,
+      "question": "How's the weather?",
+      "pred": "The weather appears to be clear and sunny, as indicated by the bright blue sky and the lack of clouds. The shadows cast on the buildings are short, suggesting that the sun is high in the sky, which typically occurs around midday when the sun is at its peak. There's no sign of precipitation or overcast conditions, supporting the conclusion that it's a fair-weather day.",
+      "gt": "['clear<or>sunny']"
+    },
+    {
+      "idx": 119,
+      "question": "What is the color of the fence made of metal?",
+      "pred": "The fence made of metal is silver in color.",
+      "gt": "['green']"
+    },
+    {
+      "idx": 120,
+      "question": "Does the person to the left of the man appear to be sitting?",
+      "pred": "Based on the image, the person to the left of the man appears to be sitting. This is indicated by their posture and the way they are holding a document in front of them, which is typical of someone who is seated at a desk. Additionally, the positioning of their body relative to the man suggests that they are not standing but rather seated beside him.",
+      "gt": "['yes']"
+    },
+    {
+      "idx": 121,
+      "question": "Is the plate of the table both dirty and silver?",
+      "pred": "Based on the image, the plate of the table is indeed dirty. The presence of food remnants and stains suggests that it has been used and not cleaned. However, the plate does not appear to be silver; it looks more like a ceramic or porcelain plate, which is common in many dining settings.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 122,
+      "question": "Is the curtain on the right side or on the left of the picture?",
+      "pred": "The curtain is on the right side of the picture. This can be determined by observing the placement of the curtain in relation to the other elements in the room, such as the desk and chair, which are positioned to the left of the curtain.",
+      "gt": "['left']"
+    },
+    {
+      "idx": 123,
+      "question": "Is there a computer in this photo?",
+      "pred": "Based on the image, there is no visible computer. The only electronic device present is a small candle holder with a lit candle, which does not resemble a computer.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 124,
+      "question": "Are there napkins under the utensil to the left of the rice?",
+      "pred": "Yes, there are napkins under the utensil to the left of the rice. They are small and white, with a pattern that resembles a checkered design, which is common for paper napkins used in dining settings.",
+      "gt": "['yes']"
+    },
+    {
+      "idx": 125,
+      "question": "Are there nuts or vegetables?",
+      "pred": "Based on the image, there are no visible nuts or vegetables. The focus is solely on the chicken wings and the sauce they are coated in.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 126,
+      "question": "Are there both plates and forks in this picture?",
+      "pred": "Yes, there are both plates and forks in the picture. The image shows a white plate with a sandwich on it, which is typically eaten with a fork. Additionally, there is another plate with a salad, which also requires a fork for eating. There are no visible forks on the table, but they are likely present in the immediate vicinity of the plates.",
+      "gt": "['yes']"
+    },
+    {
+      "idx": 127,
+      "question": "What is this bird called?",
+      "pred": "Based on the image, the bird appears to be a cockatiel, which is a type of parrot known for its vibrant plumage and friendly nature. This identification is based solely on the visible characteristics in the image, such as the coloration and the shape of the beak, which are typical of cockatiels.",
+      "gt": "['parrot<or>conure']"
+    },
+    {
+      "idx": 128,
+      "question": "Which animal in the picture is larger, the cat or the dog?",
+      "pred": "The dog is larger than the cat. This can be determined by comparing their sizes relative to each other and to the objects in the room, such as the table or the person's hand. The dog's body length from nose to tail appears to be significantly longer than that of the cat, which is smaller and more compact.",
+      "gt": "['cat']"
+    },
+    {
+      "idx": 129,
+      "question": "On the right desk, what is to the left of the laptop?",
+      "pred": "To the left of the laptop on the right desk, there is a small black object that appears to be a pen or stylus. It is placed on the edge of the desk, slightly off-center and facing away from the camera's perspective.",
+      "gt": "['table lamp<or>desk lamp']"
+    },
+    {
+      "idx": 130,
+      "question": "Does the man ride a horse?",
+      "pred": "Based on the image, it appears that the man is riding a large elephant. The saddle and bridle are typical of those used for riding elephants, which are often used in tourism and cultural performances in regions like Thailand. The man's posture and the way he is seated on the elephant suggest that he is indeed riding it rather than walking or standing on it.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 131,
+      "question": "Is the surfer to the left or to the right of the surfboard?",
+      "pred": "Based on the image, the surfer is to the right of the surfboard. This can be determined by observing the position of the surfer's body relative to the surfboard in the water. The surfer's left arm is extended forward and slightly above the water, indicating that they are facing towards the camera, which places them to the right side of the surfboard.",
+      "gt": "['left']"
+    },
+    {
+      "idx": 132,
+      "question": "What is the lamp on, a side table or a nightstand?",
+      "pred": "The lamp is on the side table. This can be deduced from its placement and the way it is positioned relative to the other objects in the room. The lamp is placed on a small, rectangular surface that is separate from the main area of the sofa, which suggests it is part of a side table rather than a nightstand. Additionally, the side table has a more open design with a clear space for placing items, which is consistent with a side table's function as a secondary storage or display area.",
+      "gt": "['side table']"
+    },
+    {
+      "idx": 133,
+      "question": "What do both the stump and the fence have in common?",
+      "pred": "Both the stump and the fence have a common feature of being made from wood. The stump is a natural piece of wood that has been cut down, while the fence is constructed with wooden planks. This shared material indicates that both are likely to be part of the same outdoor environment or property.",
+      "gt": "['material']"
+    },
+    {
+      "idx": 134,
+      "question": "Is the spoon made of the same material as the chopsticks?",
+      "pred": "Based on the image, it is not possible to definitively determine if the spoon and chopsticks are made of the same material. The spoon appears to be made of a metallic material with a polished finish, which could suggest stainless steel or another type of metal commonly used for cutlery. The chopsticks, however, have a matte finish that could indicate a different material, such as bamboo or plastic. Without additional information or the ability to touch and inspect the materials, we cannot conclusively say whether they are made of the same material.",
+      "gt": "['yes']"
+    },
+    {
+      "idx": 135,
+      "question": "Does the shirt have a different color than the kite?",
+      "pred": "Yes, the shirt has a different color than the kite. The shirt is white, while the kite is predominantly green with blue and red accents.",
+      "gt": "['yes']"
+    },
+    {
+      "idx": 136,
+      "question": "Do all these people have the same gender?",
+      "pred": "Based on the image, it is not possible to definitively determine the gender of all individuals as they are wearing clothing that does not provide clear indicators of gender. However, the attire appears to be unisex or gender-neutral, with no visible gender-specific elements such as skirts, dresses, or other traditionally feminine or masculine clothing items.",
+      "gt": "['no']"
+    },
+    {
+      "idx": 137,
+      "question": "Are these two animals different species?",
+      "pred": "Based on the image, it is plausible that these two animals are different species. The larger animal has a more robust build and a distinctive pattern of white fur with black spots, which could be indicative of a wolf or a similar canid species. The smaller animal, with its sleeker body and more slender legs, resembles a deer, possibly a moose given its size and the shape of its antlers. However, without additional information or a closer examination, it's not possible to definitively determine their species.",
+      "gt": "['yes']"
+    },
+    {
+      "idx": 138,
+      "question": "Where are the persons? Answer it and give the rationale.",
+      "pred": "The persons are in a pub. This is indicated by the presence of the bar, the wooden tables with chairs, and the framed pictures on the wall that resemble those commonly found in pubs. The setting suggests a social drinking environment typical of such establishments.",
+      "gt": "['they are in a college classroom. i think so because he young woman appears to be college age, and they are surrounded by desks and chairs.']"
+    },
+    {
+      "idx": 139,
+      "question": "Why are the persons wearing black clothes? Answer it and give the rationale.",
+      "pred": "The persons wearing black clothes are likely dressed in mourning attire, which is common for funerals or memorial services. The presence of a child and an adult carrying a book suggests that this could be a family gathering at a funeral home or a church service. The formal black clothing indicates respect and solemnity appropriate for such occasions.",
+      "gt": "['they are going to a funeral. i think so because it is traditional for people to wear black to a funeral.']"
+    },
+    {
+      "idx": 140,
+      "question": "Why is the woman wearing a robe? Answer it and give the rationale.",
+      "pred": "The woman is wearing a robe, which could be for several reasons. It might be a casual choice of attire, especially if she's in her bedroom and not dressed for an event. Alternatively, it could be a practical choice to keep warm or to protect the room's decor from being disturbed by her movements. The presence of the robe suggests a relaxed atmosphere, possibly indicating that she is at home and comfortable enough to wear something informal.",
+      "gt": "['she is getting ready for bed. i think so because the room appears to be a bedroom and the woman is headed in the general direction of her bed.']"
+    },
+    {
+      "idx": 141,
+      "question": "Where is this happening? Answer it and give the rationale.",
+      "pred": "This scene is likely taking place in a formal setting, such as a high-end restaurant or a private club. The rationale for this deduction comes from the man's attire, which includes a white shirt and bow tie, commonly associated with formal dining or social events. Additionally, the woman's elegant dress and the ornate, luxurious background suggest an environment that values formality and exclusivity.",
+      "gt": "['this is happening in a fancy restaurant. i think so because the man is dressed fancily and the background is fancy.']"
+    },
+    {
+      "idx": 142,
+      "question": "Is it summertime in the scene? Answer it and give the rationale.",
+      "pred": "Based on the image, it is not possible to definitively determine if it is summertime. However, we can make an educated guess based on the presence of pumpkins, which are commonly associated with fall and harvest time in many cultures. The lighting and shadows suggest that the photo was taken during daylight hours, but without additional context or seasonal indicators such as leaves on trees or other seasonal flora, we cannot conclusively say it is summer.",
+      "gt": "['no, it looks to be fall. i thinks so because there are pumpkins in the background and they are normally associated with fall.']"
+    },
+    {
+      "idx": 143,
+      "question": "Is the woman in red going to be mad at the man, for looking at the woman in dres",
+      "pred": "Based on the image alone, it is not possible to definitively determine if the woman in red will be mad at the man. The interaction between the two individuals is not clear; they are facing each other but do not appear to be engaged in a direct conversation. The man's gaze is directed towards the woman in dress, which could suggest he is interested in her or has something specific to discuss with her. Without additional context or body language indicating tension or disagreement, we cannot conclude that the woman in red will be angry at the man.",
+      "gt": "['yes, the woman in red and the man appear to be a couple and the woman in red would not appreciate the man checking out other women.i think so because in a monogamous relationship, partners are expected to be faithful to one another.']"
+    },
+    {
+      "idx": 144,
+      "question": "Why does the woman have both of her hands in the air? Answer it and give the rat",
+      "pred": "The woman has both of her hands in the air, likely as a gesture of celebration or triumph. This is a common human reaction to success, especially in sports where scoring points or winning a game is celebrated. The raised arms can signify joy, excitement, or a sense of accomplishment. In this context, it's reasonable to infer that she is celebrating a successful shot made by the player in the background, which could be a goal or a significant point scored in the game.",
+      "gt": "['she just shot a basketball. i think so because her arms are angled for a basketball shot and they are in a basketball arena.']"
+    },
+    {
+      "idx": 145,
+      "question": "What kind of school does the boy go to? Answer it and give the rationale.",
+      "pred": "The boy likely goes to a private school. This is suggested by the formal attire of both individuals, with the woman wearing a blazer and the man in a suit jacket, which are typically associated with more structured and possibly higher education settings. Additionally, the presence of a door with a doorknob and a window suggests a home or office environment rather than a public space like a park or street.",
+      "gt": "[\"the boy goes to a private school, not a public school. i think so because the boy is all dressed up in a suit, public schools don't require that but some private schools do.\"]"
+    },
+    {
+      "idx": 146,
+      "question": "Do the persons live in this house? Answer it and give the rationale.",
+      "pred": "Based on the image, it is plausible that the individuals live in this house. The presence of personal items such as a handbag and a cane suggests they are accustomed to using the space. Their attire, which is formal yet practical, indicates they may be residents who have prepared for an event or occasion within the house. Additionally, the way they are dressed and carrying themselves with purpose implies familiarity with the environment, supporting the idea that they are likely inhabitants rather than visitors.",
+      "gt": "['no they do not. i think so because they are all looking around at the paintings and decorations, which one would not do if they were used to seeing them.']"
+    },
+    {
+      "idx": 147,
+      "question": "Why are the man and woman in white so close to each other? Answer it and give th",
+      "pred": "The man and woman in white are close to each other because they are sharing a moment of intimacy, likely celebrating or enjoying a toast. This is suggested by their proximity, the man's hand on the woman's shoulder, and the woman's raised glass, which indicates they are both engaged in the same activity. The setting implies a formal event, such as a wedding reception or a banquet, where such gestures of closeness and shared enjoyment are common.",
+      "gt": "[\"they just got married. i think so because they're in wedding clothing and everyone is looking at them.\"]"
+    },
+    {
+      "idx": 148,
+      "question": "Can you explain this meme?",
+      "pred": "The meme is a playful take on the concept of time and its perception. The phrase \"I'll do it at 8.05\" suggests that the person has a specific task or chore to complete at a precise time, which is often associated with punctuality and responsibility. However, the image of the frog, which is typically associated with leisure and relaxation, contradicts this expectation by showing it in a relaxed posture, possibly sleeping or resting. This juxtaposition creates humor as it plays on the idea that the frog, despite being a creature known for its alertness and activity, is now in a state of rest, defying the",
+      "gt": "[\"this meme is a humorous take on procrastination and the tendency to delay tasks until a specific time. the person in the meme plans to do something at 8 o'clock, but when they miss that deadline by a few minutes, they decide to wait until 9 o'clock instead. the image of kermit the frog lying in bed represents the person's laziness and lack of motivation to complete the task.\"]"
+    },
+    {
+      "idx": 149,
+      "question": "Can you explain this meme?",
+      "pred": "The meme is a visual pun that plays on the concept of \"Zoom\" as both a video conferencing platform and a brand name. The image humorously suggests that the platform is so popular that it has become synonymous with money, as indicated by the numerous dollar signs floating around the characters. The different scenarios depict various ways one might use Zoom, from a professional setting to a personal relaxation moment, all while being associated with financial gain.",
+      "gt": "['this meme is a commentary on the current situation of online learning due to the covid-19 pandemic. it shows how different parties are affected by it.\\\\n\\\\nthe first two images show the zoom company and the teachers throwing money in the air, which implies that they are profiting from the situation. zoom, in particular, has seen a surge in usage and revenue due to the pandemic.\\\\n\\\\nthe third image shows the wifi company also throwing money in the air, which implies that they are also profiting from the situation as more people are using the internet for online learning.\\\\n\\\\nthe last image shows a student with a sad clown face, which implies that students are not benefiting from the situation and are struggling with online learning. the \"put on a happy face\" sign in the background further emphasizes the idea that students are putting on a brave face despite their struggles.']"
+    },
+    {
+      "idx": 150,
+      "question": "Can you explain this meme?",
+      "pred": "The meme is a visual pun that plays on the concept of trust and its relation to different geographical locations. The phrase \"This is why I have trust issues\" is juxtaposed with two images: one showing a person in a snowy landscape, which could be interpreted as a place where one might feel isolated or vulnerable, and another showing a person standing on a grassy field, which may suggest a more open and accessible environment. The image of the person in the snow could imply that the individual has trust issues due to the perceived isolation or danger associated with such environments, while the person on the grassy field might represent a sense of safety and",
+      "gt": "['this meme is poking fun at the fact that the names of the countries iceland and greenland are misleading. despite its name, iceland is known for its beautiful green landscapes, while greenland is mostly covered in ice and snow. the meme is saying that the person has trust issues because the names of these countries do not accurately represent their landscapes.']"
+    },
+    {
+      "idx": 151,
+      "question": "Can you explain this meme?",
+      "pred": "The meme humorously plays on the concept of handwriting exams, which are often associated with traditional education methods. The text suggests that the student is writing two pages in a single exam, which is unusual and could imply a lack of organization or a desire to impress the examiner. The second page's content, which includes a heart symbol and the phrase \"I love you,\" is a playful addition that contrasts with the serious tone of the first page, suggesting a more personal or emotional aspect to the student's experience. The final line, \"Last two pages,\" humorously implies that the student has already completed the exam, but the content of those pages",
+      "gt": "[\"this meme is poking fun at how a student's handwriting deteriorates during an exam. the first two pages show neat and legible handwriting, the middle page shows slightly messier handwriting, and the last two pages show completely illegible scribbles. this is likely due to the student becoming tired or rushed as the exam progresses.\"]"
+    },
+    {
+      "idx": 152,
+      "question": "Can you explain this meme?",
+      "pred": "The meme is a play on the concept of \"good morning\" and humorously suggests that instead of greeting someone, one should write something down. The image uses the character SpongeBob SquarePants, known for his cheerful demeanor, to convey this message in a lighthearted manner. The phrase \"Good Morning\" is replaced with \"Write That Down,\" which could be interpreted as a humorous take on the idea of writing down important tasks or notes, possibly in response to a prompt or instruction given by the person being addressed.",
+      "gt": "[\"this meme is a joke about how new college students (freshmen) are often eager to take notes and learn everything they can in class. the image is from the cartoon spongebob squarepants, where spongebob and patrick are frantically writing down notes. the caption implies that the freshmen are so eager to learn that they are even writing down the professor's greeting.\"]"
+    },
+    {
+      "idx": 153,
+      "question": "What is funny about this image?",
+      "pred": "The humor in the image arises from the juxtaposition of a human-like animal, which is typically associated with intelligence and creativity, engaging in an activity that is usually done by humans. The act of painting, which is a form of artistic expression, is being performed by an animal, which is not typically capable of such activities. This contrast between the animal's behavior and its species' typical characteristics creates a humorous effect. Additionally, the anthropomorphic nature of the animal, combined with the playful text, adds to the comedic element of the image.",
+      "gt": "['it is a cartoon of a rhinoceros painting a picture and each picture has its rhino horn because the rhino horn grows in front of its eyes. the caption \"you see the world as you are!\" is a playful commentary on how our perspective shapes our perception of the world.']"
+    },
+    {
+      "idx": 154,
+      "question": "What is funny about this image?",
+      "pred": "The humor in the image arises from the juxtaposition of a human-like figure with exaggerated facial expressions and body language, which is typically associated with animated characters or cartoons, against a real-world setting. The person's expression and the way they are pointing at the food suggest an attempt to engage with the viewer or another character, which is a common trope in animation where characters often interact with each other. This contrast between the realistic background and the cartoonish figure creates a humorous effect, as it plays on the viewer's expectations for how animated characters behave in a real-life context.",
+      "gt": "[\"there are a few things that people might find funny about this image:\\\\n\\\\n1. the contrast between the two images: on the left, we see two women who are very emotional and angry, while on the right, we see a cat who is calmly sitting at a dinner table.\\\\n\\\\n2. the absurdity of the cat's situation: it is not common to see a cat sitting at a dinner table with a plate of food in front of it, so this image is unexpected and ridiculous.\\\\n\\\\n3. the cat's expression: the cat appears to be frightened by the women's yelling, which adds to the humor of the image.\"]"
+    },
+    {
+      "idx": 155,
+      "question": "What occasions would someone use this meme?",
+      "pred": "Based solely on the image, this meme could be used in various casual and humorous contexts. It might be shared during a lighthearted conversation, as a reaction to a situation that is not serious or as a playful response to someone's comment. The meme could also be part of a larger joke or a meme thread where the context is understood by the audience. It's versatile enough to be used in social media posts, text messages, or even in person when someone wants to express a light-hearted sentiment or to make a point in a humorous way.",
+      "gt": "['the meme with the sleepy man and the chinese caption \"\u9664\u4e86\u7761\u89c9\u65f6\u95f4\u4e0d\u60f3\u7761\u89c9\u5176\u4ed6\u65f6\u95f4\u90fd\u60f3\u7761\u89c9\" (except during sleep time, i don\\'t want to sleep. but during other times, i want to sleep) can be used in various occasions where the theme of feeling sleepy or having conflicting desires is relevant. here are a few scenarios where this meme could be fitting:\\n\\n    relatable sleepiness: the meme can be shared on social media or in conversations when expressing the relatable feeling of being tired or sleepy during the day. it can serve as a lighthearted way to convey that relatable experience and generate a humorous response from others who can relate.\\n\\n    work or study-related humor: this meme can be used in work or study-related contexts to humorously express the desire to sleep or feeling drowsy during tasks that require attentiveness and focus. it can be shared among colleagues or classmates to lighten the mood and create a shared understanding of the challenges of staying awake and alert.\\n\\n    procrastination humor: the meme can also be used to depict the internal struggle between wanting to sleep or rest instead of engaging in productive activities. it can be shared when discussing procrastination or humorous self-reflections on the constant desire to avoid responsibilities and indulge in relaxation.\\n\\n    comedic irony: the meme\\'s contradiction between sleep time and wanting to sleep at other times can be used as a form of comedic irony in various contexts. it can be shared when discussing situations where our desires or behaviors contradict what is expected or appropriate, adding a humorous twist to the conversation.\\n\\nultimately, the meme can be employed in different situations where its theme of sleepiness, conflicting desires, or ironic situations aligns with the topic or sentiment being discussed, adding a touch of humor and relatability to the conversation or online interaction.']"
+    },
+    {
+      "idx": 156,
+      "question": "What occasions would someone use this meme?",
+      "pred": "Based solely on the image, this meme could be used in various casual and humorous contexts. It might be shared during a lighthearted conversation, as a reaction to something unexpected or amusing, or as part of a joke or meme culture where such exaggerated expressions are common. The simplicity and universality of the panda's expression make it versatile for different situations that call for a playful or light-hearted response.",
+      "gt": "['this meme, commonly known as \"screaming panda,\" is typically used to express shock, surprise, or fear. it could be used in response to a startling or unexpected event, or to convey a sense of panic or alarm. some possible occasions where someone might use this meme include:\\\\n\\\\n- reacting to a jump scare in a horror movie\\\\n- responding to a surprising plot twist in a tv show or book\\\\n- expressing shock at a news headline or current event\\\\n- conveying fear or anxiety about an upcoming deadline or exam\\\\n- showing surprise at an unexpected outcome in a sports game or other competition.']"
+    },
+    {
+      "idx": 157,
+      "question": "What occasions would someone use this meme?",
+      "pred": "Based solely on the image, this meme could be used in various casual and humorous contexts. It might be shared during a lighthearted conversation to express frustration or disappointment, perhaps after a failed attempt at something or in response to a joke that didn't land. It could also be used as a playful way to acknowledge a moment of embarrassment or to add a touch of humor to a text message or social media post. The meme's simplicity and the cat's expressive face make it versatile for different situations where a light-hearted, relatable reaction is desired.",
+      "gt": "['the \"crying cat\" meme with the chinese caption \"mom!\" is typically used to express a sense of distress, helplessness, or seeking comfort. here are some occasions where someone might use this meme:\\n\\n    expressing vulnerability: the meme can be used to express a moment of vulnerability or when feeling overwhelmed. it can convey a sense of seeking support or empathy from others by humorously invoking the idea of calling out for one\\'s mother.\\n\\n    seeking comfort or sympathy: this meme can be shared to evoke sympathy or support from friends or online communities. by using a relatable and recognizable meme format, it can effectively communicate feelings of sadness, disappointment, or needing emotional support.\\n\\n    self-deprecating humor: the meme can also be used in a self-deprecating manner to make light of personal situations or minor mishaps. it allows individuals to humorously highlight their own moments of perceived \"helplessness\" while inviting others to provide comfort or reassurance.\\n\\n    playful emotional exaggeration: the meme\\'s dramatic and exaggerated expression can be used in a playful manner to emphasize a situation or event that is not necessarily distressing but may require attention or care. it can add a humorous touch when expressing minor inconveniences or humorous hyperbole.\\n\\nit\\'s important to note that meme usage and interpretation can vary, and individuals may find creative ways to adapt it to different contexts. the suggested occasions above provide a general understanding of when this meme could be used based on its common themes and emotional tone.']"
+    },
+    {
+      "idx": 158,
+      "question": "How to cook this dish?",
+      "pred": "Based solely on the image, it's not possible to provide a detailed recipe for cooking this dish. However, we can infer that the dish is likely a stew or soup, given its thick consistency and the presence of chunks of meat and vegetables. The ingredients suggest a slow-cooked method, possibly involving simmering in a pot with broth or stock until the flavors meld together. The garnish of fresh herbs indicates that the dish may be finished with a final stir before serving. To replicate this dish at home, one would need to start by saut\u00e9ing the onions and garlic, then add the meat and cook until browned. Next",
+      "gt": "['the dish is called \"hungarian mushroom soup\". this hungarian mushroom soup has lots of flavor and is fairly quick to make. it\\'s primarily a mushroom soup but derives a lot of its flavor from other ingredients. my family loves soup and this is one of their favorites.\\n\\n\\nprep time:\\n15 mins\\ncook time:\\n35 mins\\ntotal time:\\n50 mins\\nservings:\\n6\\n\\n\\n ingredients\\n\\n    4 tablespoons unsalted butter\\n\\n    2 cups chopped onions\\n\\n    1 pound fresh mushrooms, sliced\\n\\n    2 cups chicken broth\\n\\n    1 tablespoon soy sauce\\n\\n    1 tablespoon paprika\\n\\n    2 teaspoons dried dill weed\\n\\n    1 cup milk\\n\\n    3 tablespoons all-purpose flour\\n\\n    \u00bd cup sour cream\\n\\n    \u00bc cup chopped fresh parsley\\n\\n    2 teaspoons lemon juice\\n\\n    1 teaspoon salt\\n\\n    ground black pepper to taste\\n\\n\\n directions\\n\\nstep1\\n    melt butter in a large pot over medium heat. add onions; cook and stir until softened, about 5 minutes. add mushrooms and saut\u00e9 for 5 more minutes. stir in broth, soy sauce, paprika, and dill; reduce heat to low, cover, and simmer for 15 minutes.\\n\\nstep2\\n    whisk milk and flour together in a separate bowl; stir into soup until blended. cover and simmer for 15 more minutes, stirring occasionally.\\n\\nstep3\\n    add sour cream, parsley, lemon juice, salt, and ground black pepper; stir over low heat until warmed through, about 3 to 5 minutes. serve immediately.']"
+    },
+    {
+      "idx": 159,
+      "question": "How to make this?",
+      "pred": "Based on the image, to make this drink, one would likely start with a base of orange juice or a similar citrus beverage. The lime slices and the green fruit could be added for flavor and color, possibly as garnish or to infuse the drink with additional citrus notes. The white liquid in the glass appears to be a clear liquid that could be water, soda, or another type of mixer. The drink's vibrant colors suggest it might be mixed with a cocktail shaker to combine all ingredients thoroughly before serving.",
+      "gt": "['this is called \"sparkling cantaloupe agua fresca\". this refreshing agua fresca with cantaloupe and lime juice topped with club soda is perfect on a hot day.\\n\\nprep time:\\n15 mins\\ntotal time:\\n15 mins\\nservings:\\n8\\n\\n ingredients\\n\\n    2 pounds fresh cantaloupe cubes (6 cups)\\n\\n    2 cups water\\n\\n    6 tablespoons freshly squeezed lime juice (from 2 limes)\\n\\n    3 tablespoons honey\\n\\n    1/4 teaspoon salt\\n\\n    2 cups club soda, chilled\\n\\n    cantaloupe melon balls or cubes, for garnish \\n\\n    lime zest twists, for garnish\\n\\n\\n directions\\n\\nstep 1\\n    working in batches if needed, blend cantaloupe, water, lime juice, honey, and salt in a blender until smooth. press through a sieve; discard solids. add strained juice to a pitcher.\\n\\nstep 2\\n    chill until ready to serve. add club soda just before serving. serve over ice, and garnish glasses with melon balls and lime zest twists.']"
+    },
+    {
+      "idx": 160,
+      "question": "How to cook this dish?",
+      "pred": "Based on the image, the dish appears to be a baked or roasted meal. The chicken breast is likely seasoned with herbs and spices before being placed in an oven-safe dish, which is then covered with foil to prevent excess moisture from escaping. The vegetables are probably cut into bite-sized pieces and mixed with the chicken for flavoring. The dish is then baked at a moderate temperature until the chicken is cooked through and the vegetables are tender. The presence of the knife suggests that the dish may have been sliced after baking to serve.",
+      "gt": "['this dish is called \"ginger glazed mahi mahi\". this ginger sauce for mahi mahi is bursting with flavor and combines both sweet and sour taste sensations. this recipe is a snap and so delicious. you\\'ll love it! \\n\\n\\nprep time:\\n5 mins\\ncook time:\\n10 mins\\nadditional time:\\n20 mins\\ntotal time:\\n35 mins\\nservings:\\n4\\n\\n ingredients\\n\\n    3 tablespoons honey\\n\\n    3 tablespoons soy sauce\\n\\n    3 tablespoons balsamic vinegar\\n\\n    2 teaspoons olive oil\\n\\n    1 teaspoon grated fresh ginger root\\n\\n    1 clove garlic, crushed or to taste\\n\\n    4 (6 ounce) mahi mahi fillets\\n\\n    salt and pepper to taste\\n\\n    1 tablespoon vegetable oil\\n\\n\\n directions\\n\\nstep 1\\n    mix honey, soy sauce, balsamic vinegar, olive oil, ginger, and garlic together in a shallow dish. season fish fillets with salt and pepper; place them skin-sides down in the dish with marinade. cover and refrigerate for 20 minutes.\\n\\nstep 2\\n    heat vegetable oil in a large skillet over medium-high heat. remove fish fillets, reserving marinade. fry fish for 4 to 6 minutes on each side, turning only once, until fish flakes easily with a fork. remove fillets to a serving platter and keep warm.\\n\\nstep 3\\n    pour reserved marinade into the skillet; simmer over medium heat until reduced to a glaze. spoon glaze over fish and serve.']"
+    },
+    {
+      "idx": 161,
+      "question": "How to cook this dish?",
+      "pred": "Based on the image, this dish appears to be a pie that has been baked. The crust is golden-brown and flaky, indicating it was likely baked at a high temperature for a sufficient amount of time to achieve a crispy texture. The filling looks moist and well-cooked, suggesting it was baked until the filling reached the desired consistency. The presence of a wooden rack under the pie suggests that it was placed in an oven with good airflow to prevent the crust from burning. The exact cooking method would depend on the specific recipe, but generally, such pies are baked in an oven preheated to around 375-4",
+      "gt": "['this dish is called \"strawberry rhubarb pie\". this strawberry rhubarb pie is a favorite springtime dessert in our house. the filling has a sweet-tart flavor; bake in your favorite pie crust and serve with vanilla ice cream.\\n\\nprep time:\\n20 mins\\ncook time:\\n35 mins\\nadditional time:\\n30 mins\\ntotal time:\\n1 hr 25 mins\\nservings:\\n8\\nyield:\\n1 9-inch pie\\n\\n ingredients\\n\\n    1 cup white sugar\\n\\n    \u00bd cup all-purpose flour\\n\\n    1 pound rhubarb, cut into 1/4 inch slices\\n\\n    2 pints strawberries, hulled and quartered\\n\\n    1 recipe pastry for a 9 inch double crust pie\\n\\n    2 tablespoons butter\\n\\n    1 large egg yolk\\n\\n    2 tablespoons white sugar\\n\\n directions\\n\\nstep 1\\n    preheat oven to 400 degrees f (200 degrees c).\\n\\nstep 2\\n    in a large bowl, mix flour and sugar. \\n\\nstep 3\\n    add strawberries and chopped rhubarb. toss with sugar and flour and let stand for 30 minutes. \\n\\nstep 4\\n    pour filling into prepared pie crust. dot top with butter, and cover with top crust. seal edges of top and bottom crust with water. \\n\\nstep 5\\n    apply yolk to top of pie, using a pastry brush. \\n\\nstep 6\\n    sprinkle with sugar. \\n\\nstep 7\\n    cut small holes in top to let steam escape. \\n\\nstep 8\\n    bake at 400 degrees f (200 degrees c), for 35 to 40 minutes, or until bubbly and brown. cool on rack. \\n\\nstep 9\\n    enjoy!']"
+    },
+    {
+      "idx": 162,
+      "question": "How to cook this dish?",
+      "pred": "Based solely on the image, it's not possible to provide a detailed cooking method for the dish. However, based on the appearance of the food, which resembles fried dough with a crispy exterior and a soft interior, one could infer that it might be a type of fried pastry or doughnut. The cooking process would likely involve frying the dough in hot oil until it reaches the desired level of crispiness, then removing it from the oil and allowing it to cool before serving. The exact method would depend on the specific recipe and ingredients used to make this dish.",
+      "gt": "['this dish is called \"authentic chinese egg rolls\". these chinese egg rolls come from my mom who is the best cook ever \u2014 and i am a picky eater. if i like this, then you will. this is very authentic because my family is chinese and i am too. this recipe is at least 300 years old in the ling family.\\n\\n\\nprep time:\\n1 hr\\ncook time:\\n30 mins\\nadditional time:\\n1 hr\\ntotal time:\\n2 hrs 30 mins\\nservings:\\n20\\nyield:\\n20 egg rolls\\n\\n\\n ingredients\\n\\n    4 teaspoons vegetable oil, divided\\n\\n    3 large eggs, beaten\\n\\n    1 medium head cabbage, finely shredded\\n\\n    \u00bd carrot, julienned\\n\\n    1 pound chinese barbequed or roasted pork, cut into matchsticks\\n\\n    1 (8 ounce) can shredded bamboo shoots\\n\\n    1 cup dried, shredded wood ear mushroom, rehydrated\\n\\n    2 green onions, thinly sliced\\n\\n    2 \u00bd teaspoons soy sauce\\n\\n    1 teaspoon salt\\n\\n    1 teaspoon sugar\\n\\n    \u00bd teaspoon monosodium glutamate (msg)\\n\\n    1 (14 ounce) package egg roll wrappers\\n\\n    1 egg white, beaten\\n\\n    4 cups oil for frying, or as needed\\n\\n directions\\n\\nstep 1\\n    heat 1 teaspoon vegetable oil in a wok or large skillet over medium heat. pour in beaten eggs and cook, without stirring, until firmed up. flip eggs over and cook for an additional 20 seconds to firm the other side. set egg pancake aside to cool, then slice into thin strips.\\n\\nstep 2\\n    heat remaining vegetable oil in a wok or large skillet over high heat. stir in cabbage and carrot; cook for 2 minutes to wilt. add pork, bamboo shoots, mushroom, green onions, soy sauce, salt, sugar, and msg; continue cooking until vegetables soften, about 6 minutes. stir in sliced egg, then spread the mixture out onto a pan, and refrigerate until cold, about 1 hour.\\n\\nstep 3\\n    to assemble the egg rolls: place a wrapper onto your work surface with one corner pointing towards you. place about 3 tablespoons of cooled filling in a heap onto the bottom third of the wrapper. brush a little beaten egg white onto the top two edges of the wrapper, then fold the bottom corner over the filling and roll firmly to the halfway point. fold the left and right sides snugly over the egg roll, then continue rolling until the top corners seal the egg roll with the egg white. repeat with remaining egg roll wrappers, covering finished egg rolls with plastic wrap to keep from drying out.\\n\\nstep 4\\n    heat about 6 inches of oil in a wok or deep-fryer to 350 degrees f (175 degrees c).\\n\\nstep 5\\n    fry egg rolls 3 or 4 at a time until golden brown, 5 to 7 minutes. drain on paper towels.']"
+    },
+    {
+      "idx": 163,
+      "question": "How to cook this dish?",
+      "pred": "Based solely on the image, it's not possible to provide a detailed recipe for cooking this dish. However, we can infer that the cookies are likely baked in an oven at a moderate temperature until they reach the desired level of crispness and golden-brown color. The sprinkles suggest a topping that is either sprinkled on after baking or used as a decorative element. The exact method would depend on the specific recipe intended for these cookies.",
+      "gt": "['this dish is called \"chocolate coated peanut butter crackers\".\\n\\nprep time:\\n30 mins\\ncook time:\\n5 mins\\nadditional time:\\n15 mins\\ntotal time:\\n50 mins\\nservings:\\n40\\nyield:\\n40 sandwich cookies\\n\\n\\ningredients\\n\u00be cup creamy or chunky peanut butter\\n\\n2 pounds chocolate almond bark, broken into pieces\\n\\n80 buttery round crackers (such as ritz\u00ae)\\n\\n2 \u00bc ounces colored candy sprinkles (optional)\\n\\n\\ndirections\\nstep 1\\nspread approximately 1 teaspoon peanut butter onto each cracker half. press peanut butter sides together to form 40 peanut butter-filled sandwich cookies.\\n\\nstep 2\\nmelt almond bark in the top of a double boiler over hot, but not boiling, water. reduce heat and keep melted chocolate in top of double boiler over simmering water.\\n\\nstep 3\\ndip each sandwich cookie into the melted chocolate, allowing excess to drain back into pot.\\n\\nstep 4\\nplace coated cookies onto waxed paper and immediately sprinkle with candy sprinkles so they adhere to the melted chocolate.\\n\\nstep 5\\nplace cookies in the refrigerator until chocolate has set, about 15 minutes.']"
+    },
+    {
+      "idx": 164,
+      "question": "How to cook this dish?",
+      "pred": "Based on the image, the dish appears to be a salad with broccoli and carrots, possibly tossed in a dressing. To cook this dish, one would start by washing the broccoli and carrots thoroughly. Then, they could steam or boil the vegetables until tender but still crisp, which is suggested by their bright color and firm texture. After cooking, the vegetables can be drained and mixed with a dressing that might include olive oil, vinegar, salt, and pepper. The dressing should be light enough not to overpower the natural flavors of the vegetables. The final step would be to serve the salad immediately, as it's best when fresh.",
+      "gt": "['this dish is called \"broccoli and carrot stir fry\".\\n\\nprep time:\\n10 mins\\ncook time:\\n16 mins\\ntotal time:\\n26 mins\\nservings:\\n5\\nyield:\\n5 cups\\n\\ningredients\\n5 \u00bd cups broccoli florets\\n\\n1 carrot, thinly sliced\\n\\n2 teaspoons water\\n\\n1 teaspoon cornstarch\\n\\n1 teaspoon chicken bouillon granules, or to taste\\n\\nsalt to taste\\n\\n2 tablespoons peanut oil\\n\\ndirections\\nstep 1\\nbring a large pot of lightly salted water to a boil. add broccoli and cook uncovered until bright green, about 2 minutes. transfer broccoli to a bowl of ice water using a slotted spoon and immerse for several minutes to stop the cooking process. drain.\\n\\nstep 2\\nbring water back to a boil in the same large pot; add sliced carrot and cook for 1 minute. drain.\\n\\nstep 3\\nmix water and cornstarch together in a bowl until smooth. add chicken granules and salt and mix well.\\n\\nstep 4\\nheat peanut oil in a wok or large skillet over high heat; saute broccoli and carrots for 2 minutes. add cornstarch mixture; cook and stir until vegetables are coated evenly, 1 to 2 minutes.']"
+    },
+    {
+      "idx": 165,
+      "question": "How to cook this dish?",
+      "pred": "Based on the image, the dish appears to be a sushi roll, which is typically made by rolling vinegared rice with various fillings and then wrapping it in nori (seaweed). The process involves preparing the rice, adding fillings like crab meat, cucumber, and avocado, and then wrapping it tightly in nori. The filling ingredients are often sliced into thin pieces for even distribution. The nori is then rolled up and cut into bite-sized pieces. The exact cooking method would depend on the specific recipe, but generally, the rice is prepared by mixing vinegar, sugar, and salt with the rice before it's cooked",
+      "gt": "['this dish is called \"cream cheese and crab sushi rolls\".\\n\\nprep time:\\n20 mins\\ncook time:\\n20 mins\\ntotal time:\\n40 mins\\nservings:\\n2\\nyield:\\n2 sushi rolls\\n\\n\\ningredients\\n1 cup uncooked white rice\\n\\n2 cups water\\n\\n2 tablespoons rice vinegar\\n\\n1 teaspoon salt\\n\\n2 sheets nori seaweed sheets\\n\\n\u00bc cucumber, peeled and sliced lengthwise\\n\\n2 pieces imitation crab legs\\n\\n\u00bd (3 ounce) package cream cheese, sliced\\n\\n1 teaspoon minced fresh ginger root\\n\\n\\ndirections\\nstep 1\\ngather all ingredients.\\nstep 2\\nbring rice and water to a boil in a saucepan over high heat. reduce heat to medium-low, cover, and simmer until the rice is tender, and the liquid has been absorbed, 20 to 25 minutes. stir in rice vinegar and salt. allow to cool completely.\\nstep 3\\nlay out seaweed sheets. moisten hands with water, then spread cooled rice evenly on each sheet, leaving a 1/2-inch gap along one edge, lengthwise. arrange strips of cucumber, imitation crabmeat, and cream cheese on top of the rice in a straight line along the side opposite the gap. roll up sushi from the toppings to the seaweed sheet\\'s exposed end.\\nstep 4\\nusing a sharp wet knife, slice each roll into 5 or 6 pieces. serve with minced ginger on the side.']"
+    },
+    {
+      "idx": 166,
+      "question": "How to cook this dish?",
+      "pred": "Based on the image, the dish appears to be a curry made with chickpeas and vegetables. To cook this dish, one would typically start by saut\u00e9ing onions and garlic in oil until they are soft and fragrant. Then, add the spices such as turmeric, cumin, coriander, and possibly garam masala or other desired spices. Next, add the chickpeas and cook until they absorb the spices. After that, add the diced vegetables like carrots, potatoes, and spinach, and continue cooking until the vegetables are tender. Finally, serve the curry over rice, which is suggested by the presence",
+      "gt": "['this dish is called \"vegan sweet potato chickpea curry\".\\n\\nprep time:\\n10 mins\\ncook time:\\n20 mins\\ntotal time:\\n30 mins\\nservings:\\n6\\n\\ningredients\\n3 tablespoons olive oil\\n\\n1 onion, chopped\\n\\n2 cloves garlic, minced\\n\\n2 teaspoons minced fresh ginger root\\n\\n1 (15 ounce) can chickpeas, drained\\n\\n1 (14.5 ounce) can diced tomatoes\\n\\n1 (14 ounce) can coconut milk\\n\\n1 sweet potato, cubed\\n\\n1 tablespoon garam masala\\n\\n1 teaspoon ground cumin\\n\\n1 teaspoon ground turmeric\\n\\n\u00bd teaspoon salt\\n\\n\u00bc teaspoon red chile flakes\\n\\n1 cup baby spinach\\n\\n\\ndirections\\nstep 1\\nheat oil in a skillet over medium heat. cook onion, garlic, and ginger in hot oil until softened, about 5 minutes. add chickpeas, tomatoes, coconut milk, and sweet potato. bring to a boil, reduce heat to low, and simmer until tender, about 15 minutes.\\nstep 2\\nseason with garam masala, cumin, turmeric, salt, and chile flakes. add spinach right before serving.']"
+    },
+    {
+      "idx": 167,
+      "question": "How to cook this dish?",
+      "pred": "Based on the image, the dish appears to be a combination of a burrito and a taco. To cook this dish, one would start by preparing the ingredients for the burrito, which likely includes rice, beans, and possibly shredded chicken or beef. These would be cooked separately and then combined with the tortilla. For the taco, the ingredients would include lettuce, cheese, and perhaps diced tomatoes or onions. The taco shell would be filled with these ingredients and then topped with the same sauce as the burrito. The dish would be assembled in a similar manner to how tacos are typically made, with the filling wrapped in the tortilla",
+      "gt": "['this dish is called \"lime chicken soft tacos\".\\n\\nprep time:\\n20 mins\\ncook time:\\n30 mins\\ntotal time:\\n50 mins\\nyield:\\n10 servings\\n\\ningredients\\n1 \u00bd pounds skinless, boneless chicken breast meat - cubed\\n\\n2 green onions, chopped\\n\\n\u215b cup red wine vinegar\\n\\n\u00bd lime, juiced\\n\\n2 cloves garlic, minced\\n\\n1 teaspoon dried oregano\\n\\n1 teaspoon white sugar\\n\\n\u00bd teaspoon salt\\n\\n\u00bd teaspoon ground black pepper\\n\\n10 (6 inch) flour tortillas\\n\\n1 tomato, diced\\n\\n\u00bc cup shredded lettuce\\n\\n\u00bc cup shredded monterey jack cheese\\n\\n\u00bc cup salsa\\n\\ndirections\\nstep 1\\nsaut\u00e9 chicken in a medium saucepan over medium high heat until tender, about 15 to 20 minutes. add green onions, vinegar, lime juice, garlic, oregano, sugar, salt, and pepper. simmer over low heat for 10 minutes.\\nstep 2\\nheat an iron skillet over medium heat. place a tortilla in the pan, warm, and turn over to heat the other side. repeat with remaining tortillas. serve lime chicken mixture in warm tortillas topped with tomato, lettuce, cheese and salsa.']"
+    },
+    {
+      "idx": 168,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, it's not possible to provide a definitive introduction to the movie. However, the man's contemplative expression and the urban setting suggest themes of introspection or perhaps a narrative involving city life. The ruggedness of his clothing could imply a character who is down-to-earth or possibly involved in manual labor. The setting does not give away any specific genre, but the mood seems serious, which might indicate a drama or a character-driven film. Without additional context or information about the movie, this remains speculative.",
+      "gt": "['the shawshank redemption is a 1994 american drama film written and directed by frank darabont, based on the 1982 stephen king novella rita hayworth and shawshank redemption. the film tells the story of banker andy dufresne (tim robbins), who is sentenced to life in shawshank state penitentiary for the murders of his wife and her lover, despite his claims of innocence. over the following two decades, he befriends a fellow prisoner, contraband smuggler ellis \"red\" redding (morgan freeman), and becomes instrumental in a money laundering operation led by the prison warden samuel norton (bob gunton). william sadler, clancy brown, gil bellows, and james whitmore appear in supporting roles.']"
+    },
+    {
+      "idx": 169,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, it's not possible to provide a definitive introduction to the movie. However, the formal attire of the men and their serious expressions suggest that the film may be set in a historical or dramatic context, possibly involving themes of authority, tradition, or conflict. The presence of medals and uniforms could imply a military or governmental setting, while the serious demeanor might indicate a plot with tension or drama. Without additional context or information about the actors or the specific scenes depicted, any introduction would be speculative.",
+      "gt": "[\"the godfather is a 1972 american crime film[2] directed by francis ford coppola, who co-wrote the screenplay with mario puzo, based on puzo's best-selling 1969 novel of the same title. the film stars marlon brando, al pacino, james caan, richard castellano, robert duvall, sterling hayden, john marley, richard conte, and diane keaton. it is the first installment in the godfather trilogy, chronicling the corleone family under patriarch vito corleone (brando) from 1945 to 1955. it focuses on the transformation of his youngest son, michael corleone (pacino), from reluctant family outsider to ruthless mafia boss.\"]"
+    },
+    {
+      "idx": 170,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, it's not possible to provide a definitive introduction to the movie. However, the character's distinctive makeup and costume suggest that this is a scene from a film known for its dark humor and satirical take on crime and criminal justice, often associated with a specific director and actor. The presence of the card in his hand could imply a pivotal moment or reveal within the narrative, possibly related to the character's identity or role in the story.",
+      "gt": "['the dark knight is a 2008 superhero film directed by christopher nolan from a screenplay he co-wrote with his brother jonathan. based on the dc comics superhero, batman, it is the sequel to batman begins (2005) and the second installment in the dark knight trilogy. the plot follows the vigilante batman, police lieutenant james gordon, and district attorney harvey dent, who form an alliance to dismantle organized crime in gotham city. their efforts are derailed by the joker, an anarchistic mastermind who seeks to test how far batman will go to save the city from chaos. the ensemble cast includes christian bale, michael caine, heath ledger, gary oldman, aaron eckhart, maggie gyllenhaal, and morgan freeman.']"
+    },
+    {
+      "idx": 171,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, it's not possible to provide a definitive introduction to the movie. However, the man's serious expression and formal attire suggest that the movie could be of a dramatic or historical nature, possibly set in a professional or governmental context. The setting appears to be an office or a similar indoor environment, which might indicate that the movie involves characters who are engaged in serious discussions or negotiations. Without additional context or information about the film's plot, themes, or cast, any introduction would be speculative.",
+      "gt": "['twelve angry men is an american courtroom drama written by reginald rose concerning the jury of a homicide trial. it was broadcast initially as a television play in 1954. the following year it was adapted for the stage. it was adapted for a film of the same name, directed by sidney lumet and released in 1957. since then it has been given numerous remakes, adaptations, and tributes.']"
+    },
+    {
+      "idx": 172,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, it's not possible to provide a definitive introduction to the movie. However, we can infer that the scene is likely from a dramatic or historical film given the formal attire of the characters and the setting that suggests an indoor location with industrial elements. The man in the foreground appears to be engaged in a serious conversation or interaction, possibly with a sense of urgency or importance, which could indicate a pivotal moment in the plot. The presence of the other individuals in the background, who seem to be observers or participants in the event, implies that this scene is significant to the narrative. The overall atmosphere seems tense and serious,",
+      "gt": "[\"schindler's list is a 1993 american epic historical drama film directed and produced by steven spielberg and written by steven zaillian. it is based on the 1982 novel schindler's ark by australian novelist thomas keneally. the film follows oskar schindler, a german industrialist who saved more than a thousand mostly polish\u2013jewish refugees from the holocaust by employing them in his factories during world war ii. it stars liam neeson as schindler, ralph fiennes as ss officer amon g\u00f6th, and ben kingsley as schindler's jewish accountant itzhak stern.\"]"
+    },
+    {
+      "idx": 173,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, this appears to be a scene from a fantasy or medieval-themed movie. The characters are dressed in traditional medieval attire, which suggests that the setting is likely set in a time period where such clothing would have been common. The presence of a horse and the rustic wooden structure in the background could indicate that the story takes place in a rural or semi-natural environment. The serious expressions and the weapons held by the characters imply that the plot may involve conflict or adventure typical of fantasy genres. Without additional context, it's not possible to provide more specific details about the movie's plot or themes.",
+      "gt": "[\"the lord of the rings: the return of the king is a 2003 epic fantasy adventure film directed by peter jackson from a screenplay by fran walsh, philippa boyens, and jackson. it is based on 1955's the return of the king, the third volume of the novel the lord of the rings by j. r. r. tolkien. the sequel to 2002's the lord of the rings: the two towers, the film is the final instalment in the lord of the rings trilogy. it features an ensemble cast including elijah wood, ian mckellen, liv tyler, viggo mortensen, sean astin, cate blanchett, john rhys-davies, bernard hill, billy boyd, dominic monaghan, orlando bloom, hugo weaving, miranda otto, david wenham, karl urban, john noble, andy serkis, ian holm, and sean bean. continuing the plot of the previous film, frodo, sam and gollum are making their final way toward mount doom to destroy the one ring, unaware of gollum's true intentions, while merry, pippin, gandalf, aragorn, legolas, gimli and the others join forces together against sauron and his legions in minas tirith.\"]"
+    },
+    {
+      "idx": 174,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, it's not possible to provide a definitive introduction to the movie. However, the woman's intense expression and the setting suggest that the film may have a dramatic or suspenseful tone. The presence of a cigarette in her hand could imply themes of rebellion or defiance, which are common in many films. The vintage car in the background might indicate a period piece or a scene set in the past. Without additional context, we can only speculate about the movie's genre and plot based on these visual cues.",
+      "gt": "['pulp fiction is a 1994 american crime film written and directed by quentin tarantino from a story he conceived with roger avary.[3] it tells four intertwining tales of crime and violence in los angeles, california. the film stars john travolta, samuel l. jackson, bruce willis, tim roth, ving rhames, and uma thurman. the title refers to the pulp magazines and hardboiled crime novels popular during the mid-20th century, known for their graphic violence and punchy dialogue.']"
+    },
+    {
+      "idx": 175,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, it's not possible to provide a detailed introduction to the movie. However, the character's intense expression and the presence of the ring suggest themes of power, mystery, or perhaps a quest for knowledge or truth. The setting appears to be a fantasy or adventure genre, which often involves elements of magic, exploration, and possibly a journey through different realms or times. The character's attire and the style of the ring could imply that the movie is set in a medieval or fantasy world where such items are significant.",
+      "gt": "[\"the lord of the rings: the fellowship of the ring is a 2001 epic fantasy adventure film directed by peter jackson from a screenplay by fran walsh, philippa boyens, and jackson, based on 1954's the fellowship of the ring, the first volume of the novel the lord of the rings by j. r. r. tolkien. the film is the first installment in the lord of the rings trilogy. it features an ensemble cast including elijah wood, ian mckellen, liv tyler, viggo mortensen, sean astin, cate blanchett, john rhys-davies, billy boyd, dominic monaghan, orlando bloom, christopher lee, hugo weaving, sean bean, ian holm, and andy serkis.\"]"
+    },
+    {
+      "idx": 176,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, it's not possible to provide a detailed introduction to the movie. However, the serious expressions and close physical contact between the two men suggest that the scene is likely dramatic or intense, possibly involving conflict or a significant emotional moment. The setting appears to be a public place, which could imply that the events unfolding are of a social nature, perhaps related to a gathering or an encounter in a public space. The attire of the characters suggests a formal or semi-formal event, which might indicate that the movie deals with themes of power dynamics, relationships, or societal norms. Without additional context or information about the movie,",
+      "gt": "['the godfather part ii is a 1974 american epic crime film produced and directed by francis ford coppola. the film is partially based on the 1969 novel the godfather by mario puzo, who co-wrote the screenplay with coppola, and it is both a sequel and a prequel to the 1972 film the godfather, presenting parallel dramas: one picks up the 1958 story of michael corleone (al pacino), the new don of the corleone family, protecting the family business in the aftermath of an attempt on his life; the prequel covers the journey of his father, vito corleone (robert de niro), from his sicilian childhood to the founding of his family enterprise in new york city. the ensemble cast also features robert duvall, diane keaton, talia shire, morgana king, john cazale, mariana hill, and lee strasberg.']"
+    },
+    {
+      "idx": 177,
+      "question": "Can you give a short introduction to this movie?",
+      "pred": "Based solely on the image, this appears to be a scene from a traditional Chinese opera or historical drama. The characters' elaborate costumes and makeup suggest that it is set in a time period where such dramatic performances were prevalent, possibly during the Ming or Qing dynasties. The presence of the dragon mask indicates that the scene may involve themes of power, royalty, or mythological elements typical of Chinese operatic storytelling. The interaction between the two characters suggests a narrative conflict or dialogue, which is common in opera to convey the story's plot and emotional depth.",
+      "gt": "[\"farewell my concubine is a 1993 chinese historical drama film directed by chen kaige, starring leslie cheung, gong li and zhang fengyi. adapted for the screen by lu wei based on the novel by lilian lee, the film is set in a politically tumultuous 20th-century china, from the early days of the republic of china to the aftermath of the cultural revolution. it chronicles the troubled relationships between two peking opera actors and lifelong friends cheng dieyi (cheung) and duan xiaolou (zhang), and xiaolou's wife juxian (gong).\"]"
+    },
+    {
+      "idx": 178,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is a portrait of the Mona Lisa, one of the most famous works by Leonardo da Vinci. It is known for its enigmatic smile and the use of sfumato, a technique that creates soft transitions between colors and tones to give a sense of depth and volume. The subject's serene expression and the way she gazes off into the distance have captivated viewers for centuries.",
+      "gt": "['the mona lisa is a half-length portrait painting by italian artist leonardo da vinci.\\n\\nconsidered an archetypal masterpiece of the italian renaissance,it has been described as \"the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world\". the painting\\'s novel qualities include the subject\\'s enigmatic expression, monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.']"
+    },
+    {
+      "idx": 179,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is a portrait of a young woman, known as the \"Girl with a Pearl Earring,\" which is one of the most famous works by Dutch painter Johannes Vermeer. The painting captures the subject's intense gaze and the subtle play of light on her skin, creating a sense of depth and mystery. The pearl earring is a focal point that draws the viewer's attention to the woman's face, emphasizing her beauty and the delicacy of her features. The painting is renowned for its realism and the way it captures the essence of the subject without revealing too much detail, leaving room for interpretation.",
+      "gt": "['girl with a pearl earring (dutch: meisje met de parel) is an oil painting by dutch golden age painter johannes vermeer, dated c. 1665. going by various names over the centuries, it became known by its present title towards the end of the 20th century after the earring worn by the girl portrayed there. the work has been in the collection of the mauritshuis in the hague since 1902 and has been the subject of various literary and cinematic treatments.']"
+    },
+    {
+      "idx": 180,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is a depiction of the night sky, with a central figure that resembles a comet or a starburst. The swirling patterns and bright lights suggest a celestial event, possibly a meteor shower or a cosmic phenomenon. The presence of the church tower in the foreground adds a human element to the scene, grounding the viewer in a specific location while also emphasizing the vastness of the universe. This artwork could be interpreted as a representation of the awe-inspiring beauty of the cosmos and the interplay between the natural world and human-made structures.",
+      "gt": "[\"the starry night is an oil-on-canvas painting by the dutch post-impressionist painter vincent van gogh. painted in june 1889, it depicts the view from the east-facing window of his asylum room at saint-r\u00e9my-de-provence, just before sunrise, with the addition of an imaginary village.it has been in the permanent collection of the museum of modern art in new york city since 1941, acquired through the lillie p. bliss bequest. widely regarded as van gogh's magnum opus, the starry night is one of the most recognizable paintings in western art.\"]"
+    },
+    {
+      "idx": 181,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is a famous work by the artist Gustav Klimt, titled \"The Kiss,\" which was created in 1907. It is part of the \"Golden Phase\" of Klimt's career, characterized by its use of gold leaf and intricate patterns. The painting depicts two figures embracing, with their bodies intertwined and faces obscured by the embrace. The central figure is adorned with a golden laurel wreath, symbolizing victory or honor, while the other figure is dressed in a simple, dark garment, possibly representing humility or modesty. The background features a patterned design that complements the figures' attire",
+      "gt": "['the kiss (in german der kuss) is an oil-on-canvas painting with added gold leaf, silver and platinum by the austrian symbolist painter gustav klimt.it was painted at some point in 1907 and 1908, during the height of what scholars call his \"golden period\". it was exhibited in 1908 under the title liebespaar (the lovers) as stated in the catalogue of the exhibition. the painting depicts a couple embracing each other, their bodies entwined in elaborate beautiful robes decorated in a style influenced by the contemporary art nouveau style and the organic forms of the earlier arts and crafts movement.\\n\\nthe painting now hangs in the \u00f6sterreichische galerie belvedere museum in the belvedere, vienna, and is considered a masterpiece of vienna secession (local variation of art nouveau) and klimt\\'s most popular work after portrait of adele bloch-bauer i. it is considered by many as a famous work of art.']"
+    },
+    {
+      "idx": 182,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is an allegorical representation of the birth of Venus, a mythological figure in Roman mythology. The central figure is Venus, depicted as a young woman emerging from the sea on a shell, symbolizing her divine origin and the purity of the sea. The surrounding figures represent different aspects of nature and the natural world: the man with the harp represents music, the woman with the lyre represents poetry, and the two women with the flowers represent fertility and beauty. The presence of the seagulls and the calm sea further emphasize the theme of nature and the divine. This scene is often interpreted as a celebration of the arrival of",
+      "gt": "[\"the birth of venus is a painting by the italian artist sandro botticelli, probably executed in the mid 1480s. it depicts the goddess venus arriving at the shore after her birth, when she had emerged from the sea fully-grown (called venus anadyomene and often depicted in art). the painting is in the uffizi gallery in florence, italy.\\n\\nalthough the two are not a pair, the painting is inevitably discussed with botticelli's other very large mythological painting, the primavera, also in the uffizi. they are among the most famous paintings in the world, and icons of the italian renaissance; of the two, the birth is better known than the primavera. as depictions of subjects from classical mythology on a very large scale they were virtually unprecedented in western art since classical antiquity, as was the size and prominence of a nude female figure in the birth. it used to be thought that they were both commissioned by the same member of the medici family, but this is now uncertain.\\n\\nthey have been endlessly analysed by art historians, with the main themes being: the emulation of ancient painters and the context of wedding celebrations (generally agreed), the influence of renaissance neo-platonism (somewhat controversial), and the identity of the commissioners (not agreed). most art historians agree, however, that the birth does not require complex analysis to decode its meaning, in the way that the primavera probably does. while there are subtleties in the painting, its main meaning is a straightforward, if individual, treatment of a traditional scene from greek mythology, and its appeal is sensory and very accessible, hence its enormous popularity.\"]"
+    },
+    {
+      "idx": 183,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is a portrait of an elderly woman, characterized by her simple yet elegant attire and the serene expression on her face. The composition focuses on her, with the background providing a soft, muted backdrop that enhances the subject's isolation and introspection. The use of monochromatic colors and the soft lighting contribute to a timeless quality, suggesting that the painting may be intended to evoke a sense of nostalgia or reflect upon the passage of time.",
+      "gt": "[\"arrangement in grey and black no. 1, best known under its colloquial name whistler's mother or portrait of artist's mother, is a painting in oils on canvas created by the american-born painter james abbott mcneill whistler in 1871. the subject of the painting is whistler's mother, anna mcneill whistler. the painting is 56.81 by 63.94 inches (1,443 mm \u00d7 1,624 mm), displayed in a frame of whistler's own design. it is held by the mus\u00e9e d'orsay in paris, having been bought by the french state in 1891. it is one of the most famous works by an american artist outside the united states. it has been variously described as an american icon and a victorian mona lisa.\"]"
+    },
+    {
+      "idx": 184,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is a portrait of a man and woman, likely representing a couple, set in a domestic interior. The man is dressed in a traditional European courtly fashion, with a fur-lined coat and a hat that suggests he may be of noble or high social status. The woman's attire is more elaborate, with a green gown and a jeweled headpiece, indicating her higher social standing. The setting is a modest room, which contrasts with the opulence of their clothing, suggesting a narrative of contrast between their social roles or perhaps a moment of transition from one to the other. The presence of the dog adds a touch of realism and",
+      "gt": "['the arnolfini portrait (or the arnolfini wedding, the arnolfini marriage, the portrait of giovanni arnolfini and his wife, or other titles) is a 1434 oil painting on oak panel by the early netherlandish painter jan van eyck. it forms a full-length double portrait, believed to depict the italian merchant giovanni di nicolao arnolfini and his wife, presumably in their residence at the flemish city of bruges.\\n\\nit is considered one of the most original and complex paintings in western art, because of its beauty, complex iconography, geometric orthogonal perspective, and expansion of the picture space with the use of a mirror. according to ernst gombrich \"in its own way it was as new and revolutionary as donatello\\'s or masaccio\\'s work in italy. a simple corner of the real world had suddenly been fixed on to a panel as if by magic... for the first time in history the artist became the perfect eye-witness in the truest sense of the term\". the portrait has been considered by erwin panofsky and some other art historians as a unique form of marriage contract, recorded as a painting. signed and dated by van eyck in 1434, it is, with the ghent altarpiece by the same artist and his brother hubert, the oldest very famous panel painting to have been executed in oils rather than in tempera. the painting was bought by the national gallery in london in 1842.']"
+    },
+    {
+      "idx": 185,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is an ink wash landscape, a traditional form of Chinese art that often depicts natural scenes. It captures the essence of a bustling river town during a time when such towns were common in China's history. The figures are engaged in various activities, suggesting a lively and possibly prosperous community. The bridge serves as a central element, connecting different parts of the town and the surrounding countryside, symbolizing unity and connectivity. The overall composition conveys a sense of harmony between humans and nature, reflecting the cultural values of balance and coexistence.",
+      "gt": "['along the river during the qingming festival (qingming shanghe tu) is a handscroll painting by the song dynasty painter zhang zeduan (1085\u20131145) and copied many times in the following centuries. it captures the daily life of people and the landscape of the capital, bianjing (present-day kaifeng) during the northern song. the theme is often said to celebrate the festive spirit and worldly commotion at the qingming festival, rather than the holiday\\'s ceremonial aspects, such as tomb sweeping and prayers. read right to left, as a viewer unrolled it, successive scenes reveal the lifestyle of all levels of the society from rich to poor as well as economic activities in rural areas and the city, and offer glimpses of period clothing and architecture. the painting is considered to be the most renowned work among all chinese paintings, and it has been called \"china\\'s mona lisa.\"']"
+    },
+    {
+      "idx": 186,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is an ink wash landscape, a traditional form of Chinese art that often depicts natural scenes. The artist has used a limited color palette, primarily black ink, to create depth and texture. The mountain range in the background is rendered with careful strokes that suggest the ruggedness and grandeur of nature. The foreground features a small village or settlement, which adds a human element to the scene. The presence of the horse and rider indicates movement and life within the landscape. This artwork likely aims to capture the essence of the natural world, possibly reflecting the tranquility and harmony found in nature, as well as the resilience of human existence amidst it",
+      "gt": "['dwelling in the fuchun mountains is one of the few surviving works by chinese painter huang gongwang (1269\u20131354) and is considered to be among his greatest works. painted between 1348 and 1350, the painting was burnt into two pieces in 1650. today, one piece is kept in the zhejiang provincial museum in hangzhou, while the other piece is kept in the national palace museum in taipei. put together, the entire painting would measure 691.3 cm in length.']"
+    },
+    {
+      "idx": 187,
+      "question": "Can you give a short introduction to this painting?",
+      "pred": "The painting is a traditional Chinese ink wash artwork, likely from the Ming or Qing dynasty, given the style of the figures and the use of ink. It depicts a scene of historical significance, possibly a military or ceremonial event, as indicated by the presence of soldiers and the formal attire of the central figure. The central figure's attire suggests a position of authority or importance, while the surrounding figures' uniforms imply a structured hierarchy or order. The overall composition and the use of color convey a sense of solemnity and gravity, which may reflect the serious nature of the event depicted.",
+      "gt": "['emperor taizong receiving the tibetan envoy (also called \u6b65\u8f87\u56fe, b\u00f9ni\u01cen t\u00fa ) is a painting on silk by yan liben to show the friendly encounter between the tang dynasty and tibet. the painting is 129 centimetres (51 in) long by 38.5 centimetres (15.2 in) wide. bunian tu is in the palace museum in beijing.']"
+    },
+    {
+      "idx": 188,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "Based on the image alone, it's not possible to definitively identify the disease without additional context or expertise in plant pathology. However, the symptoms of spots and discoloration on the leaves are common indicators of various fungal diseases, such as powdery mildew or leaf spot. The treatment for such diseases would typically involve removing infected leaves to prevent further spread, using fungicides if the disease is confirmed, and ensuring good air circulation around the plants to reduce humidity levels, which can help in preventing the disease from spreading.",
+      "gt": "['cedar apple rust (gymnosporangium juniperi-virginianae) is a fungal disease that requires juniper plants to complete its complicated two year life-cycle. spores overwinter as a reddish-brown gall on young twigs of various juniper species. in early spring, during wet weather, these galls swell and bright orange masses of spores are blown by the wind where they infect susceptible apple and crab-apple trees. the spores that develop on these trees will only infect junipers the following year. from year to year, the disease must pass from junipers to apples to junipers again; it cannot spread between apple trees.\\n\\non apple and crab-apple trees, look for pale yellow pinhead sized spots on the upper surface of the leaves shortly after bloom. these gradually enlarge to bright orange-yellow spots which make the disease easy to identify. orange spots may develop on the fruit as well. heavily infected leaves may drop prematurely.\\n\\ntreatment\\n1. choose resistant cultivars when available.\\n2. rake up and dispose of fallen leaves and other debris from under trees.\\n3. remove galls from infected junipers. in some cases, juniper plants should be removed entirely.\\n4. apply preventative, disease-fighting fungicides labeled for use on apples weekly, starting with bud break, to protect trees from spores being released by the juniper host. this occurs only once per year, so additional applications after this springtime spread are not necessary.\\n5. on juniper, rust can be controlled by spraying plants with a copper solution (0.5 to 2.0 oz/ gallon of water) at least four times between late august and late october.\\n6. safely treat most fungal and bacterial diseases with serenade garden. this broad spectrum bio-fungicide uses a patented strain of bacillus subtilis that is registered for organic use. best of all, serenade is completely non-toxic to honey bees and beneficial insects.\\n7. containing sulfur and pyrethrins, bonide\u00ae orchard spray is a safe, one-hit concentrate for insect attacks and fungal problems. for best results, apply as a protective spray (2.5 oz/ gallon) early in the season. if disease, insects or wet weather are present, mix 5 oz in one gallon of water. thoroughly spray all parts of the plant, especially new shoots.\\n8. contact your local agricultural extension office for other possible solutions in your area.']"
+    },
+    {
+      "idx": 189,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "Based solely on the image, it appears to be a fungal disease affecting the leaves of the plant. The symptoms are consistent with leaf spot diseases, which are caused by various fungi that infect plants and cause spots or lesions on the foliage. These diseases can spread rapidly under favorable conditions, leading to significant damage if not treated promptly.\n\nThe treatment for such diseases typically involves removing infected leaves to prevent the spread of the fungus. In some cases, fungicides may be applied to control the disease. However, without specific knowledge of the type of plant and the exact species of the fungus, it is not possible to provide a precise treatment method. It would",
+      "gt": "['anthracnose. it is caused by fungi in the genus colletotrichum, a common group of plant pathogens that are responsible for diseases on many plant species. infected plants develop dark, water soaked lesions on stems, leaves or fruit. the centers of these lesions often become covered with pink, gelatinous masses of spores especially during moist, warm weather. anthracnose can reduce a beautiful harvest into rotted waste in just a few days.\\n\\nthe fungal disease overwinters in and on seeds, soil and garden debris. cool wet weather promotes its development, and the optimum temperature for continued growth of the spores is between 75-85\u02daf. moisture is required for development and germination of the fungus as well as for infection of the plant. it is spread by wind, rain, insects and garden tools.\\n\\ntreatment\\n1. choose resistant plant varieties when possible and use western grown seeds which have not been exposed to the disease.\\n2. if this fungal problem is common, do not save your own seed from plantings.\\n3. to avoid spreading the disease, keep out of gardens when plants are wet and make sure to disinfect all garden tools (one part bleach to 4 parts water) after use.\\n4. do not compost infected leaves, fruit or stems and thoroughly clean up garden areas in the fall, after harvest, to reduce over wintering sites for the fungal spores.\\n5. safely treat most fungal and bacterial diseases with serenade garden. this broad spectrum bio-fungicide uses a patented strain of bacillus subtilis that is registered for organic use. best of all, serenade is completely non-toxic to honey bees and beneficial insects.\\n6. liquid copper sprays and sulfur powders should be applied weekly, starting when foliage begins to develop in the early spring and continuing throughout the growing season. spray early in the day, and avoid applications during hot weather. seeds may also be treated prior to planting.\\n7. neem oil spray is an organic, multi-purpose fungicide/insecticide/miticide that kills eggs, larvae and adult stages of insects as well as prevents fungal attack on plants. apply early, at the first sign of spring budding, every 7-14 days as a preventative measure or on a 7-day schedule until existing problems are eliminated.']"
+    },
+    {
+      "idx": 190,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "Based solely on the image, it is not possible to accurately identify the disease or provide a treatment method without additional context or scientific knowledge. The image shows a dark, sticky substance that could be indicative of a fungal infection or a type of sap, but without further information, we cannot determine the specific nature of the issue or the appropriate treatment.",
+      "gt": "['it is bacterial canker, most common on cherries and plums, but may also affect apricots, peaches and many other kinds of stone fruits. suspect this plant disease if sunken, water-soaked or \u201cgummy\u201d lesions form on the trunk or twigs. when trees begin active growth in the spring, a sour smelling sap may ooze from these wounded areas. the cankers become darker than the surrounding healthy bark, and the underlying tissue is reddish-brown to black and moist.\\n\\nnote: if cankers girdle the branches or trunk, the leaves above the diseased area curl and turn yellow. growth stops and the branch or tree will eventually die.\\n\\nthe bacterium that causes canker, pseudomonas syringae, enters trees through injured bark or an existing wound, such as a pruning cut on a twig or branch. frost damage in the spring may promote additional infections. bacterial canker infections occur during fall, winter and early spring (during cool, wet weather) and are spread by rain or water, and pruning tools. the bacteria overwinter in active cankers, in infected buds and on the surface of infected and healthy trees and weeds.\\n\\ntreatment\\n1. prune flowering trees during blooming when wounds heal fastest.\\n2. remove wilted or dead limbs well below infected areas.\\n3. avoid pruning in early spring and fall when bacteria are most active.\\n4. treat all pruning cuts immediately with tanglefoot\u00ae tree pruning sealer and make sure to disinfect your pruning equipment \u2014 one part bleach to 4 parts water \u2014 after each cut.\\n5. if using string trimmers around the base of trees avoid damaging bark with breathable tree wrap to prevent infection.\\n6. brush bark with white latex paint diluted with water to reduce bark-damaging temperature fluctuations.\\n7. research has shown that copper fungicides have some success against this stone fruit problem. however, results are inconsistent. we recommend using it as one part of a total management program.\\n8. remove weeds and grass from around the base of young trees to improve air circulation and keep the trunk and crown dry.\\n9. organocide\u00ae plant doctor is an earth-friendly systemic fungicide that works its way through the entire plant to combat a large number of diseases on ornamentals, turf, fruit and more. mix 1/3 to 3/4 oz per gallon of water and paint or spray over pruning wounds and surrounding areas.']"
+    },
+    {
+      "idx": 191,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "The disease visible on the tomato is likely a fungal infection, possibly early blight or late blight, which are common in tomatoes. These diseases are caused by fungi that thrive in warm and humid conditions. The treatment for such infections typically involves removing and destroying affected plants to prevent the spread of the disease. In some cases, fungicides can be used to control the spread of the fungus. However, without a clear view of the specific symptoms and without being able to identify the exact type of fungus, it's not possible to provide a precise treatment plan from this image alone.",
+      "gt": "['it is blossom end rot. a serious disorder of tomato, pepper, cucumber and eggplant, blossom end rot is an environmental problem (not fungal) most often caused by uneven watering or by calcium deficiency. (these can be related; uneven watering can interfere with the uptake of calcium.) this common garden \u201cdisease\u201d is often brought on by rapid growth from too much fertilizer, high salt levels or drought.\\n\\nblossom end rot symptoms occur on both green and ripe fruits and is identified by water-soaked areas that gradually widen and mature into sunken, brown, leathery spots on the bottom end. in many cases, secondary pathogens, which appear as a black, fuzzy-like growth, attack the affected area and cause complete rotting of the fruit. blossom end rot will not spread from plant to plant.\\n\\ntreatment\\nsince this plant problem is physiological in nature, fungicides will not work as a control measure. we recommend the following:\\n\\n1. choose resistant vegetable varieties whenever possible.\\n2. prevent problems by keeping soil evenly moist and by foliar spraying plants with a kelp or calcium solution.\\n3. adding high levels of calcium \u2014 bone meal, oyster shell or gypsum \u2014 to the soil at planting time usually prevents this problem from developing.\\n4. a layer of mulch (straw, compost, grass ) will help conserve soil moisture during the hot, dry days of july and august.\\n5. foliar applications of liquid calcium 5% (1-2 tbsp/ gallon of water) can be used to correct or prevent deficiencies of this essential nutrient. for best results, combine with a natural surfactant to increase adhesion and spray leaves to the point of run-off.\\n6. mulching plants will help conserve moisture and provide a more uniform water supply.\\n7. avoid using high nitrogen fertilizers which accelerate vegetative growth and reduce the uptake of calcium by plants. a large selection of balanced organic fertilizers are available at planet natural.']"
+    },
+    {
+      "idx": 192,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "Based solely on the image, it is not possible to accurately identify the disease affecting the tree. However, if we were to speculate based on common symptoms of tree diseases, the brown spots and discoloration could be indicative of a fungal infection or bacterial rot. The treatment for such diseases would typically involve removing infected branches, applying fungicides or bactericides, and ensuring good air circulation around the tree to prevent further spread. It's important to note that without a clear identification of the disease, these are general suggestions and actual treatment methods would need to be determined by a professional arborist or botanist familiar with the specific type of tree",
+      "gt": "['it is brown rot (monilinia fructicola), the most common fungal disease affecting the blossoms and fruit of almonds, apricots, cherries, peaches and plums. it overwinters in mummified fruit (on the tree and on the ground) and infected twigs.\\n\\nthe disease first infects blossoms in spring and grows back into the small branches to cause cankers that can kill stems. large numbers of flower-bearing stems are killed when the disease is severe. dead flowers often remain attached into the summer. developing or mature fruits show circular or brown spots that spread rapidly over the surface and light gray masses of spores are produced on the rotted areas. rotted tissue remains relatively firm and dry.\\n\\nbrown rot spores are carried by wind, rain and insects to the open or unopened blossoms and young shoots. if water is present \u2014 either from rain, dew or watering \u2014 on the flower surface the spores can germinate and penetrate the plant. disease development takes place over a wide temperature range and flowers can be infected from the time buds open until petals fall. under favorable conditions, brown rot spreads quickly and an entire crop can be completely destroyed on the tree.\\n\\ntreatment\\n1. choose resistant varieties whenever possible.\\n2. prompt removal and destruction of infected plant parts helps breaks the life cycle of the disease in individual trees and small orchards, and may be sufficient to keep brown rot below damaging levels.\\n3. it is important to rake up and remove any fallen fruit or debris from under trees.\\n4. prune trees occasionally to improve air circulation. also, water from below to keep from wetting blossoms, foliage and fruit.\\n5. use tanglefoot\u00ae pruning sealer to seal all cuts and wounds and protect against insects and disease organisms.\\n6. ready to use copper fungicides or sulfur powders should be applied weekly to infected trees starting when the blossoms are just beginning to open and continuing throughout the growing season. if at all possible, time applications so that 12 hours of dry weather follows application.\\n7. organocide\u00ae plant doctor is an earth-friendly systemic fungicide that works its way through the entire plant to combat a large number of diseases on ornamentals, turf, fruit and more. apply as a foliar spray (1 tsp/ gallon of water) to combat this destructive stone fruit problem.\\n8. containing sulfur and pyrethrins, bonide\u00ae orchard spray is a safe, one-hit concentrate for insect attacks and fungal problems. for best results, apply as a protective spray (2.5 oz/ gallon) early in the season. if disease, insects or wet weather are present, mix 5 oz in one gallon of water. thoroughly spray all parts of the plant, especially new shoots.']"
+    },
+    {
+      "idx": 193,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "The disease visible on the cabbage leaves is likely a form of bacterial soft rot, which is characterized by the yellowing and wilting of the leaves. This condition can be caused by various bacteria that enter through wounds or natural openings in the plant's tissues. The treatment for this disease typically involves removing and disposing of affected plants to prevent the spread of the bacteria. Additionally, maintaining good hygiene around the plants, such as avoiding overwatering and ensuring proper spacing to reduce stress, can help prevent the onset of the disease. If the infection is severe, it may be necessary to apply bactericides or fungicides specifically formulated to combat bacterial soft rot",
+      "gt": "['it is club root. affecting most brassica crops (cabbage, broccoli, cauliflower, etc.), club root is a serious plant disease in north american home gardens. it is caused by the soil-borne fungus plasmodiophora brassicae which infects susceptible plants through root hairs. diseased roots become swollen, misshapen and deformed (clubbed) often cracking and rotting. as a result, plants have difficulty absorbing water and nutrients properly.\\n\\nplants often grow poorly and wilt during the heat of the day; plants often revive during cool nights. outer leaves may turn yellow, purple or brown. club root will reduce yields and can cause total crop failure.\\n\\nfungal spores can be spread by wind, water and garden tools. disease development can occur over a wide range of conditions, but is favored by excessive moisture, low soil ph and soil temperatures between 64 and 77\u02daf. spores can survive in the soil for as many as 10 years.\\n\\ntreatment\\n1. fungicides will not treat this soil-dwelling micro-organism.\\n2. choose resistant cultivars when possible.\\n3. try to prevent the occurrence of this disease by keeping a clean garden and rotating crops.\\n4. keep in mind that the disease spores can persist in the soil for up to 20 years. if club root is present you may want to solarize the soil.*\\n5. control susceptible weeds \u2014 mustard, radish, shepherd\u2019s purse \u2014 that may be infected to reduce potential buildup of the disease.\\n6. carefully remove infected plants and sterilize garden tools (one part bleach to 4 parts water) after use.\\n7. raise your soil\u2019s ph to a more alkaline 7.2 by mixing oyster shell or dolomite lime into your garden in the fall. simple and affordable soil test kits are available to check ph often.']"
+    },
+    {
+      "idx": 194,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "Based solely on the image, it is not possible to definitively identify the disease affecting the corn. However, the presence of what appears to be a fungal or bacterial infection can often be identified by the discoloration and the presence of spores or colonies. To treat such diseases, one would typically use fungicides or bactericides, depending on the specific pathogen involved. The treatment would involve applying these chemicals to the affected areas before the disease spreads further into the plant. It's important to note that without a clear identification of the disease, the exact treatment cannot be provided.",
+      "gt": "['it is corn smut. frequently found in backyard gardens and small farms, corn smut is caused by the fungus ustilago zeae and can appear in the stalks, leaves, tassels or ears. symptoms are most commonly noticed when the ears produce mushroom-like tumors or galls. these \u201cswellings\u201d begin as small, whitish-gray irregularities which expand and turn black as they fill with spores. ear galls can grow to 4- to 5-inches in diameter and release thousands of spores as they rupture. these fungal spores are blown by the wind for considerable distances to infect new plants. galls on leaves remain small and eventually become hard and dry.\\n\\ncorn smut overwinters on garden debris and in the soil. it is carried by wind, rain and irrigation and does best in hot, dry weather. spores may remain viable for 5- to 7-years. wounds from various injuries, including cultivation and abrasion from blowing soil, provide points for the fungus to enter the plant.\\n\\ntreatment\\n1. choose the best resistant varieties, such as silver king, fantasia, brilliant and seneca sensation, when available.\\n2. in backyard gardens, collecting and destroying galls before the dark fungal spores are released is suggested. this will limit the number of available fungal spores and help break the disease-cycle.\\n3. reduce infection points by avoiding injury of roots, stalks and leaves during cultivation.\\n4. prevent damage from insects, such as corn borers, with monterey\u00ae garden insect spray or other organic insecticide.\\n5. fungicides are not an effective control option since the disease is so widespread and can persist in the soil for years.\\n6. high nitrogen fertilizers may increase the severity of the disease \u2014 use a balanced organic fertilizer in the vegetable garden.\\n7. remove and destroy all garden debris after harvest and practice crop rotation the following year.\\n8. bag or burn infected plant parts \u2014 do not compost.']"
+    },
+    {
+      "idx": 195,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "Based solely on the image, it is not possible to accurately identify the disease affecting the fruit. However, if we were to speculate based on the visible symptoms\u2014such as the dark spots and the overall appearance of the fruit\u2014it could be a fungal infection or a bacterial disease that affects fruits. The treatment would typically involve removing the affected parts of the fruit, cleaning the plant with a fungicide or bactericide, and ensuring good air circulation around the plant to prevent further spread. It's important to note that without a clear identification of the disease, these are general suggestions and specific treatments would depend on the actual cause of the disease.",
+      "gt": "['it is crown gall, a common plant disease caused by the soil-borne bacterium agrobacterium tumefaciens. it is found throughout the world and occurs on woody shrubs and herbaceous plants including grapes, raspberries, blackberries and roses.\\n\\ncrown gall symptoms include round, wart-like growths \u2014 2 inches or larger in diameter \u2014 that appear at or just above the soil line, or on lower branches and stems. plants with several galls may be unable to move water and nutrients up the trunk and become weakened, stunted and unproductive. young plants can be killed by developing gall tissue.\\n\\nthe bacteria responsible for crown gall can persist in the soil for many years and are released when galls become saturated with moisture or as older galls decompose. susceptible plants are infected through fresh wounds or abrasions, many of which are a result of pruning, freeze injury, soil insects, cultivation and other factors that may damage plants. nursery stock is often infected through grafting and budding scars.\\n\\ntreatment\\n1. select resistant cultivars when possible and purchase plants from a reputable nursery.\\n2. do not buy plants that shows signs of swelling or galling.\\n3. when caring for susceptible plants, avoid injury or pruning wounds that may come in contact with the soil.\\n4. use tree wrap to protect against string trimmer damage and keep your garden tools clean.\\n5. provide winter protection with natural burlap so bark does not crack.\\n6. in many cases, existing galls can be removed with a sharp pruning knife. destroy the infected plant tissue and treat the wound with pruning sealer. if the plant does not recover, remove and destroy it.']"
+    },
+    {
+      "idx": 196,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "The disease visible on the strawberries is likely a fungal infection, possibly anthracnose or gray mold, which are common in strawberry plants. Anthracnose is caused by the fungus Colletotrichum acutatum and can be identified by its dark spots that appear on the leaves and fruit. Gray mold, also known as Botrytis cinerea, causes a soft rot of the fruit and can spread to the leaves and stems. Treatment for these diseases typically involves removing affected parts of the plant, using fungicides, and ensuring good air circulation around the plants to prevent moisture buildup. It's important to note that without a",
+      "gt": "['it is gray mold (botrytis cinerea). found on a wide range of plants (too many to mention), gray mold is a fungal disease that travels quickly through gardens, especially during damp, cool to mild weather. disease symptoms appear as grayish colored soft, mushy spots on leaves, stems, flowers and on produce. spots may become covered with a coating of gray fungus spores, especially if humidity is high. fruit or plants shrivel and rot and often develop black, stone-like sclerotia \u2014 a compact mass of hardened fungal filaments \u2014 under rotted parts.\\n\\ngray mold is often found near the soil surface or in the densest areas of the plant canopy. it develops on wilted flowers first, then spreads quickly to other parts of the plant. the disease may also occur in storage areas causing rotting of harvested fruits and vegetables.\\n\\nbotrytis blight overwinters on plants, in or on the soil, and as sclerotia. spores develop when conditions are optimal, and are moved by wind or splashing water onto blossoms or young leaves, where they germinate and enter the plant. spores require cool temperatures (45-60 f.) and high humidity (93% and above) to germinate. germinating spores rarely penetrate green, healthy tissue directly, but can enter through wounds on growing plants. cuttings are particularly susceptible to infection.\\n\\ntreatment\\n1. prune or stake plants to improve air circulation between plants. make sure to disinfect your pruning equipment (one part bleach to 4 parts water) after each cut.\\n2. if growing indoors use a small clip-on fan to improve air flow.\\n3. keep the soil under plants clean and rake up any fallen debris.\\n4. add a good amount of organic compost or mulch under plants. mulches will prevent the fungal spores from splashing back up onto flowers and leaves.\\n5. water in the early morning hours, or use a soaker hose, to give plants time to dry out during the day.\\n6. do not compost infected plant leaves or stems, and thoroughly clean up garden areas in the fall to reduce over wintering sites for the fungal spores.\\n7. copper-soap fungicides will help by protecting plants from disease spores. apply at the start of flowering and continue every 7-10 days until harvest. fungicidal sprays are especially warranted when weather forecasts predict a long period of cool, wet weather.\\n8. safely treat most fungal diseases, including botrytis blight, with serenade garden. this broad spectrum bio-fungicide uses a patented strain of bacillus subtilis that is registered for organic use. best of all, serenade is completely non-toxic to honey bees and beneficial insects.\\n9. mycostop, a biological fungicide approved for organic use, has shown suppression of the disease. direct spray (5 gm/ 50 liters of water) to susceptible leaves, flowers and fruits to point of run-off. apply every 2-3 weeks, or as needed depending on disease pressure.\\n10. green cure fungicide contains a patented formula of potassium bicarbonate \u2014 commonly used in food products \u2014 that kills many plant diseases on contact and provides up to 2 weeks of residual protection. at first sign of disease, mix 1-2 tbsp/ gallon of water and apply to all exposed surfaces of the plant. for best protection, repeat at 1-2 week intervals until conditions are no longer favorable for disease development.']"
+    },
+    {
+      "idx": 197,
+      "question": "What is this disease (give short introduction) and how to treat it?",
+      "pred": "Based solely on the image, it appears to be a fungal disease affecting the leaves of the plant. The symptoms are consistent with leaf spot diseases, which are caused by various fungi that infect plants and cause spots or lesions on the foliage. Treatment for such diseases typically involves removing infected leaves to prevent the spread of the fungus, using fungicides if the disease is severe, and ensuring good air circulation around the plant to reduce humidity levels, which can help in preventing the disease from spreading. However, without more specific information about the type of plant and the exact species of the fungus, an accurate diagnosis and treatment plan cannot be provided.",
+      "gt": "['it is early blight. common on tomato and potato plants, early blight is caused by the fungus alternaria solani and occurs throughout the united states. symptoms first appear on the lower, older leaves as small brown spots with concentric rings that form a \u201cbull\u2019s eye\u201d pattern. as the disease matures, it spreads outward on the leaf surface causing it to turn yellow, wither and die. eventually the stem, fruit and upper portion of the plant will become infected. crops can be severely damaged.\\n\\nearly blight overwinters on infected plant tissue and is spread by splashing rain, irrigation, insects and garden tools. the disease is also carried on tomato seeds and in potato tubers. in spite of its name, early blight can occur any time throughout the growing season. high temperatures (80-85\u02daf.) and wet, humid conditions promote its rapid spread. in many cases, poorly nourished or stressed plants are attacked.\\n\\ntreatment\\nprune or stake plants to improve air circulation and reduce fungal problems.\\nmake sure to disinfect your pruning shears (one part bleach to 4 parts water) after each cut.\\nkeep the soil under plants clean and free of garden debris. add a layer of organic compost to prevent the spores from splashing back up onto vegetation.\\ndrip irrigation and soaker hoses can be used to help keep the foliage dry.\\nfor best control, apply copper-based fungicides early, two weeks before disease normally appears or when weather forecasts predict a long period of wet weather. alternatively, begin treatment when disease first appears, and repeat every 7-10 days for as long as needed.\\ncontaining copper and pyrethrins, bonide\u00ae garden dust is a safe, one-step control for many insect attacks and fungal problems. for best results, cover both the tops and undersides of leaves with a thin uniform film or dust. depending on foliage density, 10 oz will cover 625 sq ft. repeat applications every 7-10 days, as needed.\\nserenade garden is a broad spectrum, preventative bio-fungicide recommended for the control or suppression of many important plant diseases. for best results, treat prior to foliar disease development or at the first sign of infection. repeat at 7-day intervals or as needed.\\nremove and destroy all garden debris after harvest and practice crop rotation the following year.\\nburn or bag infected plant parts. do not compost.']"
+    },
+    {
+      "idx": 198,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person appears to be a man of considerable age, possibly in his late 60s or early 70s, given the lines and wrinkles on his face. His attire suggests he may have been a scholar or intellectual from the 18th or 19th century, as indicated by the style of his clothing and the presence of a wig, which was common among men of status during that period. The serious expression and the way he holds his book suggest he might have been a writer, thinker, or philosopher. Without additional context, it is not possible to determine his exact identity or",
+      "gt": "['sir isaac newton frs (25 december 1642 \u2013 20 march 1726/27) was an english mathematician, physicist, astronomer, alchemist, theologian, and author who was described in his time as a natural philosopher. he was a key figure in the scientific revolution and the enlightenment that followed. his pioneering book philosophi\u00e6 naturalis principia mathematica (mathematical principles of natural philosophy), first published in 1687, consolidated many previous results and established classical mechanics. newton also made seminal contributions to optics, and shares credit with german mathematician gottfried wilhelm leibniz for developing infinitesimal calculus.']"
+    },
+    {
+      "idx": 199,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person appears to be a historical figure of significant stature, possibly a philosopher or sage, given the traditional attire and the serene expression. The presence of the ornate staff suggests that he may have held a position of authority or wisdom within his society. The attire is consistent with what might be worn by scholars or officials in ancient Chinese culture, which often included robes with elaborate patterns and symbols. The overall impression is one of respect and reverence, indicating that this individual was likely someone of importance in their time.",
+      "gt": "['confucius (/k\u0259n\u02c8fju\u02d0\u0283\u0259s/ k\u0259n-few-sh\u0259s; chinese: \u5b54\u592b\u5b50; pinyin: k\u01d2ng f\u016bz\u01d0, \"master k\u01d2ng\"; or commonly \u5b54\u5b50; k\u01d2ngz\u01d0; c.\\u2009551 \u2013 c.\\u2009479 bce) was a chinese philosopher and politician of the spring and autumn period who is traditionally considered the paragon of chinese sages. confucius\\'s teachings and philosophy underpin east asian culture and society, remaining influential across china and east asia to this day.']"
+    },
+    {
+      "idx": 200,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person appears to be a figure of significant status or authority, possibly a ruler or a high-ranking official. This is suggested by their central position in the composition, the elaborate headdress and clothing that indicate a formal role, and the presence of other figures who seem to be in attendance or awaiting instructions. The detailed depiction of the individual's features, including the beard and mustache, along with the overall regal attire, implies a person of importance within the context of the artwork.",
+      "gt": "[\"cai lun (chinese: \u8521\u4f26; courtesy name: jingzhong (\u656c\u4ef2); c.\\u200950\u201362 \u2013 121 ce), formerly romanized as ts'ai lun, was a chinese eunuch court official of the eastern han dynasty. he is traditionally regarded as the inventor of paper and the modern papermaking process. although early forms of paper had existed since the 3rd century bce, he occupies a pivotal place in the history of paper due to his addition of pulp via tree bark and hemp ends which resulted in the large-scale manufacture and worldwide spread of paper.\"]"
+    },
+    {
+      "idx": 201,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person appears to be a man of some prominence or status, possibly a scholar or a member of the nobility. The formal attire and the presence of a book suggest that he may have been involved in intellectual pursuits or held a position of learning and authority. The detailed portrait indicates that he was likely well-regarded during his lifetime, as such portraits were often commissioned by those who wished to be remembered for their achievements or contributions.",
+      "gt": "['christopher columbus (between 25 august and 31 october 1451 \u2013 20 may 1506) was an italian explorer and navigator from the republic of genoa who completed four spanish-based voyages across the atlantic ocean sponsored by the catholic monarchs, opening the way for the widespread european exploration and european colonization of the americas. his expeditions were the first known european contact with the caribbean and central and south america.']"
+    },
+    {
+      "idx": 202,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person appears to be a man with a distinguished appearance, characterized by his white hair and beard. His attire is formal, suggesting he may have been involved in a professional or academic setting. The serious expression and direct gaze convey a sense of wisdom or contemplation. Without additional context, it's not possible to provide more specific details about his identity or background.",
+      "gt": "['albert einstein (14 march 1879 \u2013 18 april 1955) was a german-born theoretical physicist. best known for developing the theory of relativity, he also made important contributions to the development of the theory of quantum mechanics, and thus to modern physics. his mass\u2013energy equivalence formula e = mc2, which arises from relativity theory, has been dubbed \"the world\\'s most famous equation\". his work is also known for its influence on the philosophy of science. he received the 1921 nobel prize in physics \"for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\", a pivotal step in the development of quantum theory. einsteinium, one of the synthetic elements in the periodic table, was named in his honor.']"
+    },
+    {
+      "idx": 203,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person appears to be a man of considerable age, possibly in his late 60s or early 70s. His attire suggests that he was accustomed to formal occasions, which could indicate a position of some importance or respectability. The meticulous grooming and the style of his clothing imply a certain level of sophistication and attention to detail. The serious expression and direct gaze convey a sense of authority or contemplation. Without additional context, it is not possible to provide more specific details about his identity or background.",
+      "gt": "['louis pasteur formemrs (27 december 1822 \u2013 28 september 1895) was a french chemist and microbiologist renowned for his discoveries of the principles of vaccination, microbial fermentation, and pasteurization, the last of which was named after him. his research in chemistry led to remarkable breakthroughs in the understanding of the causes and preventions of diseases, which laid down the foundations of hygiene, public health and much of modern medicine. pasteur\\'s works are credited with saving millions of lives through the developments of vaccines for rabies and anthrax. he is regarded as one of the founders of modern bacteriology and has been honored as the \"father of bacteriology\" and the \"father of microbiology\" (together with robert koch; the latter epithet also attributed to antonie van leeuwenhoek).']"
+    },
+    {
+      "idx": 204,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person appears to be a man of considerable age, with a stern and serious expression. His attire suggests he may have been a scholar or intellectual from a time when such clothing was common for men of learning. The meticulous grooming and the style of his beard indicate a certain level of sophistication and care in appearance, which might imply that he was someone who valued personal presentation. The overall impression is that of a dignified and possibly influential figure from the past.",
+      "gt": "[\"galileo di vincenzo bonaiuti de' galilei (15 february 1564 \u2013 8 january 1642) was an italian astronomer, physicist and engineer, sometimes described as a polymath. commonly referred to as galileo, his name is pronounced /\u02cc\u0261\u00e6l\u026a\u02c8le\u026a.o\u028a \u02cc\u0261\u00e6l\u026a\u02c8le\u026a.i\u02cc/ (gal-ih-lay-oh gal-ih-lay-ee, italian: [\u0261ali\u02c8l\u025b\u02d0o \u0261ali\u02c8l\u025bi]). he was born in the city of pisa, then part of the duchy of florence. galileo has been called the father of observational astronomy, modern-era classical physics, the scientific method, and modern science.\"]"
+    },
+    {
+      "idx": 205,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person appears to be a man of some prominence or authority, possibly from the late 19th century given the style of his clothing and the military uniform. The mustache and beard suggest a certain level of sophistication and perhaps a connection to the upper class or a profession that required a degree of formality. His attire is formal and well-kept, which could indicate that he was accustomed to public appearances or had a role in society that required such presentation. The overall impression is that of a man who was likely respected within his community or by those around him.",
+      "gt": "['joshua abraham norton (february 4, 1818 \u2013 january 8, 1880), known as emperor norton, was a resident of san francisco, california, who in 1859 proclaimed himself \"norton i., emperor of the united states\". in 1863, after napoleon iii invaded mexico, he took the secondary title of \"protector of mexico\".']"
+    },
+    {
+      "idx": 206,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person is a soccer player, likely from Argentina, given the national team jersey with the \"ARGENTINA\" text. The jersey's design and the player's athletic build suggest he is a professional athlete. His expression of joy and the celebratory gesture indicate that he has just scored a goal or achieved a significant moment in the game.",
+      "gt": "[\"lionel andr\u00e9s messi (spanish pronunciation: [ljo\u02c8nel an\u02c8d\u027ees \u02c8mesi] (listen); born 24 june 1987), also known as leo messi, is an argentine professional footballer who plays as a forward for ligue 1 club paris saint-germain and captains the argentina national team. widely regarded as one of the greatest players of all time, messi has won a record seven ballon d'or awards and a record six european golden shoes, and in 2020 he was named to the ballon d'or dream team. until leaving the club in 2021, he had spent his entire professional career with barcelona, where he won a club-record 34 trophies, including ten la liga titles, seven copa del rey titles and the uefa champions league four times. with his country, he won the 2021 copa am\u00e9rica and the 2022 fifa world cup. a prolific goalscorer and creative playmaker, messi holds the records for most goals in la liga (474), most hat-tricks in la liga (36) and the uefa champions league (eight), and most assists in la liga (192) and the copa am\u00e9rica (17). he also has the most international goals by a south american male (102). messi has scored over 800 senior career goals for club and country, and has the most goals by a player for a single club (672).\"]"
+    },
+    {
+      "idx": 207,
+      "question": "Can you give a short introduction to this person?",
+      "pred": "Based solely on the image, this person appears to be a man of some age, possibly in his late 20s to early 30s, given the style of his suit and the stubble on his face. His attire suggests he may have been involved in formal or professional settings during the time period when this photograph was taken. The serious expression and direct gaze convey a sense of earnestness or determination. Without additional context, it is not possible to provide more specific details about his identity or background.",
+      "gt": "['alan mathison turing obe frs (/\u02c8tj\u028a\u0259r\u026a\u014b/; 23 june 1912 \u2013 7 june 1954) was an english mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist. turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the turing machine, which can be considered a model of a general-purpose computer. he is widely considered to be the father of theoretical computer science and artificial intelligence.']"
+    },
+    {
+      "idx": 208,
+      "question": "The graph below shows the long-term international migration, UK, 1999-2008.\n\nSum",
+      "pred": "The graph illustrates the long-term international migration to the UK from 1999 to 2008. The blue line represents the net migration, which shows a fluctuating trend with peaks and troughs over the years. The red line indicates the total migration, which is consistently higher than the net migration, suggesting that there are more people moving to the UK than those leaving. The total migration line shows an overall increase in numbers, peaking around 2006 and then slightly declining towards the end of the period. The net migration line also shows a general upward trend but with less volatility, indicating that while more people",
+      "gt": "['the chart gives information about uk immigration, emigration and net migration between 1999 and 2008.\\n\\nboth immigration and emigration rates rose over the period shown, but the figures for immigration were significantly higher. net migration peaked in 2004 and 2007.\\n\\nin 1999, over 450,000 people came to live in the uk, while the number of people who emigrated stood at just under 300,000. the figure for net migration was around 160,000, and it remained at a similar level until 2003. from 1999 to 2004, the immigration rate rose by nearly 150,000 people, but there was a much smaller rise in emigration. net migration peaked at almost 250,000 people in 2004.\\n\\nafter 2004, the rate of immigration remained high, but the number of people emigrating fluctuated. emigration fell suddenly in 2007, before peaking at about 420,000 people in 2008. as a result, the net migration figure rose to around 240,000 in 2007, but fell back to around 160,000 in 2008.']"
+    },
+    {
+      "idx": 209,
+      "question": "The graph and table below give information about water use worldwide and water c",
+      "pred": "The graph and table illustrate the global trend of water consumption from 1900 to 2000, showing a significant increase over time. The global line shows an upward trend with a peak around 2000, indicating that the world's water consumption has been increasing steadily. In contrast, the Brazilian line shows a more gradual increase, peaking slightly before the global line in 2000. The Peruvian line also shows an increase but at a slower rate than Brazil, reaching its peak in 2000 as well. Both countries' lines are below the global line, suggesting they consume less",
+      "gt": "['the charts compare the amount of water used for agriculture, industry and homes around the world, and water use in brazil and the democratic republic of congo.\\n\\nit is clear that global water needs rose significantly between 1900 and 2000, and that agriculture accounted for the largest proportion of water used. we can also see that water consumption was considerably higher in brazil than in the congo.\\n\\nin 1900, around 500km\u00b3 of water was used by the agriculture sector worldwide. the figures for industrial and domestic water consumption stood at around one fifth of that amount. by 2000, global water use for agriculture had increased to around 3000km\u00b3, industrial water use had risen to just under half that amount, and domestic consumption had reached approximately 500km\u00b3.\\n\\nin the year 2000, the populations of brazil and the congo were 176 million and 5.2 million respectively. water consumption per person in brazil, at 359m\u00b3, was much higher than that in the congo, at only 8m\u00b3, and this could be explained by the fact that brazil had 265 times more irrigated land.']"
+    },
+    {
+      "idx": 210,
+      "question": "The charts below give information about USA marriage and divorce rates between 1",
+      "pred": "The chart on the left shows that the number of marriages in the USA increased from 1970 to 2000, with a peak around 1980 and a slight decline towards the end of the period. The number of divorces also rose steadily over the same time frame, peaking in the late 1980s and then declining slightly by 2000. The marital status of adult Americans is shown as a bar graph, indicating that the majority were married or widowed in both 1970 and 2000, with a small percentage being single or wid",
+      "gt": "['the first bar chart shows changes in the number of marriages and divorces in the usa, and the second chart shows figures for the marital status of american adults in 1970 and 2000.\\n\\nit is clear that there was a fall in the number of marriages in the usa between 1970 and 2000. the majority of adult americans were married in both years, but the proportion of single adults was higher in 2000.\\n\\nin 1970, there were 2.5 million marriages in the usa and 1 million divorces. the marriage rate remained stable in 1980, but fell to 2 million by the year 2000. in contrast, the divorce rate peaked in 1980, at nearly 1.5 million divorces, before falling back to 1 million at the end\\nof the period.\\n\\naround 70% of american adults were married in 1970, but this figure dropped to just under 60% by 2000. at the same time, the proportion of unmarried people and divorcees rose by about 10% in total. the proportion of widowed americans was slightly lower in 2000.']"
+    },
+    {
+      "idx": 211,
+      "question": "The chart below shows the amount spent on six consumer goods in four European co",
+      "pred": "The report for the university lecturer would begin by summarizing the data presented in the chart, noting that it shows the expenditure on six consumer goods across four European countries. The goods include CDs, DVDs, cosmetics, perfumes, sports equipment, and personal care items. The lecturer could then analyze the spending patterns, such as which country spends the most on each category and whether there are any trends or differences between the countries' spending habits. For instance, the lecturer might observe that Italy spends more on cosmetics than France, while Germany spends more on personal care items. The report should conclude with a discussion of possible reasons behind these spending patterns, such",
+      "gt": "['the bar chart compares consumer spending on six different items in germany, italy, france and britain.\\n\\nit is clear that british people spent significantly more money than people in the other three countries on all six goods. of the six items, consumers spent the most money on photographic film.\\n\\npeople in britain spent just over \u00a3170,000 on photographic film, which is the highest figure shown on the chart. by contrast, germans were the lowest overall spenders, with roughly the same figures (just under \u00a3150,000) for each of the six products. \\n\\nthe figures for spending on toys were the same in both france and italy, at nearly \u00a3160,000. however, while french people spent more than italians on photographic film and cds, italians paid out more for personal stereos, tennis racquets and perfumes. the amount spent by french people on tennis racquets, around \u00a3145,000, is the lowest figure shown on the chart.']"
+    },
+    {
+      "idx": 212,
+      "question": "The table below gives information about the underground railway systems in six c",
+      "pred": "The table provides data on the underground railway systems in six cities, including the number of kilometers of track, the number of passengers per year, and the date when the system opened. London has the longest track at 394 kilometers and the most passengers with 1,195 million per year, opening in 1863. Paris follows with 275 kilometers and 1,000 million passengers per year, opening in 1900. Tokyo has the shortest track at 115 kilometers but the highest passenger volume at 1,400 million per year, opening in",
+      "gt": "['the table shows data about the underground rail networks in six major cities.\\n\\nthe table compares the six networks in terms of their age, size and the number of people who use them each year. it is clear that the three oldest underground systems are larger and serve significantly more passengers than the newer systems.\\n\\nthe london underground is the oldest system, having opened in 1863. it is also the largest system, with 394 kilometres of route. the second largest system, in paris, is only about half the size of the london underground, with 199 kilometres of route. however, it serves more people per year. while only third in terms of size, the tokyo system is easily the most used, with 1927 million passengers per year.\\n\\nof the three newer networks, the washington dc underground is the most extensive, with 126 kilometres of route, compared to only 11 kilometres and 28 kilometres for the kyoto and los angeles systems. the los angeles network is the newest, having opened in 2001, while the kyoto network is the smallest and serves only 45 million passengers per year.']"
+    },
+    {
+      "idx": 213,
+      "question": "The table below gives information on consumer spending on different items in fiv",
+      "pred": "The table shows the percentage of consumer spending on various categories in five countries: Ireland, Italy, Spain, Sweden, and the UK. The main features include the largest category being food, drink, and tobacco, which accounts for 28.4% of spending in Ireland, 26.9% in Italy, 23.1% in Spain, 20.5% in Sweden, and 19.7% in the UK. Clothing and footwear is the second-largest category, with percentages ranging from 16.1% in Ireland to 13.6% in the UK. Leisure,",
+      "gt": "['the table shows percentages of consumer expenditure for three categories of products and services in five countries in 2002.\\n\\nit is clear that the largest proportion of consumer spending in each country went on food, drinks and tobacco. on the other hand, the leisure/education category has the lowest percentages in the table.\\n\\nout of the five countries, consumer spending on food, drinks and tobacco was noticeably higher in turkey, at 32.14%, and ireland, at nearly 29%. the proportion of spending on leisure and education was also highest in turkey, at 4.35%, while expenditure on clothing and footwear was significantly higher in italy, at 9%, than in any of the other countries.\\n\\nit can be seen that sweden had the lowest percentages of national consumer expenditure for food/drinks/tobacco and for clothing/footwear, at nearly 16% and just over 5% respectively. spain had slightly higher figures for these categories, but the lowest figure for leisure/education, at only 1.98%.']"
+    },
+    {
+      "idx": 214,
+      "question": "The pie charts below show units of electricity production by fuel source in Aust",
+      "pred": "The pie charts illustrate the distribution of electricity production by fuel source in Australia and France from 1980 to 2000. In 1980, Australia's pie chart shows a significant portion of energy coming from coal (35%), followed by natural gas (26%), nuclear power (14%), and hydroelectricity (13%). By 2000, the coal share has decreased slightly to 30%, while natural gas has increased to 30%. The nuclear power share remains at 14%, and hydroelectricity has grown to 26%. In France, the",
+      "gt": "['the pie charts compare the amount of electricity produced using five different sources of fuel in two countries over two separate years.\\n\\ntotal electricity production increased dramatically from 1980 to 2000 in both australia and france. while the totals for both countries were similar, there were big differences in the fuel sources used.\\n\\ncoal was used to produce 50 of the total 100 units of electricity in australia in 1980, rising to 130 out of 170 units in 2000. by contrast, nuclear power became the most important fuel source in france in 2000, producing almost 75% of the country\u2019s electricity.\\n\\naustralia depended on hydro power for just under 25% of its electricity in both years, but the amount of electricity produced using this type of power fell from 5 to only 2 units in france. oil, on the other hand, remained a relatively important fuel source in france, but its use declined in australia. both countries relied on natural gas for electricity production significantly more in 1980 than in 2000.']"
+    },
+    {
+      "idx": 215,
+      "question": "Chorleywood is a village near London whose population has increased steadily sin",
+      "pred": "The report for the university lecturer would begin by noting that Chorleywood is a village near London with a population that has grown steadily since the mid-nineteenth century. The map illustrates this growth, showing an expansion from a small settlement in 1854 to a more developed area by 1964. The increase in population is reflected in the growth of housing and infrastructure, such as the addition of roads and public services like the railway station. The map also indicates the presence of green spaces and open fields, which have been preserved alongside the development, suggesting a balance between urbanization and conservation. The report would",
+      "gt": "['the map shows the growth of a village called chorleywood between 1868 and 1994.\\n\\nit is clear that the village grew as the transport infrastructure was improved. four periods of development are shown on the map, and each of the populated areas is near to the main roads, the railway or the motorway.\\n\\nfrom 1868 to 1883, chorleywood covered a small area next to one of the main roads. chorleywood park and golf course is now located next to this original village area. the village grew along the main road to the south between 1883 and 1922, and in 1909 a railway line was built crossing this area from west to east. chorleywood station is in this part of the village.\\n\\nthe expansion of chorleywood continued to the east and west alongside the railway line until 1970. at that time, a motorway was built to the east of the village, and from 1970 to 1994, further development of the village took place around motorway intersections with the railway and one of the main roads.']"
+    },
+    {
+      "idx": 216,
+      "question": "The map below is of the town of Garlsdon. A new supermarket (S) is planned for t",
+      "pred": "The map of Garlsdon shows a town with a population of 16,500 and an industrial area. There are two proposed sites for a new supermarket: Site A, which is located in the central part of the town, and Site B, situated to the north of the town. Both sites are marked with a red circle, indicating they are potential locations for the supermarket. The map also includes a railway line running through the town, suggesting that transportation could be a factor in choosing a site for the supermarket. The proximity of the proposed sites to the town center and the industrial area might influence the decision on where to locate",
+      "gt": "['the map shows two potential locations (s1 and s2) for a new supermarket in a town called garlsdon.\\n\\nthe main difference between the two sites is that s1 is outside the town, whereas s2 is in the town centre. the sites can also be compared in terms of access by road or rail, and their positions relative to three smaller towns.\\n\\nlooking at the information in more detail, s1 is in the countryside to the north west of garlsdon, but it is close to the residential area of the town. s2 is also close to the housing area, which surrounds the town centre.\\n\\nthere are main roads from hindon, bransdon and cransdon to garlsdon town centre, but this is a no traffic zone, so there would be no access to s2 by car. by contrast, s1 lies on the main road to hindon, but it would be more difficult to reach from bransdon and cransdon. both supermarket sites are close to the railway that runs through garlsdon from hindon to cransdon.']"
+    },
+    {
+      "idx": 217,
+      "question": "The diagram below shows how the Australian Bureau of Meteorology collects up-to-",
+      "pred": "The diagram illustrates the process by which the Australian Bureau of Meteorology gathers real-time weather data to create accurate forecasts. The initial step involves the use of satellites, which orbit the Earth and capture images of the atmosphere, particularly focusing on cloud patterns and temperature variations. This data is then analyzed by meteorologists using specialized software, which helps in identifying weather systems and predicting their movement. The next phase involves the collection of ground-based data through various sensors and instruments, such as radar for detecting precipitation and wind speed, and buoys for measuring ocean conditions. This information is crucial for understanding local weather patterns. Finally, the bureau uses this comprehensive data",
+      "gt": "['the figure illustrates the process used by the australian bureau of meteorology to forecast the weather.\\n\\nthere are four stages in the process, beginning with the collection of information about the weather. this information is then analysed, prepared for presentation, and finally broadcast to the public.\\n\\nlooking at the first and second stages of the process, there are three ways of collecting weather data and three ways of analysing it. firstly, incoming information can be received by satellite and presented for analysis as a satellite photo. the same data can also be passed to a radar station and presented on a radar screen or synoptic chart. secondly, incoming information may be collected directly by radar and analysed on a radar screen or synoptic chart. finally, drifting buoys also receive data which can be shown on a synoptic chart.\\n\\nat the third stage of the process, the weather broadcast is prepared on computers. finally, it is delivered to the public on television, on the radio, or as a recorded telephone announcement.']"
+    }
+  ],
+  "time_sec": 224.70000576972961
+}

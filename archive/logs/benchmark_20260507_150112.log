@@ -1,0 +1,20 @@
+
+══════════════════════════════════════════════════════════════════════
+  VLM BENCHMARK RUNNER
+  Device  : cpu
+  Samples : 1 per dataset  (NUM_SAMPLES=-1 for full run)
+  Models  : ['internvl2', 'qwen2vl', 'tinyllava']
+  Datasets: ['vqav2', 'pope', 'textvqa', 'mmbench', 'gqa']
+══════════════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Loading model: internvl2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [InternVL2] Loading tokenizer & model from /home/rs/24CS91R08/kathir/benchmark_models/InternVL2-2B
+  [SKIP] Failed to load internvl2: No module named 'einops'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Loading model: qwen2vl
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [Qwen2-VL] Loading processor & model from /home/rs/24CS91R08/kathir/benchmark_models/Qwen2-VL-2B

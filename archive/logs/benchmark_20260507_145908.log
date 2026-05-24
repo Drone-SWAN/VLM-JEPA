@@ -1,0 +1,84 @@
+
+══════════════════════════════════════════════════════════════════════
+  VLM BENCHMARK RUNNER
+  Device  : cpu
+  Samples : 1 per dataset  (NUM_SAMPLES=-1 for full run)
+  Models  : ['internvl2', 'qwen2vl', 'tinyllava']
+  Datasets: ['vqav2', 'pope', 'textvqa', 'mmbench', 'gqa']
+══════════════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Loading model: internvl2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [InternVL2] Loading tokenizer & model from /home/rs/24CS91R08/kathir/benchmark_models/InternVL2-2B
+  [SKIP] Failed to load internvl2: [Errno 2] No such file or directory: '/home/rs/24CS91R08/.cache/huggingface/modules/transformers_modules/InternVL2_hyphen_2B/28460bc84c361d2f/configuration_intern_vit.py'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Loading model: qwen2vl
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [Qwen2-VL] Loading processor & model from /home/rs/24CS91R08/kathir/benchmark_models/Qwen2-VL-2B
+
+────────────────────────────────────────────────────────────
+  MODEL: qwen2vl  |  DATASET: vqav2
+────────────────────────────────────────────────────────────
+  [   1/1]  pred: he is looking(499,221),(559,271)          gt: down                  running_acc: 0.0%  elapsed: 4.0s
+
+  ✓ vqav2 | Accuracy: 0.00%  (1 samples)
+
+────────────────────────────────────────────────────────────
+  MODEL: qwen2vl  |  DATASET: pope
+────────────────────────────────────────────────────────────
+  [   1/1]  pred: Yes, there is a snowboard in the image.   gt: yes                   running_acc: 100.0%  elapsed: 2.4s
+
+  ✓ pope | F1: 100.00%  (1 samples)
+
+────────────────────────────────────────────────────────────
+  MODEL: qwen2vl  |  DATASET: textvqa
+────────────────────────────────────────────────────────────
+  [   1/1]  pred: The brand of the camera in the picture i  gt: ['nous les gosses',   running_acc: 0.0%  elapsed: 5.0s
+
+  ✓ textvqa | Accuracy: 0.00%  (1 samples)
+
+────────────────────────────────────────────────────────────
+  MODEL: qwen2vl  |  DATASET: mmbench
+────────────────────────────────────────────────────────────
+  [   1/1]  pred: To determine the best question that Made  gt: B                     running_acc: 0.0%  elapsed: 3.8s
+
+  ✓ mmbench | Accuracy: 0.00%  (1 samples)
+
+────────────────────────────────────────────────────────────
+  MODEL: qwen2vl  |  DATASET: gqa
+────────────────────────────────────────────────────────────
+  [   1/1]  pred: There is no existence of the sky being o  gt: no                    running_acc: 0.0%  elapsed: 1.6s
+
+  ✓ gqa | Accuracy: 0.00%  (1 samples)
+
+  [GPU] Memory freed after qwen2vl
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Loading model: tinyllava
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [TinyLLaVA] Loading processor & model from /home/rs/24CS91R08/kathir/benchmark_models/TinyLLaVA-1.5B
+  [SKIP] Failed to load tinyllava: The checkpoint you are trying to load has model type `tinyllava` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+  Saved: /home/rs/24CS91R08/kathir/benchmark_results/qwen2vl_vqav2_20260507_145940.json
+  Saved: /home/rs/24CS91R08/kathir/benchmark_results/qwen2vl_pope_20260507_145940.json
+  Saved: /home/rs/24CS91R08/kathir/benchmark_results/qwen2vl_textvqa_20260507_145940.json
+  Saved: /home/rs/24CS91R08/kathir/benchmark_results/qwen2vl_mmbench_20260507_145940.json
+  Saved: /home/rs/24CS91R08/kathir/benchmark_results/qwen2vl_gqa_20260507_145940.json
+
+══════════════════════════════════════════════════════════════════════
+  BENCHMARK SUMMARY
+══════════════════════════════════════════════════════════════════════
+  Model          Dataset    Metric          Score       N
+  ────────────── ────────── ──────────── ────────  ──────
+  qwen2vl        vqav2      Accuracy        0.00%       1
+  qwen2vl        pope       F1            100.00%       1
+  qwen2vl        textvqa    Accuracy        0.00%       1
+  qwen2vl        mmbench    Accuracy        0.00%       1
+  qwen2vl        gqa        Accuracy        0.00%       1
+══════════════════════════════════════════════════════════════════════
+
+  Summary saved: /home/rs/24CS91R08/kathir/benchmark_results/summary_20260507_145940.json

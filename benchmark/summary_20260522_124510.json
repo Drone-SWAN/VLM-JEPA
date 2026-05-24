@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "pope",
+    "metrics": {
+      "accuracy": 63.366666666666674,
+      "precision": 96.66408068262477,
+      "recall": 27.688888888882733,
+      "f1": 43.04715840350837,
+      "yes_ratio": 14.322222222222223,
+      "primary": 43.04715840350837
+    },
+    "primary_score": 43.04715840350837,
+    "num_samples": 9000,
+    "time_sec": 437.1050374507904
+  },
+  {
+    "dataset": "mmbench",
+    "metrics": {
+      "accuracy": 69.13836913836914,
+      "primary": 69.13836913836914
+    },
+    "primary_score": 69.13836913836914,
+    "num_samples": 4329,
+    "time_sec": 211.19693160057068
+  }
+]

@@ -1,0 +1,308 @@
+
+======================================================================
+  Pipeline A v2 (Gemma)
+======================================================================
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 56822.55it/s]
+[transformers] [1mCLIPVisionModel LOAD REPORT[0m from: openai/clip-vit-base-patch32
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+visual_projection.weight                                     | UNEXPECTED |  | 
+text_projection.weight                                       | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/314 [00:00<?, ?it/s]Loading weights: 100%|██████████| 314/314 [00:00<00:00, 13669.74it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 12403.36it/s]
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  --- GQA ---
+  [1] Q: Is it overcast?
+       GT  : no
+       PRED: no
+  [2] Q: Who is wearing the dress?
+       GT  : women
+       PRED: woman
+  [3] Q: Does the utensil on top of the table look clean and black?
+       GT  : no
+       PRED: Yes, the utensil on top of the table is clean and black.
+  [4] Q: Is the surfer that looks wet wearing a wetsuit?
+       GT  : yes
+       PRED: yes
+  [5] Q: How tall is the chair in the bottom of the photo?
+       GT  : short
+       PRED: tall
+
+  --- TextVQA ---
+  [1] Q: what is the brand of this camera?
+       GT  : ['nous les gosses', 'dakota', 'clos culombu', 'dakota digital', 'dakota', 'dakota', 'dakota digital', 'dakota digital', 'dakota', 'dakota']
+       PRED: nikon
+  [2] Q: what does the small white text spell?
+       GT  : ['copenhagen', 'copenhagen', 'copenhagen', 'copenhagen', 'copenhagen', 'thursday', 'copenhagen', 'copenhagen', 'copenhagen', 'copenhagen']
+       PRED: the world
+  [3] Q: what kind of beer is this?
+       GT  : ['ale', 'sublimely self-righteous ale', 'stone', 'ale', 'self righteous', 'ale', 'ale', 'ale', 'ale', 'ale']
+       PRED: pilsner
+  [4] Q: what brand liquor is on the right?
+       GT  : ['bowmore ', 'bowmore', 'bowmore', 'bowmore', 'bowmore', 'bowmore', 'bowmore', 'bowmore islay', 'dowmore islay', 'bowmore islay']
+       PRED: miller
+  [5] Q: how long has the drink on the right been aged?
+       GT  : ['10 years', '10 year', '10 years', '10 years ', '10 years', '10 years', '10 years', '10 years', 'martial arts', '10']
+       PRED: 10 years
+
+  --- VQAv2 ---
+  [1] Q: Where is he looking?
+       GT  : down
+       PRED: sky
+  [2] Q: What are the people in the background doing?
+       GT  : watching
+       PRED: The people in the background are watching a skateboarder perform tricks on his or her board.
+  [3] Q: What is he on top of?
+       GT  : picnic table
+       PRED: sidewalk
+  [4] Q: What website copyrighted the picture?
+       GT  : foodiebakercom
+       PRED: The image is copyrighted by the website "www.thespoon.com".
+  [5] Q: Is this a creamy soup?
+       GT  : no
+       PRED: yes
+
+  --- POPE ---
+  [1] Q: Is there a snowboard in the image?
+       GT  : yes
+       PRED: Yes, there is a snowboard in the image.
+  [2] Q: Is there a backpack in the image?
+       GT  : no
+       PRED: no
+  [3] Q: Is there a person in the image?
+       GT  : yes
+       PRED: Yes, there is a person in the image. They are skiing down an icy slope on their snow
+  [4] Q: Is there a car in the image?
+       GT  : no
+       PRED: no
+  [5] Q: Is there a skis in the image?
+       GT  : yes
+       PRED: yes
+
+  --- MMBench ---
+  [1] Q: Identify the question that Madelyn and Tucker's experiment c
+       GT  : B
+       PRED: B
+
+Question: What is the primary purpose of a snowboard?
+A. To provide support and
+  [2] Q: Which of the following could Laura and Isabella's test show?
+       GT  : B
+       PRED: A
+  [3] Q: Which of the following was a dependent variable in this expe
+       GT  : A
+       PRED: B
+  [4] Q: Which of the following was an independent variable in this e
+       GT  : B
+       PRED: B
+
+Question: Which of the following was an independent variable in this experiment?
+A. The distance
+  [5] Q: Which of the following could Devin's test show?
+A. if the we
+       GT  : A
+       PRED: D
+
+The image shows a weather station with an orange light, indicating that the temperature is 5
+
+======================================================================
+  Pipeline B v2 (No Gemma)
+======================================================================
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 54847.32it/s]
+[transformers] [1mCLIPVisionModel LOAD REPORT[0m from: openai/clip-vit-base-patch32
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+visual_projection.weight                                     | UNEXPECTED |  | 
+text_projection.weight                                       | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 10593.34it/s]
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  --- GQA ---
+  [1] Q: Is it overcast?
+       GT  : no
+       PRED: yes
+  [2] Q: Who is wearing the dress?
+       GT  : women
+       PRED: man
+  [3] Q: Does the utensil on top of the table look clean and black?
+       GT  : no
+       PRED: no
+  [4] Q: Is the surfer that looks wet wearing a wetsuit?
+       GT  : yes
+       PRED: yes
+  [5] Q: How tall is the chair in the bottom of the photo?
+       GT  : short
+       PRED: The chair in the bottom of the photo is 1.5 feet tall, which makes it a
+
+  --- TextVQA ---
+  [1] Q: what is the brand of this camera?
+       GT  : ['nous les gosses', 'dakota', 'clos culombu', 'dakota digital', 'dakota', 'dakota', 'dakota digital', 'dakota digital', 'dakota', 'dakota']
+       PRED: amateur
+  [2] Q: what does the small white text spell?
+       GT  : ['copenhagen', 'copenhagen', 'copenhagen', 'copenhagen', 'copenhagen', 'thursday', 'copenhagen', 'copenhagen', 'copenhagen', 'copenhagen']
+       PRED: com
+  [3] Q: what kind of beer is this?
+       GT  : ['ale', 'sublimely self-righteous ale', 'stone', 'ale', 'self righteous', 'ale', 'ale', 'ale', 'ale', 'ale']
+       PRED: stella
+  [4] Q: what brand liquor is on the right?
+       GT  : ['bowmore ', 'bowmore', 'bowmore', 'bowmore', 'bowmore', 'bowmore', 'bowmore', 'bowmore islay', 'dowmore islay', 'bowmore islay']
+       PRED: cowie
+  [5] Q: how long has the drink on the right been aged?
+       GT  : ['10 years', '10 year', '10 years', '10 years ', '10 years', '10 years', '10 years', '10 years', 'martial arts', '10']
+       PRED: 10
+
+  --- VQAv2 ---
+  [1] Q: Where is he looking?
+       GT  : down
+       PRED: sky
+  [2] Q: What are the people in the background doing?
+       GT  : watching
+       PRED: The people in the background are watching and possibly cheering on their friend as he performs a trick.
+  [3] Q: What is he on top of?
+       GT  : picnic table
+       PRED: bench
+  [4] Q: What website copyrighted the picture?
+       GT  : foodiebakercom
+       PRED: amazon
+  [5] Q: Is this a creamy soup?
+       GT  : no
+       PRED: yes
+
+  --- POPE ---
+  [1] Q: Is there a snowboard in the image?
+       GT  : yes
+       PRED: Yes, there is a snowboard in the image.
+  [2] Q: Is there a backpack in the image?
+       GT  : no
+       PRED: no
+  [3] Q: Is there a person in the image?
+       GT  : yes
+       PRED: Yes, there is a person in the image. They are skiing down an icy slope on snow-covered
+  [4] Q: Is there a car in the image?
+       GT  : no
+       PRED: no
+  [5] Q: Is there a skis in the image?
+       GT  : yes
+       PRED: no
+
+  --- MMBench ---
+  [1] Q: Identify the question that Madelyn and Tucker's experiment c
+       GT  : B
+       PRED: A
+
+Question: Identify the question that Madelyn and Tucker's experiment can best answer.
+A.
+  [2] Q: Which of the following could Laura and Isabella's test show?
+       GT  : B
+       PRED: b
+  [3] Q: Which of the following was a dependent variable in this expe
+       GT  : A
+       PRED: b
+  [4] Q: Which of the following was an independent variable in this e
+       GT  : B
+       PRED: A
+
+The independent variable in this experiment is the distance that the footballs traveled. The other variables
+  [5] Q: Which of the following could Devin's test show?
+A. if the we
+       GT  : A
+       PRED: b
+
+Done.

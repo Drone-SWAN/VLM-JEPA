@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/kathir/code/benchmark_models_qwen2vl.py", line 841, in main
+    model, processor = MODEL_LOADERS[model_name](MODEL_PATHS[model_name])
+KeyError: 'qwen2vl'
+
+════════════════════════════════════════════════════════════════════════════════
+  VLM BENCHMARK
+  Device  : cuda
+  Samples : -1 per dataset  (-1 = full)
+  Models  : ['qwen2vl']
+  Datasets: ['gqa', 'textvqa', 'vqav2', 'pope', 'mmbench']
+════════════════════════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Loading: qwen2vl
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [SKIP] Failed to load qwen2vl: 'qwen2vl'
+  No results. Check errors above.

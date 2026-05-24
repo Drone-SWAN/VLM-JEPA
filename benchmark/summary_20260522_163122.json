@@ -1,0 +1,175 @@
+[
+  {
+    "dataset": "pope",
+    "metrics": {
+      "accuracy": 63.366666666666674,
+      "precision": 96.66408068262477,
+      "recall": 27.688888888882733,
+      "f1": 43.04715840350837,
+      "yes_ratio": 14.322222222222223,
+      "primary": 43.04715840350837
+    },
+    "primary_score": 43.04715840350837,
+    "num_samples": 9000,
+    "time_sec": 437.1050374507904
+  },
+  {
+    "dataset": "mmbench",
+    "metrics": {
+      "accuracy": 69.13836913836914,
+      "primary": 69.13836913836914
+    },
+    "primary_score": 69.13836913836914,
+    "num_samples": 4329,
+    "time_sec": 211.19693160057068
+  },
+  {
+    "dataset": "scienceqa",
+    "metrics": {
+      "accuracy": 74.41745166088249,
+      "primary": 74.41745166088249
+    },
+    "primary_score": 74.41745166088249,
+    "num_samples": 2017,
+    "time_sec": 147.79372119903564
+  },
+  {
+    "dataset": "mme",
+    "metrics": {
+      "accuracy": 58.6352148272957,
+      "perception_score": 1258.0,
+      "cognition_score": 134.0,
+      "total_score": 1392.0,
+      "per_category": {
+        "code_reasoning": {
+          "correct": 19,
+          "total": 40
+        },
+        "artwork": {
+          "correct": 259,
+          "total": 400
+        },
+        "celebrity": {
+          "correct": 170,
+          "total": 340
+        },
+        "numerical_calculation": {
+          "correct": 20,
+          "total": 40
+        },
+        "text_translation": {
+          "correct": 20,
+          "total": 40
+        },
+        "count": {
+          "correct": 33,
+          "total": 60
+        },
+        "color": {
+          "correct": 34,
+          "total": 60
+        },
+        "commonsense_reasoning": {
+          "correct": 75,
+          "total": 140
+        },
+        "position": {
+          "correct": 30,
+          "total": 60
+        },
+        "OCR": {
+          "correct": 21,
+          "total": 40
+        },
+        "landmark": {
+          "correct": 204,
+          "total": 400
+        },
+        "scene": {
+          "correct": 289,
+          "total": 400
+        },
+        "existence": {
+          "correct": 46,
+          "total": 60
+        },
+        "posters": {
+          "correct": 172,
+          "total": 294
+        }
+      },
+      "primary": 1392.0
+    },
+    "primary_score": 1392.0,
+    "num_samples": 2374,
+    "time_sec": 163.70116090774536
+  },
+  {
+    "dataset": "mmvet",
+    "metrics": {
+      "accuracy": 25.972166697433302,
+      "capability_scores": {
+        "ocr": 22.65876126397089,
+        "math": 7.6923076923076925,
+        "spat": 27.893091999844692,
+        "rec": 27.29978702884115,
+        "know": 20.17798142919176,
+        "gen": 21.19082091717241
+      },
+      "primary": 25.972166697433302
+    },
+    "primary_score": 25.972166697433302,
+    "num_samples": 218,
+    "time_sec": 224.70000576972961
+  },
+  {
+    "dataset": "mathvista",
+    "metrics": {
+      "accuracy": 32.65,
+      "primary": 32.65
+    },
+    "primary_score": 32.65,
+    "num_samples": 1000,
+    "time_sec": 163.30306696891785
+  },
+  {
+    "dataset": "mmstar",
+    "metrics": {
+      "accuracy": 31.466666666666665,
+      "primary": 31.466666666666665
+    },
+    "primary_score": 31.466666666666665,
+    "num_samples": 1500,
+    "time_sec": 86.48466181755066
+  },
+  {
+    "dataset": "ai2d",
+    "metrics": {
+      "accuracy": 58.84067357512953,
+      "primary": 58.84067357512953
+    },
+    "primary_score": 58.84067357512953,
+    "num_samples": 3088,
+    "time_sec": 150.5791952610016
+  },
+  {
+    "dataset": "vqav2",
+    "metrics": {
+      "accuracy": 49.713333333333274,
+      "primary": 49.713333333333274
+    },
+    "primary_score": 49.713333333333274,
+    "num_samples": 5000,
+    "time_sec": 339.77799677848816
+  },
+  {
+    "dataset": "mmmu",
+    "metrics": {
+      "accuracy": 20.93541202672606,
+      "primary": 20.93541202672606
+    },
+    "primary_score": 20.93541202672606,
+    "num_samples": 1347,
+    "time_sec": 100.43496632575989
+  }
+]

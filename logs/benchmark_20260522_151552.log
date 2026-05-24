@@ -1,0 +1,122 @@
+
+══════════════════════════════════════════════════════════════════════
+  VLM BENCHMARK — ALLaVA (SigLIP2 + MLP + Qwen2.5-3B)
+  Training : ALLaVA + Visual Web Instruct
+  Suite    : mmbench, scienceqa, mme, mmvet, mmmu, mathvista, mmstar, ai2d
+  Device   : cuda  |  Samples: -1  |  Force: False
+══════════════════════════════════════════════════════════════════════
+
+  [CACHE] mmbench — loaded from /home/rs/24CS91R08/kathir/benchmark/mmbench/result_20260522_150434.json
+  [CACHE] scienceqa — loaded from /home/rs/24CS91R08/kathir/benchmark/scienceqa/result_20260522_150434.json
+  [CACHE] mme — loaded from /home/rs/24CS91R08/kathir/benchmark/mme/result_20260522_150434.json
+  [CACHE] mmvet — loaded from /home/rs/24CS91R08/kathir/benchmark/mmvet/result_20260522_150434.json
+[1/4] Loading SigLIP2 vision encoder...
+Loading weights:   0%|          | 0/448 [00:00<?, ?it/s]Loading weights:  49%|████▉     | 220/448 [00:00<00:00, 2199.46it/s]Loading weights:  98%|█████████▊| 440/448 [00:00<00:00, 1851.00it/s]Loading weights: 100%|██████████| 448/448 [00:00<00:00, 1923.12it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: /home/rs/24CS91R08/kathir/models/siglip2-so400m-patch16-256
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...26}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...26}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2/4] Loading MLP projector...
+[3/4] Loading Qwen2.5-3B-Instruct decoder...
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 11606.27it/s]
+[4/4] Loading tokenizer and SigLIP2 processor...
+
+────────────────────────────────────────────────────────────
+  DATASET : MMMU  |  N=-1
+────────────────────────────────────────────────────────────
+  [    1/30]  pred: C       gt: 76.3    acc:   0.0%  ETA: 32s  [    2/30]  pred: E       gt: 447.2   acc:   0.0%  ETA: 27s  [    3/30]  pred: E       gt: 27.5    acc:   0.0%  ETA: 25s  [    4/30]  pred: F       gt: 171342  acc:   0.0%  ETA: 23s  [    5/30]  pred: C       gt: 104.46  acc:   0.0%  ETA: 22s  [    6/30]  pred: C       gt: 37428   acc:   0.0%  ETA: 21s  [    7/30]  pred: E       gt: 0.089   acc:   0.0%  ETA: 20s  [    8/30]  pred: C       gt: 205     acc:   0.0%  ETA: 19s  [    9/30]  pred: C       gt: 17545   acc:   0.0%  ETA: 18s  [   10/30]  pred: E       gt: 40      acc:   0.0%  ETA: 17s  [   11/30]  pred: D       gt: LITHOS  acc:   0.0%  ETA: 16s  [   12/30]  pred: D       gt: E       acc:   0.0%  ETA: 15s  [   13/30]  pred: D       gt: CALCIU  acc:   0.0%  ETA: 15s  [   14/30]  pred: D       gt: B       acc:   0.0%  ETA: 14s  [   15/30]  pred: A       gt: 7       acc:   0.0%  ETA: 13s  [   16/30]  pred: D       gt: OXISOL  acc:   0.0%  ETA: 12s  [   17/30]  pred: D       gt: D       acc:   5.9%  ETA: 11s  [   18/30]  pred: D       gt: EARTHQ  acc:   5.6%  ETA: 10s  [   19/30]  pred: F       gt: 1.71    acc:   5.3%  ETA: 9s  [   20/30]  pred: D       gt: PALEOZ  acc:   5.0%  ETA: 9s  [   21/30]  pred: E       gt: 143.23  acc:   4.8%  ETA: 8s  [   22/30]  pred: E       gt: 1.17    acc:   4.5%  ETA: 7s  [   23/30]  pred: E       gt: DEFORE  acc:   4.3%  ETA: 6s  [   24/30]  pred: D       gt: VOLCAN  acc:   4.2%  ETA: 5s  [   25/30]  pred: E       gt: 43      acc:   4.0%  ETA: 4s  [   26/30]  pred: D       gt: A       acc:   3.8%  ETA: 3s  [   27/30]  pred: E       gt: WILDFI  acc:   3.7%  ETA: 3s  [   28/30]  pred: D       gt: DEFORE  acc:   3.6%  ETA: 2s  [   29/30]  pred: E       gt: MEERKA  acc:   3.4%  ETA: 1s  [   30/30]  pred: D       gt: ULTISO  acc:   3.3%  ETA: 0sTraceback (most recent call last):
+  File "/home/rs/24CS91R08/kathir/code/benchmark.py", line 843, in main
+    result = run_benchmark(dataset_name, vision, projector, decoder,
+  File "/home/rs/24CS91R08/kathir/code/benchmark.py", line 617, in run_benchmark
+    samples = DATASET_LOADERS[dataset_name](num_samples)
+  File "/home/rs/24CS91R08/kathir/code/benchmark.py", line 401, in get_mathvista_samples
+    ds = load_from_disk(DATASET_PATHS["mathvista"])
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/datasets/load.py", line 1762, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory /home/rs/24CS91R08/kathir/data/mathvista_disk not found
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/kathir/code/benchmark.py", line 843, in main
+    result = run_benchmark(dataset_name, vision, projector, decoder,
+  File "/home/rs/24CS91R08/kathir/code/benchmark.py", line 617, in run_benchmark
+    samples = DATASET_LOADERS[dataset_name](num_samples)
+  File "/home/rs/24CS91R08/kathir/code/benchmark.py", line 448, in get_mmstar_samples
+    ds = load_from_disk(DATASET_PATHS["mmstar"])
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/datasets/load.py", line 1762, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory /home/rs/24CS91R08/kathir/data/mmstar_disk not found
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/kathir/code/benchmark.py", line 843, in main
+    result = run_benchmark(dataset_name, vision, projector, decoder,
+  File "/home/rs/24CS91R08/kathir/code/benchmark.py", line 617, in run_benchmark
+    samples = DATASET_LOADERS[dataset_name](num_samples)
+  File "/home/rs/24CS91R08/kathir/code/benchmark.py", line 480, in get_ai2d_samples
+    ds = load_from_disk(DATASET_PATHS["ai2d"])
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/datasets/load.py", line 1762, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory /home/rs/24CS91R08/kathir/data/ai2d_disk not found
+
+
+  MMMU | Accuracy: 3.33%  (30 samples)
+
+────────────────────────────────────────────────────────────
+  DATASET : MATHVISTA  |  N=-1
+────────────────────────────────────────────────────────────
+
+  [SKIP] mathvista: Directory /home/rs/24CS91R08/kathir/data/mathvista_disk not found
+
+────────────────────────────────────────────────────────────
+  DATASET : MMSTAR  |  N=-1
+────────────────────────────────────────────────────────────
+
+  [SKIP] mmstar: Directory /home/rs/24CS91R08/kathir/data/mmstar_disk not found
+
+────────────────────────────────────────────────────────────
+  DATASET : AI2D  |  N=-1
+────────────────────────────────────────────────────────────
+
+  [SKIP] ai2d: Directory /home/rs/24CS91R08/kathir/data/ai2d_disk not found
+
+═══════════════════════════════════════════════════════════════════════════════════════
+  BENCHMARK RESULTS — ALLaVA Reasoning Suite
+  Training: ALLaVA + Visual Web Instruct
+═══════════════════════════════════════════════════════════════════════════════════════
+  Metric                                  Acc        Acc      Total      Score        Acc
+  Model                               MMBENCH  SCIENCEQA        MME      MMVET       MMMU
+  ───────────────────────────────────────────────────────────────────────────────────────
+  ALLaVA (SigLIP2+Qwen2.5-3B)           69.14      74.42    1392.00      25.97       3.33
+  ───────────────────────────────────────────────────────────────────────────────────────
+
+  MME    → Perception:1258.0  Cognition:134.0  Total:1392.0
+  MM-Vet → spat:27.9  rec:27.3  ocr:22.7  gen:21.2  know:20.2  math:7.7
+═══════════════════════════════════════════════════════════════════════════════════════
+
+  [SAVED] /home/rs/24CS91R08/kathir/benchmark/results_20260522_151658.txt
+  [SAVED] /home/rs/24CS91R08/kathir/benchmark/summary_20260522_151658.json
+  [SAVED] /home/rs/24CS91R08/kathir/benchmark/results_20260522_151658.png

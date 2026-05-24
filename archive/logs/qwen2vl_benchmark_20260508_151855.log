@@ -1,0 +1,4 @@
+usage: benchmark_models.py [-h] [--models {pipeline_b} [{pipeline_b} ...]]
+                           [--datasets {gqa,textvqa,vqav2,pope,mmbench} [{gqa,textvqa,vqav2,pope,mmbench} ...]]
+                           [--samples SAMPLES]
+benchmark_models.py: error: argument --models: invalid choice: 'qwen2vl' (choose from 'pipeline_b')

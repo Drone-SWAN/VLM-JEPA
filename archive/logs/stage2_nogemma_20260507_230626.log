@@ -1,0 +1,67 @@
+[DEVICE] cuda
+[GPU] NVIDIA L40 | VRAM 47.7GB
+[MODEL] Loading processors...
+[DATA] Building datasets...
+[LLaVA-Instruct] 361411 samples
+[GQA Train] 72140 unique image samples
+[TextVQA] 34602 samples
+[DATA] Total train samples: 468153
+[MODEL] Loading CLIP (frozen)...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 51884.53it/s]
+[MODEL] Loading Qwen (trainable)...
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 8382.65it/s]
+[MODEL] Building proj1 (768→896 via 2048)...
+[MODEL] Trainable: 501.6M / Total: 589.1M params
+[CKPT] Loading Stage 1 NoGemma proj1 from ../checkpoints/stage1_nogemma/stage1_nogemma_best.pt
+  Stage 1 val loss was: 3.3411 (epoch 4)
+
+============================================================
+EPOCH 1/5
+============================================================
+[DATA] Starting train loop... (10403 batches)
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/kathir/code/Stage2_nogemma.py", line 781, in <module>
+    main()
+  File "/home/rs/24CS91R08/kathir/code/Stage2_nogemma.py", line 740, in main
+    train_loss = train_epoch(model, train_loader, optimizer, device, epoch, CFG["epochs"])
+  File "/home/rs/24CS91R08/kathir/code/Stage2_nogemma.py", line 431, in train_epoch
+    loss = model(pixel_values, input_ids, attention_mask, labels)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rs/24CS91R08/kathir/code/Stage2_nogemma.py", line 395, in forward
+    outputs = self.qwen(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 900, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 462, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 976, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/utils/output_capturing.py", line 248, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 399, in forward
+    hidden_states = decoder_layer(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 291, in forward
+    hidden_states = self.input_layernorm(hidden_states)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 263, in forward
+    return self.weight * hidden_states.to(input_dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 54.00 MiB. GPU 0 has a total capacity of 44.42 GiB of which 6.06 MiB is free. Including non-PyTorch memory, this process has 44.40 GiB memory in use. Of the allocated memory 43.83 GiB is allocated by PyTorch, and 82.27 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

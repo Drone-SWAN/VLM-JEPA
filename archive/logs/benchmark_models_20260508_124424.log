@@ -1,0 +1,438 @@
+
+════════════════════════════════════════════════════════════════════════════════
+  VLM BENCHMARK
+  Device  : cuda
+  Samples : -1 per dataset  (-1 = full)
+  Models  : ['pipeline_a', 'pipeline_a_v2', 'pipeline_b', 'pipeline_b_v2']
+  Datasets: ['gqa', 'textvqa', 'vqav2', 'pope', 'mmbench']
+════════════════════════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Loading: pipeline_a
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [pipeline_a] Loading CLIP, Gemma, proj1, proj2, Qwen...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 56002.85it/s]
+[transformers] [1mCLIPVisionModel LOAD REPORT[0m from: openai/clip-vit-base-patch32
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+visual_projection.weight                                     | UNEXPECTED |  | 
+text_projection.weight                                       | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/314 [00:00<?, ?it/s]Loading weights: 100%|██████████| 314/314 [00:00<00:00, 11664.47it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  10%|█         | 30/290 [00:00<00:00, 267.39it/s]Loading weights:  20%|█▉        | 57/290 [00:00<00:01, 150.90it/s]Loading weights:  26%|██▌       | 75/290 [00:00<00:01, 114.78it/s]Loading weights:  31%|███       | 89/290 [00:00<00:01, 102.97it/s]Loading weights:  42%|████▏     | 121/290 [00:00<00:01, 151.82it/s]Loading weights:  48%|████▊     | 140/290 [00:01<00:01, 126.44it/s]Loading weights:  54%|█████▍    | 156/290 [00:01<00:01, 132.09it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 238.12it/s]
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [pipeline_a] proj1 loaded | stage1 val_loss=2.4596 epoch=5
+  [pipeline_a] proj2+qwen loaded | stage2 best GQA=25.78%
+
+────────────────────────────────────────────────────────────
+  MODEL: pipeline_a  |  DATASET: gqa  |  N=-1
+────────────────────────────────────────────────────────────
+  [    1/12578]  pred: Yes, it is overcast. Overcast weath  gt: no               acc:   0.0%  elapsed: 1s  ETA: 14402s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    2/12578]  pred: The person wearing the dress is a w  gt: women            acc:   0.0%  elapsed: 1s  ETA: 7946s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    3/12578]  pred: Yes, the utensil on top of the tabl  gt: no               acc:   0.0%  elapsed: 1s  ETA: 5790s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    4/12578]  pred: Yes, the surfer in the image is wea  gt: yes              acc:   0.0%  elapsed: 1s  ETA: 4709s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    5/12578]  pred: The chair in the bottom of the phot  gt: short            acc:   0.0%  elapsed: 2s  ETA: 4060s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    6/12578]  pred: The device on top of the desk is a   gt: keyboard         acc:   0.0%  elapsed: 2s  ETA: 3632s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    7/12578]  pred: The airplane flying above the cloud  gt: ocean            acc:   0.0%  elapsed: 2s  ETA: 3321s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    8/12578]  pred: The pants in the image are a light   gt: red              acc:   0.0%  elapsed: 2s  ETA: 3087s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [    9/12578]  pred: The ground in the image is likely t  gt: brown            acc:   0.0%  elapsed: 2s  ETA: 2904s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   10/12578]  pred: The open window in the image is sur  gt: drapes           acc:   0.0%  elapsed: 2s  ETA: 2758s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   11/12578]  pred: The window in the image is surround  gt: drapes           acc:   0.0%  elapsed: 2s  ETA: 2639s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   12/12578]  pred: The person standing at the table is  gt: woman            acc:   0.0%  elapsed: 2s  ETA: 2540s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   13/12578]  pred: Yes, there are drapes to the right   gt: yes              acc:   0.0%  elapsed: 3s  ETA: 2456s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   14/12578]  pred: The chalkboard is hanging above the  gt: picture          acc:   0.0%  elapsed: 3s  ETA: 2384s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   15/12578]  pred: Yes, the cake on a platter is indee  gt: no               acc:   0.0%  elapsed: 3s  ETA: 2321s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   16/12578]  pred: Yes, the person to the right of the  gt: yes              acc:   0.0%  elapsed: 3s  ETA: 2267s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   17/12578]  pred: The device sitting next to the mous  gt: keyboard         acc:   0.0%  elapsed: 3s  ETA: 2218s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   18/12578]  pred: The sweater in the image is not ope  gt: yes              acc:   0.0%  elapsed: 3s  ETA: 2175s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   19/12578]  pred: Yes, the jacket in question is long  gt: yes              acc:   0.0%  elapsed: 3s  ETA: 2137s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   20/12578]  pred: Yes, there are beds next to the sma  gt: yes              acc:   0.0%  elapsed: 3s  ETA: 2103s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   21/12578]  pred: The leather bag is on the left side  gt: right            acc:   0.0%  elapsed: 3s  ETA: 2072s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   22/12578]  pred: Yes, the blue pillow in this image   gt: no               acc:   0.0%  elapsed: 4s  ETA: 2044s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   23/12578]  pred: The cake in the image is a white ch  gt: white            acc:   0.0%  elapsed: 4s  ETA: 2020s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   24/12578]  pred: The cooking utensil that is hung fr  gt: pan              acc:   0.0%  elapsed: 4s  ETA: 1996s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   25/12578]  pred: The skinny person standing in the p  gt: table            acc:   0.0%  elapsed: 4s  ETA: 1973s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   26/12578]  pred: Yes, the plates on top of an ottoma  gt: no               acc:   0.0%  elapsed: 4s  ETA: 1953s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   27/12578]  pred: The freezer in the image is not lar  gt: large            acc:   0.0%  elapsed: 4s  ETA: 1934s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   28/12578]  pred: The baby is sitting atop a woman, a  gt: marshmallow      acc:   0.0%  elapsed: 4s  ETA: 1917s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   29/12578]  pred: The fence in the image is made of a  gt: aluminum         acc:   0.0%  elapsed: 4s  ETA: 1901s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   30/12578]  pred: The white houses on the side of the  gt: left             acc:   0.0%  elapsed: 5s  ETA: 1885s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   31/12578]  pred: Yes, both the phone and the coffee   gt: yes              acc:   0.0%  elapsed: 5s  ETA: 1871s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   32/12578]  pred: Yes, there are small refrigerators   gt: no               acc:   0.0%  elapsed: 5s  ETA: 1858s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   33/12578]  pred: The car in the image is likely a vi  gt: white            acc:   0.0%  elapsed: 5s  ETA: 1845s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   34/12578]  pred: The book in the image is a picture   gt: white            acc:   0.0%  elapsed: 5s  ETA: 1834s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   35/12578]  pred: The color of the dirt in this image  gt: red              acc:   0.0%  elapsed: 5s  ETA: 1822s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   36/12578]  pred: Yes, the bag is made of leather lyi  gt: no               acc:   0.0%  elapsed: 5s  ETA: 1812s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   37/12578]  pred: The drapes around the window are ma  gt: window           acc:   0.0%  elapsed: 5s  ETA: 1802s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   38/12578]  pred: The picture is on the left side of   gt: left             acc:   0.0%  elapsed: 5s  ETA: 1792s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   39/12578]  pred: The crosswalk in front of the store  gt: concrete         acc:   0.0%  elapsed: 6s  ETA: 1783s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   40/12578]  pred: The cupcakes in the image are made   gt: small            acc:   0.0%  elapsed: 6s  ETA: 1776s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   41/12578]  pred: The crosswalk near the street lamp   gt: concrete         acc:   0.0%  elapsed: 6s  ETA: 1768s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   42/12578]  pred: The kind of clothing that is pink i  gt: tank top         acc:   0.0%  elapsed: 6s  ETA: 1760s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   43/12578]  pred: The clothing item that is pink in t  gt: tank top         acc:   0.0%  elapsed: 6s  ETA: 1753s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   44/12578]  pred: The kind of clothing that is not pi  gt: hat              acc:   0.0%  elapsed: 6s  ETA: 1745s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   45/12578]  pred: Yes, the helicopter is on.           gt: off              acc:   0.0%  elapsed: 6s  ETA: 1734s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   46/12578]  pred: Yes, I see a cat in the image.       gt: yes              acc:   0.0%  elapsed: 6s  ETA: 1727s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   47/12578]  pred: Yes, that shoe is behind a dog. The  gt: no               acc:   0.0%  elapsed: 6s  ETA: 1721s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   48/12578]  pred: Sleeveless clothing refers to a typ  gt: tank top         acc:   0.0%  elapsed: 7s  ETA: 1715s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   49/12578]  pred: The field in the image is not expli  gt: no               acc:   0.0%  elapsed: 7s  ETA: 1710s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   50/12578]  pred: The fruits beneath the microwave ar  gt: bananas          acc:   0.0%  elapsed: 7s  ETA: 1702s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   51/12578]  pred: The shirt in the image is a white t  gt: white            acc:   0.0%  elapsed: 7s  ETA: 1697s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   52/12578]  pred: The microwave is a device used for   gt: bananas          acc:   0.0%  elapsed: 7s  ETA: 1692s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   53/12578]  pred: The chair is on the left side of th  gt: right            acc:   0.0%  elapsed: 7s  ETA: 1687s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   54/12578]  pred: The happy man is to the left of the  gt: right            acc:   0.0%  elapsed: 7s  ETA: 1683s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   55/12578]  pred: The person wearing a wristband is l  gt: woman            acc:   0.0%  elapsed: 7s  ETA: 1678s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   56/12578]  pred: Yes, there is a pear beneath the ap  gt: no               acc:   0.0%  elapsed: 7s  ETA: 1674s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   57/12578]  pred: This is a bed.                       gt: cabinet          acc:   0.0%  elapsed: 8s  ETA: 1663s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   58/12578]  pred: The router is located on the left s  gt: left             acc:   0.0%  elapsed: 8s  ETA: 1659s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   59/12578]  pred: The color of the pants in this imag  gt: gray             acc:   0.0%  elapsed: 8s  ETA: 1655s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   60/12578]  pred: The person wearing the shirt is a m  gt: girl             acc:   0.0%  elapsed: 8s  ETA: 1651s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   61/12578]  pred: The person wearing the shirt is a m  gt: girl             acc:   0.0%  elapsed: 8s  ETA: 1648s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   62/12578]  pred: The man is sitting on a bench in fr  gt: standing         acc:   0.0%  elapsed: 8s  ETA: 1644s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   63/12578]  pred: Yes, there are rivers and oceans th  gt: no               acc:   0.0%  elapsed: 8s  ETA: 1641s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   64/12578]  pred: The picture frame hanging from the   gt: wall             acc:   0.0%  elapsed: 8s  ETA: 1638s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   65/12578]  pred: The cars in the image are dense and  gt: dense            acc:   0.0%  elapsed: 8s  ETA: 1635s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   66/12578]  pred: The food in the image is not baked.  gt: cookies          acc:   0.0%  elapsed: 9s  ETA: 1632s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   67/12578]  pred: The vehicle in front of the flag is  gt: van              acc:   0.0%  elapsed: 9s  ETA: 1629s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   68/12578]  pred: The vehicle in front of the flag is  gt: van              acc:   0.0%  elapsed: 9s  ETA: 1626s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   69/12578]  pred: The object hanging from the wall in  gt: picture frame    acc:   0.0%  elapsed: 9s  ETA: 1623s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   70/12578]  pred: The skateboarder is jumping off a r  gt: pavement         acc:   0.0%  elapsed: 9s  ETA: 1620s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   71/12578]  pred: Yes, the van is in front of a ballo  gt: no               acc:   0.0%  elapsed: 9s  ETA: 1618s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   72/12578]  pred: The color of the bench is not expli  gt: beige            acc:   0.0%  elapsed: 9s  ETA: 1615s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   73/12578]  pred: The cabinets below the stove are no  gt: no               acc:   0.0%  elapsed: 9s  ETA: 1613s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   74/12578]  pred: The item of furniture that is plaid  gt: bed              acc:   0.0%  elapsed: 10s  ETA: 1611s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   75/12578]  pred: Yes, the boxes to the right of the   gt: yes              acc:   0.0%  elapsed: 10s  ETA: 1609s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   76/12578]  pred: Yes, the horse is next to both baby  gt: no               acc:   0.0%  elapsed: 10s  ETA: 1606s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   77/12578]  pred: The river in the image is wide.      gt: narrow           acc:   0.0%  elapsed: 10s  ETA: 1603s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   78/12578]  pred: The appliance in the image is a ref  gt: stove            acc:   0.0%  elapsed: 10s  ETA: 1600s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   79/12578]  pred: Yes, the umbrella is in the bottom   gt: no               acc:   0.0%  elapsed: 10s  ETA: 1598s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   80/12578]  pred: The bowl in the image is a containe  gt: cookies          acc:   0.0%  elapsed: 10s  ETA: 1596s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   81/12578]  pred: The catcher is wearing a clean face  gt: clean            acc:   0.0%  elapsed: 10s  ETA: 1594s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   82/12578]  pred: The catcher is standing on the base  gt: field            acc:   0.0%  elapsed: 10s  ETA: 1592s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   83/12578]  pred: The color of the glove is black.     gt: black            acc:   0.0%  elapsed: 11s  ETA: 1589s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   84/12578]  pred: Yes, the blanket in this image appe  gt: yes              acc:   0.0%  elapsed: 11s  ETA: 1587s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   85/12578]  pred: The color of the drawers in this im  gt: light brown      acc:   0.0%  elapsed: 11s  ETA: 1585s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   86/12578]  pred: Yes, there are refrigerators to the  gt: yes              acc:   0.0%  elapsed: 11s  ETA: 1583s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   87/12578]  pred: The bright clothing in the image is  gt: gown             acc:   0.0%  elapsed: 11s  ETA: 1582s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   88/12578]  pred: Yes, there is an elephant near the   gt: no               acc:   0.0%  elapsed: 11s  ETA: 1580s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   89/12578]  pred: The woman in the image is wearing a  gt: gloves           acc:   0.0%  elapsed: 11s  ETA: 1578s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   90/12578]  pred: The standing person near the man we  gt: gloves           acc:   0.0%  elapsed: 11s  ETA: 1576s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   91/12578]  pred: The type of clothing that is pink i  gt: gown             acc:   0.0%  elapsed: 11s  ETA: 1575s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   92/12578]  pred: The person sitting down is a man. H  gt: stairs           acc:   0.0%  elapsed: 12s  ETA: 1574s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   93/12578]  pred: The object standing on the floor is  gt: shelf            acc:   0.0%  elapsed: 12s  ETA: 1572s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   94/12578]  pred: The items of furniture to the left   gt: tables           acc:   0.0%  elapsed: 12s  ETA: 1571s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   95/12578]  pred: The wall in front of the image is n  gt: shelf            acc:   0.0%  elapsed: 12s  ETA: 1569s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   96/12578]  pred: The parking lot in the image is mad  gt: wide             acc:   0.0%  elapsed: 12s  ETA: 1568s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   97/12578]  pred: The clean mirror is on the left sid  gt: left             acc:   0.0%  elapsed: 12s  ETA: 1566s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   98/12578]  pred: The device in front of the flat com  gt: phone            acc:   0.0%  elapsed: 12s  ETA: 1565s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [   99/12578]  pred: The person is sitting on a chair.    gt: gift             acc:   0.0%  elapsed: 12s  ETA: 1562s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  100/12578]  pred: Yes, there is a blender to the righ  gt: yes              acc:   0.0%  elapsed: 13s  ETA: 1562s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  101/12578]  pred: No, the gift is not sitting on a fl  gt: yes              acc:   0.0%  elapsed: 13s  ETA: 1560s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  102/12578]  pred: The round glasses in the image are   gt: glass            acc:   0.0%  elapsed: 13s  ETA: 1559s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  103/12578]  pred: The glasses in the image are made o  gt: glass            acc:   0.0%  elapsed: 13s  ETA: 1558s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  104/12578]  pred: The animal behind the couch in this  gt: dog              acc:   0.0%  elapsed: 13s  ETA: 1557s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  105/12578]  pred: The device on the left of the photo  gt: black            acc:   0.0%  elapsed: 13s  ETA: 1555s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  106/12578]  pred: Yes, the knife is to the right of a  gt: no               acc:   0.0%  elapsed: 13s  ETA: 1554s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  107/12578]  pred: The device in the image is a laptop  gt: monitor          acc:   0.0%  elapsed: 13s  ETA: 1553s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  108/12578]  pred: The man to the left of the glasses   gt: resting          acc:   0.0%  elapsed: 13s  ETA: 1552s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  109/12578]  pred: The phone in the image is made of p  gt: plastic          acc:   0.0%  elapsed: 14s  ETA: 1551s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  110/12578]  pred: Yes, there are red fire trucks. The  gt: no               acc:   0.0%  elapsed: 14s  ETA: 1550s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  111/12578]  pred: The vehicle waiting for the traffic  gt: cars             acc:   0.0%  elapsed: 14s  ETA: 1549s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  112/12578]  pred: The vehicle waiting for the traffic  gt: cars             acc:   0.0%  elapsed: 14s  ETA: 1548s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  113/12578]  pred: The electronic device to the left o  gt: blue             acc:   0.0%  elapsed: 14s  ETA: 1547s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  114/12578]  pred: The vehicles above the road near th  gt: cars             acc:   0.0%  elapsed: 14s  ETA: 1546s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  115/12578]  pred: The traffic light is waiting for th  gt: cars             acc:   0.0%  elapsed: 14s  ETA: 1545s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  116/12578]  pred: The yellow and black object sitting  gt: luggage          acc:   0.0%  elapsed: 14s  ETA: 1544s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  117/12578]  pred: Yes, there are both toothbrushes an  gt: no               acc:   0.0%  elapsed: 14s  ETA: 1543s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  118/12578]  pred: Yes, the soap dish is to the right   gt: yes              acc:   0.0%  elapsed: 15s  ETA: 1542s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  119/12578]  pred: The parked vehicles are waiting for  gt: traffic light    acc:   0.0%  elapsed: 15s  ETA: 1541s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  120/12578]  pred: The shorts in the image are not lar  gt: no               acc:   0.0%  elapsed: 15s  ETA: 1540s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  121/12578]  pred: The soap dispenser made of chrome i  gt: countertop       acc:   0.0%  elapsed: 15s  ETA: 1539s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  122/12578]  pred: The serving tray in the image is a   gt: white            acc:   0.0%  elapsed: 15s  ETA: 1538s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  123/12578]  pred: No, the device under the picture fr  gt: no               acc:   0.0%  elapsed: 15s  ETA: 1537s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  124/12578]  pred: The material of the trousers is mad  gt: cloth            acc:   0.0%  elapsed: 15s  ETA: 1536s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  125/12578]  pred: The pens in the image are black and  gt: black and white  acc:   0.0%  elapsed: 15s  ETA: 1536s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  126/12578]  pred: The jacket worn around in the image  gt: man              acc:   0.0%  elapsed: 16s  ETA: 1535s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  127/12578]  pred: The pens are on the right side of t  gt: right            acc:   0.0%  elapsed: 16s  ETA: 1534s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  128/12578]  pred: Yes, I see a skis in the image       gt: yes              acc:   0.0%  elapsed: 16s  ETA: 1533s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  129/12578]  pred: The item of furniture to the right   gt: table            acc:   0.0%  elapsed: 16s  ETA: 1532s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  130/12578]  pred: The man to the left of the performe  gt: blond            acc:   0.0%  elapsed: 16s  ETA: 1531s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  131/12578]  pred: No, the cell phone is not lying on   gt: no               acc:   0.0%  elapsed: 16s  ETA: 1530s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  132/12578]  pred: Yes, the plastic helmet is to the l  gt: yes              acc:   0.0%  elapsed: 16s  ETA: 1530s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  133/12578]  pred: Yes, the utensil beside the pan has  gt: no               acc:   0.0%  elapsed: 16s  ETA: 1529s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  134/12578]  pred: The person wearing jeans is a man.   gt: child            acc:   0.0%  elapsed: 16s  ETA: 1527s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  135/12578]  pred: The balls to the left of a ball in   gt: yes              acc:   0.0%  elapsed: 17s  ETA: 1526s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  136/12578]  pred: The swimsuit in the image is a wome  gt: male             acc:   0.0%  elapsed: 17s  ETA: 1526s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  137/12578]  pred: Yes, the toaster is to the right of  gt: no               acc:   0.0%  elapsed: 17s  ETA: 1525s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  138/12578]  pred: The trees on the field are bare.     gt: lush             acc:   0.0%  elapsed: 17s  ETA: 1523s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  139/12578]  pred: Yes, the net is in front of the man  gt: yes              acc:   0.0%  elapsed: 17s  ETA: 1522s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  140/12578]  pred: The weather in the image is cloudy.  gt: yes              acc:   0.0%  elapsed: 17s  ETA: 1521s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  141/12578]  pred: The door and the kitten are both ex  gt: color            acc:   0.0%  elapsed: 17s  ETA: 1520s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  142/12578]  pred: The jacket is made of cotton.        gt: small            acc:   0.0%  elapsed: 17s  ETA: 1518s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  143/12578]  pred: The gray chair is to the left of th  gt: right            acc:   0.0%  elapsed: 17s  ETA: 1517s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  144/12578]  pred: The soccer player to the left of th  gt: male             acc:   0.0%  elapsed: 18s  ETA: 1517s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  145/12578]  pred: Yes, iron was used to make the fenc  gt: no               acc:   0.0%  elapsed: 18s  ETA: 1516s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  146/12578]  pred: The hair in the image is a dark bro  gt: black            acc:   0.0%  elapsed: 18s  ETA: 1515s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  147/12578]  pred: The picture hanging above is a phot  gt: chair            acc:   0.0%  elapsed: 18s  ETA: 1515s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  148/12578]  pred: The framed picture is hanging above  gt: chair            acc:   0.0%  elapsed: 18s  ETA: 1514s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  149/12578]  pred: No, the hat is not wet. The image    gt: no               acc:   0.0%  elapsed: 18s  ETA: 1513s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  150/12578]  pred: The person running in the image is   gt: soccer player    acc:   0.0%  elapsed: 18s  ETA: 1513s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  151/12578]  pred: The large device in the image is a   gt: keyboard         acc:   0.0%  elapsed: 18s  ETA: 1512s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  152/12578]  pred: The person wearing the helmet is a   gt: policeman        acc:   0.0%  elapsed: 18s  ETA: 1512s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  153/12578]  pred: The microwave is a device used for   gt: dishwasher       acc:   0.0%  elapsed: 19s  ETA: 1511s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  154/12578]  pred: The dress shirt is not gray or teal  gt: teal             acc:   0.0%  elapsed: 19s  ETA: 1510s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  155/12578]  pred: The scissors in the image are black  gt: gray             acc:   0.0%  elapsed: 19s  ETA: 1509s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  156/12578]  pred: The toilet brush is located on the   gt: left             acc:   0.0%  elapsed: 19s  ETA: 1509s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  157/12578]  pred: The boy on the photo is a young gir  gt: bike             acc:   0.0%  elapsed: 19s  ETA: 1508s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  158/12578]  pred: Yes, I see a container and an image  gt: no               acc:   0.0%  elapsed: 19s  ETA: 1508s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  159/12578]  pred: Yes, the young person on the bike i  gt: yes              acc:   0.0%  elapsed: 19s  ETA: 1507s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  160/12578]  pred: The name of the clothing item that   gt: jacket           acc:   0.0%  elapsed: 19s  ETA: 1507s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  161/12578]  pred: The poster in the image is a large,  gt: monitor          acc:   0.0%  elapsed: 20s  ETA: 1506s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  162/12578]  pred: Yes, there are both girls and socce  gt: no               acc:   0.0%  elapsed: 20s  ETA: 1505s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  163/12578]  pred: The baby is holding a toy car, whic  gt: marshmallow      acc:   0.0%  elapsed: 20s  ETA: 1505s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  164/12578]  pred: The toilet paper is resting on the   gt: chair            acc:   0.0%  elapsed: 20s  ETA: 1504s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  165/12578]  pred: The toilet paper to the right of th  gt: chair            acc:   0.0%  elapsed: 20s  ETA: 1504s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  166/12578]  pred: There are no skateboarders or snowb  gt: no               acc:   0.0%  elapsed: 20s  ETA: 1503s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  167/12578]  pred: The bench in the image is a rectang  gt: rectangular      acc:   0.0%  elapsed: 20s  ETA: 1503s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  168/12578]  pred: The person below the crowd in this   gt: sneakers         acc:   0.0%  elapsed: 20s  ETA: 1502s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  169/12578]  pred: The brown field in the image appear  gt: yes              acc:   0.0%  elapsed: 20s  ETA: 1502s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  170/12578]  pred: The picture frame made of plastic d  gt: yes              acc:   0.0%  elapsed: 21s  ETA: 1501s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  171/12578]  pred: Yes, there is a silver laptop and D  gt: no               acc:   0.0%  elapsed: 21s  ETA: 1501s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  172/12578]  pred: The person standing in the image is  gt: snowboarder      acc:   0.0%  elapsed: 21s  ETA: 1500s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  173/12578]  pred: The piece of furniture in the image  gt: coffee table     acc:   0.0%  elapsed: 21s  ETA: 1499s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  174/12578]  pred: The wooden piece of furniture in th  gt: coffee table     acc:   0.0%  elapsed: 21s  ETA: 1499s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  175/12578]  pred: The piece of furniture that is made  gt: coffee table     acc:   0.0%  elapsed: 21s  ETA: 1499s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  176/12578]  pred: The person looking up in the image   gt: spectator        acc:   0.0%  elapsed: 21s  ETA: 1498s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  177/12578]  pred: The kind of furniture that is blue   gt: sofa             acc:   0.0%  elapsed: 21s  ETA: 1498s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  178/12578]  pred: The monitor in front of the person   gt: poster           acc:   0.0%  elapsed: 21s  ETA: 1497s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  179/12578]  pred: Based on the description of a table  gt: sofa             acc:   0.0%  elapsed: 22s  ETA: 1497s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  180/12578]  pred: The spectator in the image is likel  gt: looking up       acc:   0.0%  elapsed: 22s  ETA: 1496s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  181/12578]  pred: The piece of furniture in the image  gt: sofa             acc:   0.0%  elapsed: 22s  ETA: 1496s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  182/12578]  pred: The container in the image is made   gt: shelf            acc:   0.0%  elapsed: 22s  ETA: 1495s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  183/12578]  pred: The name of the smooth piece of clo  gt: robe             acc:   0.0%  elapsed: 22s  ETA: 1495s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  184/12578]  pred: The photo is taken on a sunny day,   gt: right            acc:   0.0%  elapsed: 22s  ETA: 1494s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  185/12578]  pred: The shirt the woman wears is a whit  gt: white            acc:   0.0%  elapsed: 22s  ETA: 1494s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  186/12578]  pred: The soap bottle and the clock do no  gt: yes              acc:   0.0%  elapsed: 22s  ETA: 1494s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  187/12578]  pred: The object sitting on top of the sh  gt: jar              acc:   0.0%  elapsed: 23s  ETA: 1493s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  188/12578]  pred: No, the vehicle behind the zebras d  gt: no               acc:   0.0%  elapsed: 23s  ETA: 1493s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  189/12578]  pred: The person in the image is approxim  gt: tall             acc:   0.0%  elapsed: 23s  ETA: 1492s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  190/12578]  pred: The wood floor in the image is a li  gt: dark brown       acc:   0.0%  elapsed: 23s  ETA: 1492s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  191/12578]  pred: Yes, the brown cookies on the right  gt: yes              acc:   0.0%  elapsed: 23s  ETA: 1492s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  192/12578]  pred: Yes, there are televisions and curt  gt: no               acc:   0.0%  elapsed: 23s  ETA: 1491s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  193/12578]  pred: The appliance in front of the wall   gt: refrigerator     acc:   0.0%  elapsed: 23s  ETA: 1491s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  194/12578]  pred: Yes, there is a refrigerator in fro  gt: yes              acc:   0.0%  elapsed: 23s  ETA: 1490s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  195/12578]  pred: The name of the piece of furniture   gt: chair            acc:   0.0%  elapsed: 23s  ETA: 1490s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  196/12578]  pred: The fence in the image is a wooden   gt: chair            acc:   0.0%  elapsed: 24s  ETA: 1490s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  197/12578]  pred: The walls of the window are not cle  gt: clean            acc:   0.0%  elapsed: 24s  ETA: 1489s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  198/12578]  pred: The kind of furniture in front of t  gt: chair            acc:   0.0%  elapsed: 24s  ETA: 1489s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  199/12578]  pred: The animal standing against the gra  gt: cow              acc:   0.0%  elapsed: 24s  ETA: 1488s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  200/12578]  pred: The person wearing shorts is a man.  gt: skateboarder     acc:   0.0%  elapsed: 24s  ETA: 1487s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  201/12578]  pred: Yes, the mugs to the right of the    gt: yes              acc:   0.0%  elapsed: 24s  ETA: 1487s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  202/12578]  pred: The photo is taken in a baseball st  gt: left             acc:   0.0%  elapsed: 24s  ETA: 1487s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  203/12578]  pred: The basket in the image is a large,  gt: broccoli         acc:   0.0%  elapsed: 24s  ETA: 1486s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  204/12578]  pred: The sink on the image is a bathtub.  gt: countertop       acc:   0.0%  elapsed: 24s  ETA: 1486s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  205/12578]  pred: Yes, the player to the right of the  gt: yes              acc:   0.0%  elapsed: 25s  ETA: 1485s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  206/12578]  pred: Yes, I see a fence in front of the   gt: no               acc:   0.0%  elapsed: 25s  ETA: 1485s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  207/12578]  pred: Yes, the baskets that are not empty  gt: yes              acc:   0.0%  elapsed: 25s  ETA: 1485s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  208/12578]  pred: Yes, there is a bed and table that   gt: no               acc:   0.0%  elapsed: 25s  ETA: 1484s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  209/12578]  pred: The device to the left of the lamp   gt: laptop           acc:   0.0%  elapsed: 25s  ETA: 1484s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  210/12578]  pred: The heater next to the toilet is li  gt: no               acc:   0.0%  elapsed: 25s  ETA: 1483s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  211/12578]  pred: Yes, the man in the image appears t  gt: no               acc:   0.0%  elapsed: 25s  ETA: 1483s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  212/12578]  pred: The bike is approximately 1.5 meter  gt: large            acc:   0.0%  elapsed: 25s  ETA: 1483s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  213/12578]  pred: The table in the image is located o  gt: flowers          acc:   0.0%  elapsed: 26s  ETA: 1482s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  214/12578]  pred: The side table that is not big and   gt: no               acc:   0.0%  elapsed: 26s  ETA: 1482s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  215/12578]  pred: Yes, the porcelain sink has a round  gt: no               acc:   0.0%  elapsed: 26s  ETA: 1482s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  216/12578]  pred: The lid of the container is made ou  gt: plastic          acc:   0.0%  elapsed: 26s  ETA: 1481s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  217/12578]  pred: Yes, the person is sitting on a ben  gt: yes              acc:   0.0%  elapsed: 26s  ETA: 1481s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  218/12578]  pred: The barn is parked alongside the ho  gt: ambulance        acc:   0.0%  elapsed: 26s  ETA: 1480s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  219/12578]  pred: The vehicle in the image is a car.   gt: truck            acc:   0.0%  elapsed: 26s  ETA: 1480s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  220/12578]  pred: Yes, the ambulance that is to the l  gt: yes              acc:   0.0%  elapsed: 26s  ETA: 1479s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  221/12578]  pred: The vehicle parked alongside the ba  gt: ambulance        acc:   0.0%  elapsed: 26s  ETA: 1479s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  222/12578]  pred: Yes, the flags in question are tria  gt: no               acc:   0.0%  elapsed: 27s  ETA: 1479s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  223/12578]  pred: The calf in the image has brown col  gt: no               acc:   0.0%  elapsed: 27s  ETA: 1478s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  224/12578]  pred: The rock in the image is likely a b  gt: grass            acc:   0.0%  elapsed: 27s  ETA: 1478s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  225/12578]  pred: The zebra that is not large in the   gt: grass            acc:   0.0%  elapsed: 27s  ETA: 1477s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  226/12578]  pred: The blue bag in the image is not sm  gt: yes              acc:   0.0%  elapsed: 27s  ETA: 1477s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  227/12578]  pred: The baseball mitt is not bright. It  gt: yes              acc:   0.0%  elapsed: 27s  ETA: 1477s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  228/12578]  pred: The person wearing the watch is a m  gt: women            acc:   0.0%  elapsed: 27s  ETA: 1477s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  229/12578]  pred: The person wearing the watch is a m  gt: women            acc:   0.0%  elapsed: 27s  ETA: 1476s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  230/12578]  pred: The people to the left of the bulb   gt: restaurant       acc:   0.0%  elapsed: 27s  ETA: 1476s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  231/12578]  pred: The device that the young man near   gt: cell phone       acc:   0.0%  elapsed: 28s  ETA: 1476s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  232/12578]  pred: The device that is not illuminated   gt: speaker          acc:   0.0%  elapsed: 28s  ETA: 1475s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  233/12578]  pred: The marble counter in the image is   gt: books            acc:   0.0%  elapsed: 28s  ETA: 1475s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  234/12578]  pred: The books to the left of the wood c  gt: left             acc:   0.0%  elapsed: 28s  ETA: 1475s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  235/12578]  pred: Yes, the sky above a train is visib  gt: no               acc:   0.0%  elapsed: 28s  ETA: 1474s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  236/12578]  pred: Yes, the mug in front of the cup is  gt: no               acc:   0.0%  elapsed: 28s  ETA: 1474s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  237/12578]  pred: Yes, there are seals and bunnies in  gt: no               acc:   0.0%  elapsed: 28s  ETA: 1474s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  238/12578]  pred: Yes, the sky above an airplane is v  gt: no               acc:   0.0%  elapsed: 28s  ETA: 1473s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  239/12578]  pred: The large vehicle in the image is a  gt: truck            acc:   0.0%  elapsed: 29s  ETA: 1473s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  240/12578]  pred: The piece of furniture that is not   gt: shelf            acc:   0.0%  elapsed: 29s  ETA: 1473s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  241/12578]  pred: The furniture in the image is not s  gt: shelf            acc:   0.0%  elapsed: 29s  ETA: 1472s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  242/12578]  pred: Yes, I see forks in the image. Fork  gt: no               acc:   0.0%  elapsed: 29s  ETA: 1472s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  243/12578]  pred: The soft toy in the image is likely  gt: stuffed bear     acc:   0.0%  elapsed: 29s  ETA: 1472s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  244/12578]  pred: The bottle in the image is made of   gt: plastic          acc:   0.0%  elapsed: 29s  ETA: 1472s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  245/12578]  pred: The colorful toy in the picture is   gt: stuffed bear     acc:   0.0%  elapsed: 29s  ETA: 1471s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  246/12578]  pred: The pan in the image is a large, ro  gt: pizza            acc:   0.0%  elapsed: 29s  ETA: 1471s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  247/12578]  pred: The chair in the image is not large  gt: yes              acc:   0.0%  elapsed: 29s  ETA: 1471s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  248/12578]  pred: Yes, the container in question is m  gt: no               acc:   0.0%  elapsed: 30s  ETA: 1470s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  249/12578]  pred: The container made of plastic has a  gt: light            acc:   0.0%  elapsed: 30s  ETA: 1470s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  250/12578]  pred: The plastic container on the pictur  gt: right            acc:   0.0%  elapsed: 30s  ETA: 1470s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  251/12578]  pred: The kind of fruit in the image is a  gt: pear             acc:   0.0%  elapsed: 30s  ETA: 1470s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  252/12578]  pred: The clothing item not long sleeved   gt: baseball mitt    acc:   0.0%  elapsed: 30s  ETA: 1469s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  253/12578]  pred: The towels in the image are made of  gt: black            acc:   0.0%  elapsed: 30s  ETA: 1469s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  254/12578]  pred: The shorts that the man is wearing   gt: brown            acc:   0.0%  elapsed: 30s  ETA: 1469s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  255/12578]  pred: The piece of furniture that the lug  gt: table            acc:   0.0%  elapsed: 30s  ETA: 1468s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  256/12578]  pred: The person wearing the shirt is a m  gt: woman            acc:   0.0%  elapsed: 31s  ETA: 1468s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  257/12578]  pred: Yes, there are new dishwashers on t  gt: yes              acc:   0.0%  elapsed: 31s  ETA: 1468s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  258/12578]  pred: The sink in the image is approximat  gt: small            acc:   0.0%  elapsed: 31s  ETA: 1468s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  259/12578]  pred: The shirt in the image is sleeveles  gt: long sleeved     acc:   0.0%  elapsed: 31s  ETA: 1467s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  260/12578]  pred: The ceiling above the table in this  gt: no               acc:   0.0%  elapsed: 31s  ETA: 1467s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  261/12578]  pred: The giraffe is staring at the perso  gt: woman            acc:   0.0%  elapsed: 31s  ETA: 1467s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  262/12578]  pred: Yes, there is a bag that can be des  gt: no               acc:   0.0%  elapsed: 31s  ETA: 1467s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  263/12578]  pred: The person in front of the post is   gt: giraffe          acc:   0.0%  elapsed: 31s  ETA: 1466s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  264/12578]  pred: The woman in the image is staring a  gt: giraffe          acc:   0.0%  elapsed: 31s  ETA: 1466s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  265/12578]  pred: The woman in the image is staring a  gt: giraffe          acc:   0.0%  elapsed: 32s  ETA: 1466s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  266/12578]  pred: The small bathroom in the image is   gt: white            acc:   0.0%  elapsed: 32s  ETA: 1466s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  267/12578]  pred: The table in the image is likely a   gt: yes              acc:   0.0%  elapsed: 32s  ETA: 1465s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  268/12578]  pred: The plate in the image is not diffe  gt: yes              acc:   0.0%  elapsed: 32s  ETA: 1465s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  269/12578]  pred: The yellow clothing in the image is  gt: coat             acc:   0.0%  elapsed: 32s  ETA: 1465s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  270/12578]  pred: The soccer ball and the backpack ar  gt: shape            acc:   0.0%  elapsed: 32s  ETA: 1465s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  271/12578]  pred: The yellow clothing in the image is  gt: coat             acc:   0.0%  elapsed: 32s  ETA: 1464s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  272/12578]  pred: The table in the image has a light   gt: brown            acc:   0.0%  elapsed: 32s  ETA: 1464s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  273/12578]  pred: Yes, the kid is wearing shorts. Sho  gt: yes              acc:   0.0%  elapsed: 32s  ETA: 1464s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  274/12578]  pred: The child in the picture is wearing  gt: shorts           acc:   0.0%  elapsed: 33s  ETA: 1463s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  275/12578]  pred: Yes, the sticker on the box is both  gt: no               acc:   0.0%  elapsed: 33s  ETA: 1463s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  276/12578]  pred: Yes, I think this boy is real. The   gt: yes              acc:   0.0%  elapsed: 33s  ETA: 1463s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  277/12578]  pred: The sticker that looks rectangular   gt: purple           acc:   0.0%  elapsed: 33s  ETA: 1463s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  278/12578]  pred: The shirt in the image is a white T  gt: dark blue        acc:   0.0%  elapsed: 33s  ETA: 1463s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  279/12578]  pred: The sky is typically blue, but it c  gt: blue             acc:   0.0%  elapsed: 33s  ETA: 1462s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  280/12578]  pred: Yes, I can see a red chair in the    gt: no               acc:   0.0%  elapsed: 33s  ETA: 1462s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  281/12578]  pred: The man is in front of a large, ope  gt: tree             acc:   0.0%  elapsed: 33s  ETA: 1462s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  282/12578]  pred: The person in the image is a man. H  gt: man              acc:   0.0%  elapsed: 34s  ETA: 1462s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  283/12578]  pred: Yes, the person in front of the oth  gt: no               acc:   0.0%  elapsed: 34s  ETA: 1461s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  284/12578]  pred: The item of furniture in front of t  gt: chair            acc:   0.0%  elapsed: 34s  ETA: 1461s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  285/12578]  pred: The man in front of the woman is a   gt: tree             acc:   0.0%  elapsed: 34s  ETA: 1461s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  286/12578]  pred: The sidewalk in the image is made o  gt: concrete         acc:   0.0%  elapsed: 34s  ETA: 1461s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  287/12578]  pred: Yes, there are green snowboards and  gt: yes              acc:   0.0%  elapsed: 34s  ETA: 1460s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  288/12578]  pred: Yes, the blue sky in this image app  gt: no               acc:   0.0%  elapsed: 34s  ETA: 1460s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  289/12578]  pred: The bison in the image is approxima  gt: heavy            acc:   0.0%  elapsed: 34s  ETA: 1460s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  290/12578]  pred: The concrete sidewalk in the image   gt: yes              acc:   0.0%  elapsed: 34s  ETA: 1460s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  291/12578]  pred: The device to the left of the tomat  gt: laptop           acc:   0.0%  elapsed: 35s  ETA: 1459s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  292/12578]  pred: Yes, there are phones to the left o  gt: no               acc:   0.0%  elapsed: 35s  ETA: 1459s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  293/12578]  pred: The device to the right of the couc  gt: speaker          acc:   0.0%  elapsed: 35s  ETA: 1459s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  294/12578]  pred: The bison is standing in a field, w  gt: looking down     acc:   0.0%  elapsed: 35s  ETA: 1459s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  295/12578]  pred: The device sitting on the square ta  gt: laptop           acc:   0.0%  elapsed: 35s  ETA: 1459s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  296/12578]  pred: The woman is holding a camera.       gt: camera           acc:   0.0%  elapsed: 35s  ETA: 1458s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  297/12578]  pred: The device that the young woman is   gt: camera           acc:   0.0%  elapsed: 35s  ETA: 1457s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  298/12578]  pred: The color of the floor in this imag  gt: gray             acc:   0.0%  elapsed: 35s  ETA: 1457s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  299/12578]  pred: Yes, there are glasses and women in  gt: yes              acc:   0.0%  elapsed: 35s  ETA: 1457s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  300/12578]  pred: The door and the room are both exam  gt: color            acc:   0.0%  elapsed: 36s  ETA: 1457s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  301/12578]  pred: The appliance shown in the picture   gt: radiator         acc:   0.0%  elapsed: 36s  ETA: 1456s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  302/12578]  pred: The appliance under the sink is a w  gt: radiator         acc:   0.0%  elapsed: 36s  ETA: 1456s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  303/12578]  pred: The sink on the counter top is a co  gt: radiator         acc:   0.0%  elapsed: 36s  ETA: 1456s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  304/12578]  pred: The sink in the image is a combinat  gt: radiator         acc:   0.0%  elapsed: 36s  ETA: 1456s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  305/12578]  pred: The window in the image is made of   gt: glass            acc:   0.0%  elapsed: 36s  ETA: 1455s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  306/12578]  pred: Yes, I see a drawer under the sink.  gt: no               acc:   0.0%  elapsed: 36s  ETA: 1455s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  307/12578]  pred: The vehicle that is parked near the  gt: car              acc:   0.0%  elapsed: 36s  ETA: 1455s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  308/12578]  pred: Yes, the tall books in this image l  gt: no               acc:   0.0%  elapsed: 37s  ETA: 1455s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  309/12578]  pred: In the photograph, it is not possib  gt: umpire           acc:   0.0%  elapsed: 37s  ETA: 1455s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  310/12578]  pred: The woman sitting on top of the bui  gt: steps            acc:   0.0%  elapsed: 37s  ETA: 1454s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  311/12578]  pred: The animal behind the shoe in this   gt: cat              acc:   0.0%  elapsed: 37s  ETA: 1454s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  312/12578]  pred: The room in the image is a living s  gt: picture          acc:   0.0%  elapsed: 37s  ETA: 1454s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  313/12578]  pred: Wooden furniture is a type of mater  gt: table            acc:   0.0%  elapsed: 37s  ETA: 1454s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  314/12578]  pred: Yes, the life vest and shirt are bo  gt: no               acc:   0.0%  elapsed: 37s  ETA: 1453s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  315/12578]  pred: Yes, the table lamp in this image h  gt: no               acc:   0.0%  elapsed: 37s  ETA: 1453s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  316/12578]  pred: The open umbrella is located in the  gt: left             acc:   0.0%  elapsed: 37s  ETA: 1453s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  317/12578]  pred: Yes, the skateboard has brown color  gt: no               acc:   0.0%  elapsed: 38s  ETA: 1453s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  318/12578]  pred: Yes, the bench is in front of the w  gt: yes              acc:   0.0%  elapsed: 38s  ETA: 1453s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  319/12578]  pred: The mirror in the image is a reflec  gt: faucet           acc:   0.0%  elapsed: 38s  ETA: 1452s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  320/12578]  pred: Yes, plastic is used to make the bo  gt: yes              acc:   0.0%  elapsed: 38s  ETA: 1452s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  321/12578]  pred: Yes, the building in front of the t  gt: yes              acc:   0.0%  elapsed: 38s  ETA: 1452s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  322/12578]  pred: The device to the right of the man   gt: wii controller   acc:   0.0%  elapsed: 38s  ETA: 1452s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  323/12578]  pred: The color of the dirt on which elep  gt: brown            acc:   0.0%  elapsed: 38s  ETA: 1452s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  324/12578]  pred: Yes, the lady in the photo is looki  gt: yes              acc:   0.0%  elapsed: 38s  ETA: 1451s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  325/12578]  pred: Yes, the suitcase to the right of a  gt: yes              acc:   0.0%  elapsed: 38s  ETA: 1451s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  326/12578]  pred: The lady in the photo is holding a   gt: looking down     acc:   0.0%  elapsed: 39s  ETA: 1451s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  327/12578]  pred: The woman in the photo is wearing a  gt: dress            acc:   0.0%  elapsed: 39s  ETA: 1451s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  328/12578]  pred: The happy woman in the image is wea  gt: dress            acc:   0.0%  elapsed: 39s  ETA: 1450s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  329/12578]  pred: The person wearing the shirt is a m  gt: woman            acc:   0.0%  elapsed: 39s  ETA: 1450s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  330/12578]  pred: Yes, the athletic person in front o  gt: no               acc:   0.0%  elapsed: 39s  ETA: 1450s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  331/12578]  pred: The window in the image is rectangu  gt: yes              acc:   0.0%  elapsed: 39s  ETA: 1450s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  332/12578]  pred: The silver forks in the image are n  gt: yes              acc:   0.0%  elapsed: 39s  ETA: 1450s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  333/12578]  pred: The large mirror in the image is a   gt: square           acc:   0.0%  elapsed: 39s  ETA: 1450s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  334/12578]  pred: Yes, the camera is on the right sid  gt: no               acc:   0.0%  elapsed: 40s  ETA: 1449s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  335/12578]  pred: Yes, there is a mirror near the whi  gt: yes              acc:   0.0%  elapsed: 40s  ETA: 1449s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  336/12578]  pred: The napkin, paper or cloth is a pie  gt: paper            acc:   0.0%  elapsed: 40s  ETA: 1449s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  337/12578]  pred: Yes, the garbage can behind a mat i  gt: yes              acc:   0.0%  elapsed: 40s  ETA: 1449s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  338/12578]  pred: The napkin in the image is not clea  gt: dirty            acc:   0.0%  elapsed: 40s  ETA: 1449s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  339/12578]  pred: Yes, the small trash can underneath  gt: yes              acc:   0.0%  elapsed: 40s  ETA: 1448s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  340/12578]  pred: The eggplant is on the left side of  gt: right            acc:   0.0%  elapsed: 40s  ETA: 1448s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  341/12578]  pred: Yes, the garbage bin below a sink i  gt: yes              acc:   0.0%  elapsed: 40s  ETA: 1448s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  342/12578]  pred: Yes, the chubby man to the left of   gt: no               acc:   0.0%  elapsed: 40s  ETA: 1448s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  343/12578]  pred: The chubby man in the image is hold  gt: umbrella         acc:   0.0%  elapsed: 41s  ETA: 1448s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  344/12578]  pred: The woman is sitting on a bench, wh  gt: looking down     acc:   0.0%  elapsed: 41s  ETA: 1447s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  345/12578]  pred: The monitor to the right of another  gt: black            acc:   0.0%  elapsed: 41s  ETA: 1447s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  346/12578]  pred: The animal that is walking on the g  gt: birds            acc:   0.0%  elapsed: 41s  ETA: 1447s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  347/12578]  pred: The desk in the image is a bookshel  gt: monitor          acc:   0.0%  elapsed: 41s  ETA: 1447s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  348/12578]  pred: Yes, the sky appears to be bright a  gt: no               acc:   0.0%  elapsed: 41s  ETA: 1446s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  349/12578]  pred: Yes, both the spectators to the lef  gt: yes              acc:   0.0%  elapsed: 41s  ETA: 1446s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  350/12578]  pred: Yes, the plastic container on the l  gt: yes              acc:   0.0%  elapsed: 41s  ETA: 1446s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  351/12578]  pred: Yes, the suitcase to the right of t  gt: no               acc:   0.0%  elapsed: 42s  ETA: 1446s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  352/12578]  pred: The name of the wooden piece of fur  gt: tv stand         acc:   0.0%  elapsed: 42s  ETA: 1446s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  353/12578]  pred: The brown furniture in the image is  gt: tv stand         acc:   0.0%  elapsed: 42s  ETA: 1446s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  354/12578]  pred: Yes, both the smiling gentleman in   gt: yes              acc:   0.0%  elapsed: 42s  ETA: 1445s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  355/12578]  pred: The plane in the image is a Boeing   gt: large            acc:   0.0%  elapsed: 42s  ETA: 1445s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  356/12578]  pred: The color of the wrist watch worn b  gt: pink             acc:   0.0%  elapsed: 42s  ETA: 1445s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  357/12578]  pred: The gentleman in the image is 40 ye  gt: young            acc:   0.0%  elapsed: 42s  ETA: 1445s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  358/12578]  pred: The color of the wood floor in this  gt: dark brown       acc:   0.0%  elapsed: 42s  ETA: 1444s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  359/12578]  pred: The image shows a baseball player s  gt: right            acc:   0.0%  elapsed: 42s  ETA: 1444s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  360/12578]  pred: Yes, there is a colorful hat or sca  gt: no               acc:   0.0%  elapsed: 43s  ETA: 1444s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  361/12578]  pred: The old people in the image are wea  gt: fat              acc:   0.0%  elapsed: 43s  ETA: 1444s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  362/12578]  pred: The man in the picture is sitting o  gt: jumping          acc:   0.0%  elapsed: 43s  ETA: 1444s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  363/12578]  pred: Yes, there are both a horse and a f  gt: yes              acc:   0.0%  elapsed: 43s  ETA: 1444s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  364/12578]  pred: Yes, there are both trucks and airp  gt: no               acc:   0.0%  elapsed: 43s  ETA: 1443s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  365/12578]  pred: The cup in the image is a bottle.    gt: bottle           acc:   0.0%  elapsed: 43s  ETA: 1443s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  366/12578]  pred: The jars sitting on top of the moun  gt: stove            acc:   0.0%  elapsed: 43s  ETA: 1443s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  367/12578]  pred: Yes, there are curtains and trash c  gt: no               acc:   0.0%  elapsed: 43s  ETA: 1443s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  368/12578]  pred: The Asian person near the water bot  gt: dress shirt      acc:   0.0%  elapsed: 43s  ETA: 1443s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  369/12578]  pred: The man in the photo is wearing a b  gt: dress shirt      acc:   0.0%  elapsed: 44s  ETA: 1442s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  370/12578]  pred: The kind of furniture that is fluff  gt: bed              acc:   0.0%  elapsed: 44s  ETA: 1442s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  371/12578]  pred: The pen in the image is made of a c  gt: plastic          acc:   0.0%  elapsed: 44s  ETA: 1442s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  372/12578]  pred: The white paper in the image is loc  gt: pen              acc:   0.0%  elapsed: 44s  ETA: 1442s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  373/12578]  pred: The hair in the image is gray.       gt: gray             acc:   0.0%  elapsed: 44s  ETA: 1441s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  374/12578]  pred: The pen in the image is made of a c  gt: plastic          acc:   0.0%  elapsed: 44s  ETA: 1441s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  375/12578]  pred: Yes, there is a waffle in the image  gt: yes              acc:   0.0%  elapsed: 44s  ETA: 1441s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  376/12578]  pred: Yes, the truck is in front of the b  gt: yes              acc:   0.0%  elapsed: 44s  ETA: 1441s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  377/12578]  pred: The large animal in the image is a   gt: dark brown       acc:   0.0%  elapsed: 45s  ETA: 1440s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  378/12578]  pred: Yes, both the sweater and black dre  gt: yes              acc:   0.0%  elapsed: 45s  ETA: 1440s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  379/12578]  pred: The jacket in the image is made of   gt: cloth            acc:   0.0%  elapsed: 45s  ETA: 1440s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  380/12578]  pred: The car is to the left of the vehic  gt: right            acc:   0.0%  elapsed: 45s  ETA: 1440s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  381/12578]  pred: The person in the image is wearing   gt: skateboarder     acc:   0.0%  elapsed: 45s  ETA: 1440s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  382/12578]  pred: The person wearing the helmet is a   gt: skateboarder     acc:   0.0%  elapsed: 45s  ETA: 1440s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  383/12578]  pred: The person wearing the helmet is a   gt: skateboarder     acc:   0.0%  elapsed: 45s  ETA: 1439s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  384/12578]  pred: The person skating on the skateboar  gt: skateboarder     acc:   0.0%  elapsed: 45s  ETA: 1439s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [  385/12578]  pred: The person wearing the knee pad is   gt: skateboarder     acc:   0.0%  elapsed: 45s  ETA: 1439s[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.

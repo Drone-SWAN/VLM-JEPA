@@ -1,0 +1,192 @@
+{
+  "dataset": "mmmu",
+  "metrics": {
+    "accuracy": 3.3333333333333335,
+    "primary": 3.3333333333333335
+  },
+  "primary_score": 3.3333333333333335,
+  "num_samples": 30,
+  "predictions": [
+    {
+      "idx": 0,
+      "question": "Compute the vertical displacement of point C for the beam in Figure P8.35. For t",
+      "pred": "To compute the vertical displacement of point C, we need to consider both the beam and the cable. The beam will have a deflection due to its own weight and the load it carries, while the cable will also deflect under the same loads.\n\n1. **Beam Deflection:**\n   - The deflection of a",
+      "gt": "76.3"
+    },
+    {
+      "idx": 1,
+      "question": "The cable in Figure P6.3 supports girder DE uniformly loaded with 4 kips/ft. The",
+      "pred": "To solve this problem, we need to analyze the forces acting on the cable and the girder. The girder is uniformly loaded with 4 kips/ft, so the total load on the girder is 40 kips (since the girder spans 10 ft). The support reactions at A",
+      "gt": "447.2"
+    },
+    {
+      "idx": 2,
+      "question": "A circular curve of 800 m radius has been set out connecting two straights with ",
+      "pred": "To solve this problem, we need to understand the geometry of the circular curve and how moving its midpoint affects the subchord. The original subchord is a straight line connecting two points on the circle's circumference. When the midpoint is moved 4 meters towards the center, it creates a new chord that is not",
+      "gt": "27.5"
+    },
+    {
+      "idx": 3,
+      "question": "The area within the contour lines at the site of a reservoir and the face of a p",
+      "pred": "To find the volume of water in the reservoir, we need to calculate the area of the cross-section at the bottom level (300 m) and the top level (314 m), then subtract the area at 300 m from the area at 314 m. The difference will give",
+      "gt": "1713420"
+    },
+    {
+      "idx": 4,
+      "question": "For the illustrations,Fig. 6.64 below set up the level notes in proper form. Cal",
+      "pred": "To calculate the elevation required, we need to add up the elevations of all the points and then subtract the total from the starting elevation. The starting elevation is 100 meters. The elevations are as follows: 2.5 meters for point B, 1.6 meters for point M, and",
+      "gt": "104.465"
+    },
+    {
+      "idx": 5,
+      "question": "Fig. 8.15 shows the distribution of 12 spot heights with a regular 20 m spacing ",
+      "pred": "To calculate the volume of earth to be removed, we need to find the difference between the total height of the spots and the target elevation of 10.00 m. The total height is the sum of all spot heights minus the target elevation. We can then multiply this total by the area of the rectangle (",
+      "gt": "37428"
+    },
+    {
+      "idx": 6,
+      "question": "When the truss in Figure P8.8 is loaded, the support at E displaces 0.6 in. vert",
+      "pred": "To solve this problem, we need to understand the behavior of a truss under load. The vertical displacement at E and the horizontal displacement at A will affect the entire truss. Since the truss is symmetric and the loads are applied at the ends, the vertical displacement at C can be calculated by considering the equilibrium of",
+      "gt": "0.089"
+    },
+    {
+      "idx": 7,
+      "question": "Using a finite summation, compute the  initial deflection at point C for the tap",
+      "pred": "To compute the initial deflection at point C for the tapered beam, we need to use the properties of 0.5IG (moment of inertia multiplied by the length) and apply the formula for the deflection of a cantilever beam with a triangular load. The formula is given by:\n\n\\[ \\delta_C",
+      "gt": "205"
+    },
+    {
+      "idx": 8,
+      "question": "It is desired to cut the hill of Figure 20-14 down to elevation 510 ft. The area",
+      "pred": "To calculate the total excavation, we need to subtract the volume of earthwork above elevation 525 from the total volume. The volume for each contour is calculated by multiplying the area by the height difference between the contour and the elevation 525. We then sum these volumes for all contours and subtract the volume",
+      "gt": "17545"
+    },
+    {
+      "idx": 9,
+      "question": "Draw the influence lines for the vertical  and horizontal reactions, AX and AY, ",
+      "pred": "To solve this problem, we need to understand the influence lines for the reactions and bar forces in a truss under a uniform load. The influence line for a reaction at support A (AX or AY) is a straight line that starts at zero at the supports and increases linearly to the maximum value at the center",
+      "gt": "40"
+    },
+    {
+      "idx": 10,
+      "question": "What is the masked area in ?\nA. [\nB. ]\nThink step by step, then end your respons",
+      "pred": "To determine the masked area, we need to identify the specific part of the map that is not visible. The masked area appears to be a section of the continental crust labeled \"MORB,\" which stands for Mid-Ocean Ridge Basalt. This is indicated by the text and coloration on the map. Since the question",
+      "gt": "LITHOSPHERE"
+    },
+    {
+      "idx": 11,
+      "question": "The economically important sea lane designated by the arrow on  is the\nA. [\nB. ]",
+      "pred": "To determine the economically important sea lane designated by the arrow, we need to identify the direction of the arrow and its proximity to the labeled areas. The arrow points towards the area labeled \"D,\" which is situated in the northern part of the map. This suggests that the sea lane is likely a route that connects or passes",
+      "gt": "E"
+    },
+    {
+      "idx": 12,
+      "question": "What is the masked element in ?\nA. [\nB. ]\nThink step by step, then end your resp",
+      "pred": "To determine the masked element in the pie chart, we need to identify which element has a percentage of 0.6%. By examining the percentages listed next to each element, we can see that \"Magnesium\" is associated with 0.6%. Therefore, the masked element in the pie chart is \"Magnesium",
+      "gt": "CALCIUM"
+    },
+    {
+      "idx": 13,
+      "question": "Which of the regions in  would contain the older \"Asian Tigers\" that experienced",
+      "pred": "To determine which region in would contain the older \"Asian Tigers,\" we need to consider the historical context of industrial redevelopment in the 1950s and 1960s. The \"Asian Tigers\" typically refer to South Korea, Taiwan, Singapore, and Hong Kong. These countries were known for their",
+      "gt": "B"
+    },
+    {
+      "idx": 14,
+      "question": "In the single slit Fraunhofer diffraction experiment, the wavefront between the ",
+      "pred": "In a single slit Fraunhofer diffraction experiment, the number of half wave bands (HWBs) between the slits and the third order bright pattern on the screen can be calculated using the formula for the position of the bright fringes in the diffraction pattern. The formula is given by:\n\n\\[ d",
+      "gt": "7"
+    },
+    {
+      "idx": 15,
+      "question": "What are the soil types shown in ?\nA. [\nB. ]\nThink step by step, then end your r",
+      "pred": "To determine the soil types shown in the image, we need to analyze the color and texture of the soil layers. The top layer appears to be a lighter color with fine particles, which could indicate a sandy or loamy composition. This is often found on the surface where organic matter has decomposed. The middle layer shows",
+      "gt": "OXISOL"
+    },
+    {
+      "idx": 16,
+      "question": "Which of the regions in  would contain areas known as special economic zones (SE",
+      "pred": "To determine which region contains areas known as special economic zones (SEZs), we would need to refer to a map that includes such information. However, based on the image alone and without additional context or data, it is not possible to accurately answer this question. The image only shows geographical boundaries and does not provide any",
+      "gt": "D"
+    },
+    {
+      "idx": 17,
+      "question": "What disaster distribution is likely to be shown in ?\nA. [\nB. ]\nThink step by st",
+      "pred": "To determine the disaster distribution, we need to analyze the color coding and the geographical spread of the red dots. The red dots are concentrated in a specific region, which is likely to be the area affected by the disaster. Given that the image shows a high concentration of red dots in one particular area, it is reasonable to",
+      "gt": "EARTHQUAKE"
+    },
+    {
+      "idx": 18,
+      "question": "There are three layers of soil horizontally distributed on the impermeable bedro",
+      "pred": "To find the equivalent horizontal seepage coefficient, we need to calculate the weighted average of the permeability coefficients (K) with their respective thicknesses (h). The formula for the equivalent horizontal seepage coefficient (Keq) is:\n\n\\[ Keq = \\frac{\\sum (K_i \\times h_i",
+      "gt": "1.71"
+    },
+    {
+      "idx": 19,
+      "question": "What is the masked period in ?\nA. [\nB. ]\nThink step by step, then end your respo",
+      "pred": "To determine the masked period, we need to identify the section of the image that is not visible. The visible sections are labeled with numbers and names, but there is a gap where the text is missing. This gap corresponds to the period marked as \"Cenozoic\" in the legend at the bottom right of the",
+      "gt": "PALEOZOIC"
+    },
+    {
+      "idx": 20,
+      "question": "Water is ejected from the nozzle shown in the diagram, with a flow rate of Q=0.4",
+      "pred": "To solve this problem, we need to apply the principles of fluid dynamics. The flow rate Q is constant throughout the system, so we can use the continuity equation to find the velocity at the coarse pipe outlet (v1). The continuity equation states that the product of the cross-sectional area and the velocity is constant for in",
+      "gt": "143.23"
+    },
+    {
+      "idx": 21,
+      "question": "There is a water gate with a width of 10m, and the total self weight of each lin",
+      "pred": "To solve this problem, we need to calculate the anti-skid stability safety factor for the gate. The safety factor is given by the ratio of the resisting moment (M_r) to the driving moment (M_d). The resisting moment is the product of the self-weight of the gate and the distance from the base to",
+      "gt": "1.17"
+    },
+    {
+      "idx": 22,
+      "question": "What is the common result of , , , and ?\nA. [\nB. ]\nThink step by step, then end ",
+      "pred": "The image shows a landscape with trees that have been affected by fire, as evidenced by the blackened trunks and the absence of foliage. This suggests that the common result of these elements is deforestation due to fire. The presence of charred trees indicates that a significant fire event has occurred in this area. Therefore,",
+      "gt": "DEFORESTATION"
+    },
+    {
+      "idx": 23,
+      "question": "What disaster distribution is likely to be shown in ?\nA. [\nB. ]\nThink step by st",
+      "pred": "To determine the disaster distribution, we need to look at the color coding of the map. The red dots are likely to represent disasters or areas of concern. By examining the map, we can see that there are several red dots in the Pacific Ocean region, particularly around the Philippines and Indonesia. This suggests that the map is",
+      "gt": "VOLCANIC"
+    },
+    {
+      "idx": 24,
+      "question": "Take 500g of frozen soil samples with a network structure, and after the frozen ",
+      "pred": "To solve this problem, we need to understand the relationship between the mass of the frozen soil sample, the water content after melting, and the moisture content. The moisture content is defined as the ratio of the mass of water to the total mass of the paste soil (frozen soil + water). Given that the mass of",
+      "gt": "43"
+    },
+    {
+      "idx": 25,
+      "question": "In this urban model shown in , land prices would be highest in the area labeled\n",
+      "pred": "To determine where land prices would be highest, we need to consider the accessibility and connectivity of each area. The central area labeled [A] is surrounded by roads on all sides, which suggests it has the most direct access to various points within the model. This central location would likely have the highest demand for land due to",
+      "gt": "A"
+    },
+    {
+      "idx": 26,
+      "question": "What causes the scars shown in , , and ?\nA. [\nB. ]\nThink step by step, then end ",
+      "pred": "The scars shown in the image are likely caused by human activity, such as deforestation or mining. This is suggested by the pattern of the scars, which appear to be linear and consistent with the direction of the coastline. The absence of natural erosion patterns and the uniformity of the scars support this hypothesis. Additionally, the",
+      "gt": "WILDFIRE"
+    },
+    {
+      "idx": 27,
+      "question": "reveals the trend of ___.\nA. [\nB. ]\nThink step by step, then end your response w",
+      "pred": "To determine the trend, we need to observe the changes in the green areas over the years. In 1950, there is a large area of green covering most of the map. By 1960, the green area has decreased significantly, with only a small patch remaining. This pattern continues through",
+      "gt": "DEFORESTATION"
+    },
+    {
+      "idx": 28,
+      "question": "What is the animal in ?\nA. [\nB. ]\nThink step by step, then end your response wit",
+      "pred": "Step 1: Observe the animal's body shape and size relative to the object it is holding.\nStep 2: The animal has a small, round body with a short tail, which suggests it could be a young mammal. The object in its mouth appears to be a small, round piece of food or",
+      "gt": "MEERKAT"
+    },
+    {
+      "idx": 29,
+      "question": "What are the soil types shown in ?\nA. [\nB. ]\nThink step by step, then end your r",
+      "pred": "To determine the soil types shown in the image, we would typically look for distinct color changes or texture variations that indicate different soil layers. However, without a closer examination of the soil's color and texture, it is not possible to accurately identify the soil types from this image alone. Therefore, based on the given information,",
+      "gt": "ULTISOL"
+    }
+  ],
+  "time_sec": 25.5392963886261
+}

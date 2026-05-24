@@ -1,0 +1,49 @@
+[DEVICE] cuda
+[GPU] NVIDIA H100 PCIe | VRAM 85.0GB
+[MODEL] Loading processors...
+[DATA] Building cached datasets...
+[CACHE] Loading llava.pt into RAM...
+[CACHE] llava.pt loaded in 4s (81479 tensors)
+[LLaVA-Instruct] 361411 samples from 157712 records
+[CACHE] Loading gqa_train.pt into RAM...
+[CACHE] gqa_train.pt loaded in 3s (72140 tensors)
+[GQA Train] 72140 unique image samples
+[CACHE] Loading textvqa_train.pt into RAM...
+[CACHE] textvqa_train.pt loaded in 1s (34602 tensors)
+/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py:624: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+[TextVQA] 34602 samples from ../data/textvqa_train_disk
+[DATA] Total train samples: 468153
+[MODEL] Loading Qwen (trainable)...
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 13148.57it/s]
+[MODEL] Building proj2 (768→896 via 2048)...
+[MODEL] Trainable: 501.6M params
+
+============================================================
+EPOCH 1/3
+============================================================
+[DATA] Starting train loop... (3657 batches)
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/kathir/code/Stage2_2.py", line 790, in <module>
+    main()
+  File "/home/rs/24CS91R08/kathir/code/Stage2_2.py", line 755, in main
+    train_loss = train_epoch(model, train_loader, optimizer, device, epoch, CFG["epochs"])
+  File "/home/rs/24CS91R08/kathir/code/Stage2_2.py", line 625, in train_epoch
+    loss = model(vision_cache, input_ids, attention_mask, labels)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rs/24CS91R08/kathir/code/Stage2_2.py", line 350, in forward
+    outputs = self.qwen(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 900, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 479, in forward
+    loss = self.loss_function(logits=logits, labels=labels, vocab_size=self.config.vocab_size, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/loss/loss_utils.py", line 56, in ForCausalLMLoss
+    logits = logits.float()
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 22.10 GiB. GPU 0 has a total capacity of 79.18 GiB of which 11.59 GiB is free. Including non-PyTorch memory, this process has 67.58 GiB memory in use. Of the allocated memory 66.47 GiB is allocated by PyTorch, and 536.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

@@ -1,0 +1,52 @@
+BENCHMARK RESULTS — ALLaVA (SigLIP2-SO400M + MLP + Qwen2.5-3B-Instruct)
+Training data : ALLaVA + Visual Web Instruct
+Run           : 20260522_151658
+
+  Metric                                  Acc        Acc      Total      Score        Acc
+  Model                               MMBENCH  SCIENCEQA        MME      MMVET       MMMU
+  ───────────────────────────────────────────────────────────────────────────────────────
+  ALLaVA (SigLIP2+Qwen2.5-3B)           69.14      74.42    1392.00      25.97       3.33
+  ───────────────────────────────────────────────────────────────────────────────────────
+
+[MMBENCH]  samples=4329  time=211s
+  accuracy: 69.1384
+  primary: 69.1384
+
+[SCIENCEQA]  samples=2017  time=148s
+  accuracy: 74.4175
+  primary: 74.4175
+
+[MME]  samples=2374  time=164s
+  accuracy: 58.6352
+  perception_score: 1258.0000
+  cognition_score: 134.0000
+  total_score: 1392.0000
+  primary: 1392.0000
+  category/code_reasoning: 19/40
+  category/artwork: 259/400
+  category/celebrity: 170/340
+  category/numerical_calculation: 20/40
+  category/text_translation: 20/40
+  category/count: 33/60
+  category/color: 34/60
+  category/commonsense_reasoning: 75/140
+  category/position: 30/60
+  category/OCR: 21/40
+  category/landmark: 204/400
+  category/scene: 289/400
+  category/existence: 46/60
+  category/posters: 172/294
+
+[MMVET]  samples=218  time=225s
+  accuracy: 25.9722
+  primary: 25.9722
+  capability/spat: 27.89%
+  capability/rec: 27.30%
+  capability/ocr: 22.66%
+  capability/gen: 21.19%
+  capability/know: 20.18%
+  capability/math: 7.69%
+
+[MMMU]  samples=30  time=26s
+  accuracy: 3.3333
+  primary: 3.3333

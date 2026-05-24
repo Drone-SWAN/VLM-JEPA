@@ -1,0 +1,97 @@
+
+════════════════════════════════════════════════════════════════════════════════
+  VLM BENCHMARK
+  Device  : cuda
+  Samples : -1 per dataset  (-1 = full)
+  Models  : ['pipeline_a']
+  Datasets: ['gqa', 'textvqa', 'vqav2', 'pope', 'mmbench']
+════════════════════════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Loading: pipeline_a
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [pipeline_a] Loading CLIP, Gemma, proj1, proj2, Qwen...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 55474.31it/s]
+[transformers] [1mCLIPVisionModel LOAD REPORT[0m from: openai/clip-vit-base-patch32
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+visual_projection.weight                                     | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_projection.weight                                       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/314 [00:00<?, ?it/s]Loading weights:   4%|▍         | 13/314 [00:00<00:02, 105.48it/s]Loading weights:   8%|▊         | 24/314 [00:00<00:03, 89.38it/s] Loading weights:  13%|█▎        | 41/314 [00:00<00:02, 120.30it/s]Loading weights:  18%|█▊        | 58/314 [00:00<00:01, 130.09it/s]Loading weights:  23%|██▎       | 72/314 [00:00<00:01, 129.36it/s]Loading weights:  27%|██▋       | 86/314 [00:00<00:01, 114.62it/s]Loading weights:  31%|███       | 98/314 [00:00<00:02, 101.56it/s]Loading weights:  36%|███▌      | 113/314 [00:00<00:01, 111.67it/s]Loading weights:  42%|████▏     | 133/314 [00:01<00:01, 132.83it/s]Loading weights:  47%|████▋     | 147/314 [00:01<00:01, 127.30it/s]Loading weights:  51%|█████▏    | 161/314 [00:01<00:01, 117.72it/s]Loading weights: 100%|██████████| 314/314 [00:01<00:00, 228.80it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 9528.92it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/openai/clip-vit-base-patch32/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/image_processing_base.py", line 282, in get_image_processor_dict
+    resolved_processor_file = cached_file(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 512, in cached_files
+    raise e
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 997, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1130, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1669, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1591, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 685, in _httpx_follow_relative_redirects_with_backoff
+    response = http_backoff(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 559, in http_backoff
+    return next(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 467, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/httpx/_client.py", line 901, in send
+    raise RuntimeError("Cannot send a request, as the client has been closed.")
+RuntimeError: Cannot send a request, as the client has been closed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/kathir/code/benchmark_models.py", line 832, in main
+    model, processor = load_pipeline_a(PIPELINE_A_CFG)
+  File "/home/rs/24CS91R08/kathir/code/benchmark_models.py", line 229, in load_pipeline_a
+    clip_processor = CLIPImageProcessor.from_pretrained(cfg["clip_model"])
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/image_processing_base.py", line 179, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/image_processing_base.py", line 314, in get_image_processor_dict
+    raise OSError(
+OSError: Can't load image processor for 'openai/clip-vit-base-patch32'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'openai/clip-vit-base-patch32' is the correct path to a directory containing a preprocessor_config.json file
+  [pipeline_a] proj1 loaded | stage1 val_loss=2.4596 epoch=5
+  [pipeline_a] proj2+qwen loaded | stage2 best GQA=25.78%
+  [SKIP] Failed to load pipeline_a: Can't load image processor for 'openai/clip-vit-base-patch32'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'openai/clip-vit-base-patch32' is the correct path to a directory containing a preprocessor_config.json file
+  No results. Check errors above.

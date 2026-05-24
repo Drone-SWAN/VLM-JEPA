@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 761, in hf_raise_for_status
+    response.raise_for_status()
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://huggingface.co/api/whoami-v2'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 2291, in _inner_whoami
+    hf_raise_for_status(r)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 877, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: Client error '401 Unauthorized' for url 'https://huggingface.co/api/whoami-v2' (Request ID: Root=1-6a041127-77e9d3d50781d5ce09817b4b;3f6994ac-a3ee-42f6-8690-a0a6a5cb9c13)
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+Invalid username or password.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/kathir/code/Stage2_2.py", line 58, in <module>
+    login(token="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")
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/_login.py", line 112, in login
+    _login(token, add_to_git_credential=add_to_git_credential)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/_login.py", line 378, in _login
+    token_info = whoami(token)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 2278, in whoami
+    output = self._inner_whoami(token=token)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 2307, in _inner_whoami
+    raise HfHubHTTPError(error_message, response=e.response) from e
+huggingface_hub.errors.HfHubHTTPError: Invalid user token. The token stored is invalid. Please run `hf auth login --force` to set a new token.

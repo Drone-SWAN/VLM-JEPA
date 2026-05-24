@@ -1,0 +1,49 @@
+[DEVICE] cuda
+[GPU] NVIDIA L40 | VRAM 47.7GB
+[MODEL] Loading processors...
+[DATA] Building datasets...
+[LLaVA-Instruct] 361411 samples
+[GQA Train] 72140 unique image samples
+[TextVQA] 34602 samples
+[DATA] Total train samples: 468153
+[MODEL] Loading CLIP (frozen)...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 51618.21it/s]
+[MODEL] Loading Qwen (trainable)...
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 8589.00it/s]
+[MODEL] Building proj1 (768→896 via 2048)...
+[MODEL] Trainable: 501.6M / Total: 589.1M params
+[CKPT] Loading Stage 1 NoGemma proj1 from ../checkpoints/stage1_nogemma/stage1_nogemma_best.pt
+  Stage 1 val loss was: 3.3411 (epoch 4)
+
+============================================================
+EPOCH 1/5
+============================================================
+[DATA] Starting train loop... (19506 batches)
+Traceback (most recent call last):
+  File "/home/rs/24CS91R08/kathir/code/Stage2_nogemma.py", line 781, in <module>
+    main()
+  File "/home/rs/24CS91R08/kathir/code/Stage2_nogemma.py", line 740, in main
+    train_loss = train_epoch(model, train_loader, optimizer, device, epoch, CFG["epochs"])
+  File "/home/rs/24CS91R08/kathir/code/Stage2_nogemma.py", line 431, in train_epoch
+    loss = model(pixel_values, input_ids, attention_mask, labels)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rs/24CS91R08/kathir/code/Stage2_nogemma.py", line 395, in forward
+    outputs = self.qwen(
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 900, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 479, in forward
+    loss = self.loss_function(logits=logits, labels=labels, vocab_size=self.config.vocab_size, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/loss/loss_utils.py", line 67, in ForCausalLMLoss
+    loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/transformers/loss/loss_utils.py", line 37, in fixed_cross_entropy
+    loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+  File "/home/rs/24CS91R08/miniconda3/envs/venv/lib/python3.10/site-packages/torch/nn/functional.py", line 3494, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 9.50 GiB. GPU 0 has a total capacity of 44.42 GiB of which 4.66 GiB is free. Including non-PyTorch memory, this process has 39.75 GiB memory in use. Of the allocated memory 39.16 GiB is allocated by PyTorch, and 100.12 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
