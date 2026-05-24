@@ -16,3 +16,4 @@ __pycache__/
 .idea/
 Thumbs.db
 archive/checkpoints/
+filestructure.txt
