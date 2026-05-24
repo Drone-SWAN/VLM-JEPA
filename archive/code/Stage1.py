@@ -12,7 +12,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from huggingface_hub import login
-login(token="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")
+login(token="HF_TOKEN_REMOVED")
 import math
 import random
 import time

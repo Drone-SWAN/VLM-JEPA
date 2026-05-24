@@ -37,7 +37,7 @@ from transformers import (
     AutoModelForCausalLM,
 )
 
-login(token="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")
+login(token="HF_TOKEN_REMOVED")
 
 import os
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"

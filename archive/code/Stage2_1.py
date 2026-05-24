@@ -43,7 +43,7 @@ from transformers import (
     AutoModel,
 )
 
-login(token="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")
+login(token="HF_TOKEN_REMOVED")
 
 # ───────────────────────────────────────────────
 # CONFIG

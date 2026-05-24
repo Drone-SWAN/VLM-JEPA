@@ -44,7 +44,7 @@ from transformers import (
     AutoModelForCausalLM,
 )
 
-login(token="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")
+login(token="HF_TOKEN_REMOVED")
 
 # ───────────────────────────────────────────────
 # CONFIG

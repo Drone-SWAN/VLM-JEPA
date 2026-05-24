@@ -55,7 +55,7 @@ def normalize_answer(s):
     s = re.sub(r"\s+", " ", s).strip()
     return s
 
-login(token="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")
+login(token="HF_TOKEN_REMOVED")
 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
